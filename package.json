@@ -1,26 +1,22 @@
 {
   "name": "chainflow-docs",
-  "scripts": {
-    "dev": "solid-start dev",
-    "build": "solid-start build",
-    "start": "solid-start start"
-  },
   "type": "module",
-  "devDependencies": {
-    "@types/node": "^18.17.5",
-    "esbuild": "^0.14.54",
-    "postcss": "^8.4.28",
-    "solid-start-static": "^0.3.10",
-    "typescript": "^4.9.5",
-    "vite": "^4.4.9"
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@solidjs/meta": "^0.29.1",
-    "@solidjs/router": "^0.8.3",
-    "solid-js": "^1.8.5",
-    "solid-start": "^0.3.10"
+    "@astrojs/check": "^0.3.1",
+    "astro": "^3.6.4",
+    "typescript": "^5.3.2"
   },
-  "engines": {
-    "node": ">=18"
+  "devDependencies": {
+    "bulma": "^0.9.4",
+    "prettier": "^3.1.0",
+    "prettier-plugin-astro": "^0.12.2"
   }
 }

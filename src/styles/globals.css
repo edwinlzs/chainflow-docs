@@ -1,0 +1,27 @@
+.bg-dark {
+  background-color: var(--bg-dark);
+}
+
+.bg {
+  background-color: var(--bg);
+}
+
+.bg-light {
+  background-color: var(--bg-light);
+}
+
+.primary {
+  color: var(--primary);
+}
+
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
