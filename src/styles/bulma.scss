@@ -6,13 +6,15 @@ $family-sans-serif:
   system-ui,
   sans-serif;
 
+$light: #f4eee0;
+$grey-lightest: #ECB365;
+
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 @import "../../node_modules/bulma/sass/base/generic.sass";
 // @import "../../node_modules/bulma/sass/helpers/_all.sass";
 @import "../../node_modules/bulma/sass/elements/container.sass";
 @import "../../node_modules/bulma/sass/components/navbar.sass";
 @import "../../node_modules/bulma/sass/grid/columns.sass";
-
 
 // dark mode
 body {
@@ -61,5 +63,6 @@ body.dark strong {
 }
 
 body.dark code {
-  background-color: #24292e;
+  background-color: inherit;
+  color: #ED6363;
 }
