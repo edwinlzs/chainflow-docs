@@ -1,0 +1,22 @@
+---
+import Sidemenu from '../../components/Sidemenu.astro';
+import Layout from '../Layout.astro';
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout>
+  <section class="columns is-desktop is-fullheight">
+    <Sidemenu/>
+    <div class="container">
+      <h1>{frontmatter.title}</h1>
+      <slot />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .content {
+    display: flex;
+  }
+</style>

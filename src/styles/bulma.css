@@ -1192,6 +1192,55 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   min-height: calc(100vh - 3.25rem);
 }
 
+.menu {
+  font-size: 1rem;
+}
+.menu.is-small {
+  font-size: 0.75rem;
+}
+.menu.is-medium {
+  font-size: 1.25rem;
+}
+.menu.is-large {
+  font-size: 1.5rem;
+}
+
+.menu-list {
+  line-height: 1.25;
+}
+.menu-list a {
+  border-radius: 2px;
+  color: hsl(0, 0%, 29%);
+  display: block;
+  padding: 0.5em 0.75em;
+}
+.menu-list a:hover {
+  background-color: hsl(0, 0%, 96%);
+  color: hsl(0, 0%, 21%);
+}
+.menu-list a.is-active {
+  background-color: hsl(229, 53%, 53%);
+  color: #fff;
+}
+.menu-list li ul {
+  border-left: 1px solid hsl(0, 0%, 86%);
+  margin: 0.75em;
+  padding-left: 0.75em;
+}
+
+.menu-label {
+  color: hsl(0, 0%, 48%);
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.menu-label:not(:first-child) {
+  margin-top: 1em;
+}
+.menu-label:not(:last-child) {
+  margin-bottom: 1em;
+}
+
 .column {
   display: block;
   flex-basis: 0;
@@ -2840,6 +2889,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 body {
   transition: all 0.4s ease;
   line-height: 1.3;
+  font-size: 1.1rem;
 }
 
 body.dark {

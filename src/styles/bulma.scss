@@ -11,15 +11,17 @@ $grey-lightest: #ECB365;
 
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 @import "../../node_modules/bulma/sass/base/generic.sass";
+@import "../../node_modules/bulma/sass/grid/columns.sass";
 // @import "../../node_modules/bulma/sass/helpers/_all.sass";
 @import "../../node_modules/bulma/sass/elements/container.sass";
 @import "../../node_modules/bulma/sass/components/navbar.sass";
-@import "../../node_modules/bulma/sass/grid/columns.sass";
+@import "../../node_modules/bulma/sass/components/menu.sass";
 
 // dark mode
 body {
   transition: all 0.4s ease;
   line-height: 1.3;
+  font-size: 1.1rem;
 }
 
 body.dark {
