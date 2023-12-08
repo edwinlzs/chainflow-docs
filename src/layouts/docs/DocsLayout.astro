@@ -6,9 +6,9 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout>
-  <section class="columns is-desktop is-fullheight py-2 px-4">
+  <section class="columns is-desktop is-fullheight px-4">
     <Sidemenu/>
-    <div class="container column column-main">
+    <div class="content container column">
       <div id="doc">
         <h1>{frontmatter.title}</h1>
         <slot /></div>
@@ -18,7 +18,8 @@ const { frontmatter } = Astro.props;
 
 <style>
   .content {
-    display: flex;
+    padding-top: 1.5em;
+    border-left: 0.5px solid var(--bg-light);
   }
 
   #doc {
