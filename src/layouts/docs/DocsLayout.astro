@@ -1,7 +1,29 @@
 ---
+import Sidemenu from '../../components/Sidemenu.astro';
 import Layout from '../Layout.astro';
+
+const { frontmatter } = Astro.props;
 ---
 
 <Layout>
-  <slot />
+  <section class="columns is-desktop is-fullheight py-2 px-4">
+    <Sidemenu/>
+    <div class="container column column-main">
+      <div id="doc">
+        <h1>{frontmatter.title}</h1>
+        <slot /></div>
+      </div>
+  </section>
 </Layout>
+
+<style>
+  .content {
+    display: flex;
+  }
+
+  #doc {
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>

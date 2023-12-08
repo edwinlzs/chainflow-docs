@@ -45,6 +45,10 @@ a.nostyle:visited {
   cursor: pointer;
 }
 
+a.nostyle:hover {
+  background-color: var(--bg-dark);
+}
+
 p {
   line-height: 1.25;
 }

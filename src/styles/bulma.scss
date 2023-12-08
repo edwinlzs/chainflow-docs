@@ -12,10 +12,12 @@ $grey-lightest: #ECB365;
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 @import "../../node_modules/bulma/sass/base/generic.sass";
 @import "../../node_modules/bulma/sass/grid/columns.sass";
-// @import "../../node_modules/bulma/sass/helpers/_all.sass";
+@import "../../node_modules/bulma/sass/helpers/_all.sass";
 @import "../../node_modules/bulma/sass/elements/container.sass";
+// @import "../../node_modules/bulma/sass/elements/content.sass";
 @import "../../node_modules/bulma/sass/components/navbar.sass";
 @import "../../node_modules/bulma/sass/components/menu.sass";
+@import "../../node_modules/bulma/sass/layout/section.sass";
 
 // dark mode
 body {
@@ -67,4 +69,8 @@ body.dark strong {
 body.dark code {
   background-color: inherit;
   color: #ED6363;
+}
+
+body.dark .menu-label {
+  color: $grey-lightest;
 }

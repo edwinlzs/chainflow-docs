@@ -3,21 +3,27 @@ const docs = await Astro.glob('../pages/docs/*.md');
 const guides = await Astro.glob('../pages/guides/*.md');
 ---
 
-<div class="column is-one-fifth-desktop section">
+<div id="sidemenu" class="column is-one-fifth-desktop container">
   <aside class="menu">
     <p class="menu-label">Documentation</p>
     <ul class="menu-list">
       {docs.map((doc) => (
-        <li><a href={doc.url}>{doc.frontmatter.title}</a></li>
+        <li><a class="nostyle" href={doc.url}>{doc.frontmatter.title}</a></li>
       ))}
     </ul>
     <p class="menu-label">Guides</p>
     
     <ul class="menu-list">
       {guides.map((guide) => (
-        <li><a href={guide.url}>{guide.frontmatter.title}</a></li>
+        <li><a class="nostyle" href={guide.url}>{guide.frontmatter.title}</a></li>
       ))}
     </ul>
     <ul class="menu-list"></ul>
   </aside>
 </div>
+
+<style>
+  #sidemenu {
+    text-align: left;
+  }
+</style>

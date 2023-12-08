@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/guides/GuidesLayout.astro
+layout: ../../layouts/docs/DocsLayout.astro
 title: Introduction
 ---
 
