@@ -1,0 +1,30 @@
+---
+import Sidemenu from '../../components/Sidemenu.astro';
+import Layout from '../Layout.astro';
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout>
+  <section class="columns is-desktop is-fullheight px-4">
+    <Sidemenu/>
+    <div class="content container column">
+      <div id="doc">
+        <h1>{frontmatter.title}</h1>
+        <slot /></div>
+      </div>
+  </section>
+</Layout>
+
+<style>
+  .content {
+    padding-top: 1.5em;
+    border-left: 0.5px solid var(--bg-light);
+  }
+
+  #doc {
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>

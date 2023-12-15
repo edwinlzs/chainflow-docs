@@ -1,3 +1,20 @@
+html {
+  background: var(--bg-dark);
+  font-family:
+    'Work Sans',
+    'Sora',
+    system-ui,
+    sans-serif;
+}
+
+/* (TEMP) Setting colors */
+:root {
+  --bg-dark: #1A1A1B;
+  --bg: #272121;
+  --bg-light: #323232;
+  --primary: #f4eee0;
+}
+
 .bg-dark {
   background-color: var(--bg-dark);
 }
@@ -14,6 +31,8 @@
   color: var(--primary);
 }
 
+/* Removing default styles */
+
 a.nostyle:link {
   text-decoration: inherit;
   color: inherit;
@@ -24,4 +43,12 @@ a.nostyle:visited {
   text-decoration: inherit;
   color: inherit;
   cursor: pointer;
+}
+
+a.nostyle:hover {
+  background-color: var(--bg-dark);
+}
+
+p {
+  line-height: 1.25;
 }

@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "css-build": "sass --no-source-map src/styles/bulma.scss src/styles/bulma.css"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.1",
@@ -17,6 +18,7 @@
   "devDependencies": {
     "bulma": "^0.9.4",
     "prettier": "^3.1.0",
-    "prettier-plugin-astro": "^0.12.2"
+    "prettier-plugin-astro": "^0.12.2",
+    "sass": "^1.69.5"
   }
 }

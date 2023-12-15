@@ -2,7 +2,7 @@
   <div class="container">
     <div class="navbar-brand">
       <a class="nostyle navbar-item" href="/">
-        🌊hainflow
+        <span id="logo">🌊hainflow</span>
       </a>
 
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -13,15 +13,13 @@
     </div>
 
     <div class="navbar-menu">
-      <div class="navbar-start">
-          <a class="nostyle navbar-item" href="/docs/get-started">
-            Documentation
-          </a>
-          <a class="nostyle navbar-item" href="/guide/intro">
-            Guide
-          </a>
-      </div>
       <div class="navbar-end">
+        <a class="nostyle navbar-item" href="/docs/get-started">
+          Documentation
+        </a>
+        <a class="nostyle navbar-item" href="/guides/intro">
+          Guides
+        </a>
         <a class="nostyle navbar-item" target="_blank" href="https://github.com/edwinlzs/chainflow">
           Github
         </a>
@@ -31,6 +29,11 @@
 </nav>
 
 <style>
+  #logo {
+    font-size: 22px;
+    font-family: 'Sora';
+  }
+
   .navbar-item:hover {
     background-color: var(--bg-dark);
   }
