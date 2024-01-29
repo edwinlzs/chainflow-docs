@@ -3,12 +3,33 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<section class="hero is-link">
+	<section class="hero is-link has-text-centered">
 		<div class="hero-body">
-			<p class="title">Chainflow</p>
-			<p class="subtitle">Create and manage flexible and dynamic API callchains.</p>
+			<p class="title is-size-1 is-size-2-mobile">Chainflow</p>
+			<p class="subtitle is-size-2 is-size-3-mobile">Enhance your data setup and backend testing processes with powerful API callchains.</p>
 		</div>
 	</section>
+	<div class="columns">
+		<div class="column is-flex is-justify-content-center is-align-items-center has-text-centered">
+			<p class="">Make your API callchains dynamic.</p>
+		</div>
+		<div class="column is-two-thirds">
+			<figure class="image is-128x128">
+				<img src="../../assets/imgs/chainflow.png" />
+			</figure>
+		</div>
+	</div>
+	<div class="columns">
+		<div class="column">
+			<figure class="image is-128x128">
+				<img src="../../assets/imgs/extending.png" />
+			</figure>
+		</div>
+		<div class="column is-flex is-justify-content-center is-align-items-center has-text-centered">
+			<p class="">
+				Group API calls into chainflows and connect them together.</p>
+		</div>
+	</div>
 </Layout>
 
 <style>
@@ -19,4 +40,8 @@ import Layout from '../layouts/Layout.astro';
 		text-align: center;
 		margin: 1em 0;
 	} */
+
+	.hero {
+		background-color: var(--bg-light)
+	}
 </style>
