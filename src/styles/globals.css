@@ -13,6 +13,8 @@ html {
   --bg: #272121;
   --bg-light: #323232;
   --primary: #f4eee0;
+  --secondary: #ECB365;
+  --code: #ED6363;
 }
 
 .bg-dark {
@@ -36,12 +38,21 @@ html {
 a.nostyle:link {
   text-decoration: inherit;
   color: inherit;
+  background-color: inherit;
   cursor: pointer;
 }
 
 a.nostyle:visited {
   text-decoration: inherit;
   color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+a.nostyle:active {
+  text-decoration: inherit;
+  color: var(--secondary);
+  background-color: inherit;
   cursor: pointer;
 }
 

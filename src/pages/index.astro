@@ -1,22 +1,124 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+
+import { Content as CallchainSnippet } from "./home/callchains.md";
+import { Content as ExtendingSnippet } from "./home/extending.md";
 ---
 
 <Layout>
-	<section class="hero is-link">
-		<div class="hero-body">
-			<p class="title">Chainflow</p>
-			<p class="subtitle">Create and manage flexible and dynamic API callchains.</p>
-		</div>
-	</section>
+  <section class="hero has-text-centered">
+    <div class="hero-body">
+      <p class="title is-size-1 is-size-2-mobile">🌊hainflow</p>
+      <p class="subtitle is-size-2 is-size-3-mobile">
+        Enhance your data setup and backend testing with powerful API
+        callchains.
+      </p>
+      <a href="/guides/intro">
+        <button class="button is-size-4">Get Started</button></a
+      >
+    </div>
+  </section>
+
+  <section
+    class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center"
+  >
+    <div class="columns p-6">
+      <div
+        class="column is-flex is-flex-direction-column is-justify-content-center is-align-items-end"
+      >
+        <div class="is-flex is-flex-direction-column is-align-items-start">
+          <p>
+            Make your API callchains dynamic by letting data flow throughout
+            multiple endpoint calls.
+          </p>
+          <div class="snippet">
+            <CallchainSnippet />
+          </div>
+        </div>
+      </div>
+      <div
+        class="column is-flex is-justify-content-start is-align-items-center"
+      >
+        <figure class="flow-diagram">
+          <img
+            class="flow-diagram-img"
+            src="../../assets/imgs/chainflow.png"
+            alt="creating-chains"
+          />
+        </figure>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <figure class="flow-diagram">
+          <img
+            class="flow-diagram-img"
+            src="../../assets/imgs/extending.png"
+            alt="extending-chainflows"
+          />
+        </figure>
+      </div>
+      <div
+        class="column is-flex is-flex-direction-column is-justify-content-center is-align-items-start"
+      >
+        <p class="has-text-centered">
+          Group API calls into chainflows and connect them together.
+        </p>
+        <div class="snippet">
+          <ExtendingSnippet />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero has-text-centered">
+    <div class="hero-body">
+      <a href="/guides/intro">
+        <button class="button is-size-4">Get Started</button></a
+      >
+    </div>
+  </section>
+
+  <section class="has-text-centered p-5">
+    <div>
+      © 2024 Built by <a
+        href="https://github.com/edwinlzs"
+        target="_blank"
+        rel="noreferrer"
+      >
+        @edwinlzs</a
+      >
+    </div>
+    <div>
+      This site was made with <a
+        href="https://github.com/withastro/astro"
+        target="_blank"
+        rel="noreferrer">Astro</a
+      > and <a
+        href="https://github.com/jgthms/bulma"
+        target="_blank"
+        rel="noreferrer">Bulma</a
+      >, and hosted free on Github Pages.
+    </div>
+  </section>
 </Layout>
 
 <style>
-	/* #main-title {
-		font-size: 3rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin: 1em 0;
-	} */
+  .hero {
+    background-color: var(--bg-light);
+  }
+
+  .flow-diagram {
+    overflow: hidden;
+    border-radius: 3%;
+  }
+
+  .flow-diagram-img {
+    transform: scale(1, 1.05); /* Get rid of white borders */
+  }
+
+  .snippet {
+    font-size: 1.1rem;
+  }
 </style>
