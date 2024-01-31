@@ -5551,3 +5551,9 @@ body.dark code {
 body.dark .menu-label {
   color: #ECB365;
 }
+
+a.nostyle:active {
+  text-decoration: inherit;
+  color: #ECB365;
+  cursor: pointer;
+}
