@@ -1,9 +1,10 @@
 ---
 layout: ../../layouts/docs/DocsLayout.astro
 title: Introduction
+order: 0
 ---
 
-**Chainflow** is a library that enables managing dynamic and flexible API callchains via **links** between **input** and **output** nodes defined on **endpoints**.  
+**Chainflow** is a library for managing dynamic and flexible API call workflow via **links** between **input** and **output** nodes defined on **endpoints**.  
 <br/>
 
 ## Defining Endpoints

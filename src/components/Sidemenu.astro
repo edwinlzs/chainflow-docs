@@ -10,34 +10,38 @@ const pathname = Astro.url.pathname;
     <p class="menu-label">Documentation</p>
     <ul class="menu-list">
       {
-        docs.map((doc) => (
-          <li>
-            <a
-              class="nostyle"
-              id={`${pathname === doc.url && "sidemenu-selected"}`}
-              href={doc.url}
-            >
-              {doc.frontmatter.title}
-            </a>
-          </li>
-        ))
+        docs
+          .sort((a, b) => a.frontmatter.order - b.frontmatter.order)
+          .map((doc) => (
+            <li>
+              <a
+                class="nostyle"
+                id={`${pathname === doc.url && "sidemenu-selected"}`}
+                href={doc.url}
+              >
+                {doc.frontmatter.title}
+              </a>
+            </li>
+          ))
       }
     </ul>
     <p class="menu-label">Guides</p>
 
     <ul class="menu-list">
       {
-        guides.map((guide) => (
-          <li>
-            <a
-              class="nostyle"
-              id={`${pathname === guide.url && "sidemenu-selected"}`}
-              href={guide.url}
-            >
-              {guide.frontmatter.title}
-            </a>
-          </li>
-        ))
+        guides
+          .sort((a, b) => a.frontmatter.order - b.frontmatter.order)
+          .map((guide) => (
+            <li>
+              <a
+                class="nostyle"
+                id={`${pathname === guide.url && "sidemenu-selected"}`}
+                href={guide.url}
+              >
+                {guide.frontmatter.title}
+              </a>
+            </li>
+          ))
       }
     </ul>
     <ul class="menu-list"></ul>

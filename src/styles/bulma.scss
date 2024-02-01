@@ -72,6 +72,17 @@ body.dark code {
   color: #ED6363;
 }
 
+blockquote {
+  background-color: var(--bg-light);
+  border-left: 5px solid #ccc;
+  margin: 1.5em .7em;
+  padding: 0.5em 1em;
+}
+
+blockquote p {
+  margin: .5em .5em;
+}
+
 body.dark .menu-label {
   color: $grey-lightest;
 }

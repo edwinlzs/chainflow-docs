@@ -5548,12 +5548,17 @@ body.dark code {
   color: #ED6363;
 }
 
-body.dark .menu-label {
-  color: #ECB365;
+blockquote {
+  background-color: var(--bg-light);
+  border-left: 5px solid #ccc;
+  margin: 1.5em 0.7em;
+  padding: 0.5em 1em;
 }
 
-a.nostyle:active {
-  text-decoration: inherit;
+blockquote p {
+  margin: 0.5em 0.5em;
+}
+
+body.dark .menu-label {
   color: #ECB365;
-  cursor: pointer;
 }

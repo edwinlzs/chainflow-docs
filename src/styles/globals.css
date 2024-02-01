@@ -1,6 +1,8 @@
 html {
   background: var(--bg-dark);
+  word-spacing: .12em;
   font-family:
+    Lato,
     'Work Sans',
     'Sora',
     system-ui,

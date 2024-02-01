@@ -1,6 +1,7 @@
 ---
 import Sidemenu from '../../components/Sidemenu.astro';
 import Layout from '../Layout.astro';
+import EarlyStateBanner from '../../components/EarlyStateBanner.md';
 
 const { frontmatter } = Astro.props;
 ---
@@ -11,6 +12,7 @@ const { frontmatter } = Astro.props;
     <div class="content container column">
       <div id="doc">
         <h1>{frontmatter.title}</h1>
+        <EarlyStateBanner />
         <slot /></div>
       </div>
   </section>
