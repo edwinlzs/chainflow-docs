@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/docs/DocsLayout.astro
-title: "EndpointFactory"
+title: "OriginServer"
 pubDate: "2024-02-02"
 order: 1
 ---

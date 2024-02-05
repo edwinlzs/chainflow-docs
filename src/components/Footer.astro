@@ -1,6 +1,7 @@
 <section class="has-text-centered is-size-6 p-5">
   <div>
     © 2024 Built by <a
+      class="nostyle link"
       href="https://github.com/edwinlzs"
       target="_blank"
       rel="noreferrer"
@@ -10,13 +11,28 @@
   </div>
   <div>
     This site was made with <a
+      class="nostyle link"
       href="https://github.com/withastro/astro"
       target="_blank"
       rel="noreferrer">Astro</a
     > and <a
+      class="nostyle link"
       href="https://github.com/jgthms/bulma"
       target="_blank"
       rel="noreferrer">Bulma</a
     >, and hosted on Github Pages.
   </div>
 </section>
+
+<style lang="scss">
+  a.link {
+    &:hover {
+      opacity: 75%;
+    }
+    &:visited,
+    &:link,
+    & {
+      color: var(--secondary);
+    }
+  }
+</style>

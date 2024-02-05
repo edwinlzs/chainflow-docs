@@ -27,24 +27,24 @@ chainflow().call(createUser).call(addRole).run();
 
 # Basic Example
 
-Below, we create endpoints from a factory, define the input nodes on their request body/query parameters, and run a flow calling those endpoints.
+Below, we create endpoints for an origin server, define the input nodes on their request body/query parameters, and run a flow calling those endpoints.
 
 ```typescript
-import { endpointFactory, chainflow } from "./chainflow";
+import { originServer, chainflow } from "./chainflow";
 
-const factory = endpointFactory("127.0.0.1:5000");
+const origin = originServer("127.0.0.1:5000");
 
 // create endpoints
-const createUser = factory.post("/user").body({
+const createUser = origin.post("/user").body({
   name: "Tom",
 });
 
-const addRole = factory.post("/role").body({
+const addRole = origin.post("/role").body({
   userId: createUser.body.resp.id,
   role: "Engineer",
 });
 
-const getUsersWithRole = factory.get("/user").query({
+const getUsersWithRole = origin.get("/user").query({
   role: "Engineer",
 });
 

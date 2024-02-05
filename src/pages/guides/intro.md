@@ -8,20 +8,20 @@ order: 0
 <br/>
 
 ## Defining Endpoints
-Start by specifying a host (e.g. `127.0.0.1:5000`) on an `endpointFactory`. You can then call methods named after supported HTTP methods and pass in the path (e.g. `factory.post('/user')`) to create an endpoint under the factory's host (in this case, a HTTP `POST` endpoint `127.0.0.1:5000/user`).
+Start by specifying a host (e.g. `127.0.0.1:5000`) on an `originServer`. You can then call methods named after supported HTTP methods and pass in the path (e.g. `origin.post('/user')`) to create an endpoint under the origin's host (in this case, a HTTP `POST` endpoint `127.0.0.1:5000/user`).
 
 ```typescript
-import { endpointFactory } from 'chainflow';
+import { originServer } from 'chainflow';
 
-const factory = endpointFactory('127.0.0.1:5000');
+const origin = originServer('127.0.0.1:5000');
 
-const createUser = factory.post('/user');
-const createRole = factory.post('/role');
+const createUser = origin.post('/user');
+const createRole = origin.post('/role');
 ```
 <br/>
 
 ## Creating Input Nodes
-You can create **input nodes** on an endpoint by defining its request body, headers, query or path parameters. **Path parameters** are defined at endpoint creation by wrapping parts of the path in curly braces `{}` (e.g. `factory.get(/user/{userId})`). The other input nodes can be defined by calling the `body`, `headers` and `query` methods on an endpoint.
+You can create **input nodes** on an endpoint by defining its request body, headers, query or path parameters. **Path parameters** are defined at endpoint creation by wrapping parts of the path in curly braces `{}` (e.g. `origin.get(/user/{userId})`). The other input nodes can be defined by calling the `body`, `headers` and `query` methods on an endpoint.
 
 ```typescript
 createUser.body({
@@ -100,7 +100,7 @@ To establish links, you call the `set` method on an endpoint to expose its input
 ```typescript
 import { link } from 'chainflow';
 
-const sendMessage = factory.post('/message').body({
+const sendMessage = origin.post('/message').body({
 	userId: required(),
 	message: 'hello world!',
 });
