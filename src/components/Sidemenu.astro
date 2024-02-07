@@ -1,5 +1,5 @@
 ---
-const docs = await Astro.glob("../pages/docs/*.md");
+// const docs = await Astro.glob("../pages/docs/*.md");
 const guides = await Astro.glob("../pages/guides/*.md");
 
 const pathname = Astro.url.pathname;
@@ -7,7 +7,7 @@ const pathname = Astro.url.pathname;
 
 <div id="sidemenu" class="column is-one-fifth-desktop container">
   <aside class="menu">
-    <p class="menu-label">Documentation</p>
+    <!-- <p class="menu-label">Documentation</p>
     <ul class="menu-list">
       {
         docs
@@ -24,7 +24,7 @@ const pathname = Astro.url.pathname;
             </li>
           ))
       }
-    </ul>
+    </ul> -->
     <p class="menu-label">Guides</p>
 
     <ul class="menu-list">

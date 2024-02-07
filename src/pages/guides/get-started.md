@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/docs/DocsLayout.astro
+layout: ../../layouts/guides/GuidesLayout.astro
 title: "Get Started"
 pubDate: "2024-01-30"
 order: 0
