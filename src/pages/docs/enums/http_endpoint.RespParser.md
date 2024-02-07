@@ -1,13 +1,12 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / [http/endpoint](../modules/http_endpoint) / RespParser
+[chainflow](/docs/README) / [Modules](/docs/modules) / [http/endpoint](/docs/modules/http_endpoint) / RespParser
 
 # Enumeration: RespParser
 
-[http/endpoint](../modules/http_endpoint).RespParser
+[http/endpoint](/docs/modules/http_endpoint).RespParser
 
 Formats to parse the response body.
 
@@ -15,10 +14,10 @@ Formats to parse the response body.
 
 ### Enumeration Members
 
-- [ArrayBuffer](./http_endpoint.RespParser#arraybuffer)
-- [Blob](./http_endpoint.RespParser#blob)
-- [Json](./http_endpoint.RespParser#json)
-- [Text](./http_endpoint.RespParser#text)
+- [ArrayBuffer](/docs/enums/http_endpoint.RespParser#arraybuffer)
+- [Blob](/docs/enums/http_endpoint.RespParser#blob)
+- [Json](/docs/enums/http_endpoint.RespParser#json)
+- [Text](/docs/enums/http_endpoint.RespParser#text)
 
 ## Enumeration Members
 
@@ -28,7 +27,7 @@ Formats to parse the response body.
 
 #### Defined in
 
-[src/http/endpoint.ts:48](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/endpoint.ts#L48)
+[src/http/endpoint.ts:48](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/endpoint.ts#L48)
 
 ___
 
@@ -38,7 +37,7 @@ ___
 
 #### Defined in
 
-[src/http/endpoint.ts:49](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/endpoint.ts#L49)
+[src/http/endpoint.ts:49](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/endpoint.ts#L49)
 
 ___
 
@@ -48,7 +47,7 @@ ___
 
 #### Defined in
 
-[src/http/endpoint.ts:50](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/endpoint.ts#L50)
+[src/http/endpoint.ts:50](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/endpoint.ts#L50)
 
 ___
 
@@ -58,4 +57,4 @@ ___
 
 #### Defined in
 
-[src/http/endpoint.ts:51](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/endpoint.ts#L51)
+[src/http/endpoint.ts:51](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/endpoint.ts#L51)

@@ -1,9 +1,8 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / http/endpoint
+[chainflow](/docs/README) / [Modules](/docs/modules) / http/endpoint
 
 # Module: http/endpoint
 
@@ -11,14 +10,14 @@ sidebar: true
 
 ### Enumerations
 
-- [RespParser](../enums/http_endpoint.RespParser)
+- [RespParser](/docs/enums/http_endpoint.RespParser)
 
 ### Classes
 
-- [Endpoint](../classes/http_endpoint.Endpoint)
+- [Endpoint](/docs/classes/http_endpoint.Endpoint)
 
 ### Interfaces
 
-- [EndpointConfig](../interfaces/http_endpoint.EndpointConfig)
-- [HttpInputNodes](../interfaces/http_endpoint.HttpInputNodes)
-- [INodeWithValue](../interfaces/http_endpoint.INodeWithValue)
+- [EndpointConfig](/docs/interfaces/http_endpoint.EndpointConfig)
+- [HttpInputNodes](/docs/interfaces/http_endpoint.HttpInputNodes)
+- [INodeWithValue](/docs/interfaces/http_endpoint.INodeWithValue)

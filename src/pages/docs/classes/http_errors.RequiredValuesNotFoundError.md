@@ -1,13 +1,12 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / [http/errors](../modules/http_errors) / RequiredValuesNotFoundError
+[chainflow](/docs/README) / [Modules](/docs/modules) / [http/errors](/docs/modules/http_errors) / RequiredValuesNotFoundError
 
 # Class: RequiredValuesNotFoundError
 
-[http/errors](../modules/http_errors).RequiredValuesNotFoundError
+[http/errors](/docs/modules/http_errors).RequiredValuesNotFoundError
 
 When there is no value available for a required input node.
 
@@ -21,26 +20,26 @@ When there is no value available for a required input node.
 
 ### Constructors
 
-- [constructor](./http_errors.RequiredValuesNotFoundError#constructor)
+- [constructor](/docs/classes/http_errors.RequiredValuesNotFoundError#constructor)
 
 ### Properties
 
-- [cause](./http_errors.RequiredValuesNotFoundError#cause)
-- [message](./http_errors.RequiredValuesNotFoundError#message)
-- [name](./http_errors.RequiredValuesNotFoundError#name)
-- [stack](./http_errors.RequiredValuesNotFoundError#stack)
-- [prepareStackTrace](./http_errors.RequiredValuesNotFoundError#preparestacktrace)
-- [stackTraceLimit](./http_errors.RequiredValuesNotFoundError#stacktracelimit)
+- [cause](/docs/classes/http_errors.RequiredValuesNotFoundError#cause)
+- [message](/docs/classes/http_errors.RequiredValuesNotFoundError#message)
+- [name](/docs/classes/http_errors.RequiredValuesNotFoundError#name)
+- [stack](/docs/classes/http_errors.RequiredValuesNotFoundError#stack)
+- [prepareStackTrace](/docs/classes/http_errors.RequiredValuesNotFoundError#preparestacktrace)
+- [stackTraceLimit](/docs/classes/http_errors.RequiredValuesNotFoundError#stacktracelimit)
 
 ### Methods
 
-- [captureStackTrace](./http_errors.RequiredValuesNotFoundError#capturestacktrace)
+- [captureStackTrace](/docs/classes/http_errors.RequiredValuesNotFoundError#capturestacktrace)
 
 ## Constructors
 
 ### constructor
 
-• **new RequiredValuesNotFoundError**(`hash`, `missingValues`): [`RequiredValuesNotFoundError`](./http_errors.RequiredValuesNotFoundError)
+• **new RequiredValuesNotFoundError**(`hash`, `missingValues`): [`RequiredValuesNotFoundError`](/docs/classes/http_errors.RequiredValuesNotFoundError)
 
 #### Parameters
 
@@ -51,7 +50,7 @@ When there is no value available for a required input node.
 
 #### Returns
 
-[`RequiredValuesNotFoundError`](./http_errors.RequiredValuesNotFoundError)
+[`RequiredValuesNotFoundError`](/docs/classes/http_errors.RequiredValuesNotFoundError)
 
 #### Overrides
 
@@ -59,7 +58,7 @@ Error.constructor
 
 #### Defined in
 
-[src/http/errors.ts:11](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/errors.ts#L11)
+[src/http/errors.ts:11](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/errors.ts#L11)
 
 ## Properties
 

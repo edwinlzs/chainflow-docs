@@ -1,13 +1,12 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / [http/endpoint](../modules/http_endpoint) / EndpointConfig
+[chainflow](/docs/README) / [Modules](/docs/modules) / [http/endpoint](/docs/modules/http_endpoint) / EndpointConfig
 
 # Interface: EndpointConfig
 
-[http/endpoint](../modules/http_endpoint).EndpointConfig
+[http/endpoint](/docs/modules/http_endpoint).EndpointConfig
 
 Configurations for the endpoint.
 
@@ -15,8 +14,8 @@ Configurations for the endpoint.
 
 ### Properties
 
-- [respParser](./http_endpoint.EndpointConfig#respparser)
-- [respValidator](./http_endpoint.EndpointConfig#respvalidator)
+- [respParser](/docs/interfaces/http_endpoint.EndpointConfig#respparser)
+- [respValidator](/docs/interfaces/http_endpoint.EndpointConfig#respvalidator)
 
 ## Properties
 
@@ -26,7 +25,7 @@ Configurations for the endpoint.
 
 #### Defined in
 
-[src/http/endpoint.ts:39](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/endpoint.ts#L39)
+[src/http/endpoint.ts:39](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/endpoint.ts#L39)
 
 ___
 
@@ -55,4 +54,4 @@ ___
 
 #### Defined in
 
-[src/http/endpoint.ts:40](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/endpoint.ts#L40)
+[src/http/endpoint.ts:40](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/endpoint.ts#L40)

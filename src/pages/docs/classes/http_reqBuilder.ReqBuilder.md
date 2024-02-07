@@ -1,13 +1,12 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / [http/reqBuilder](../modules/http_reqBuilder) / ReqBuilder
+[chainflow](/docs/README) / [Modules](/docs/modules) / [http/reqBuilder](/docs/modules/http_reqBuilder) / ReqBuilder
 
 # Class: ReqBuilder
 
-[http/reqBuilder](../modules/http_reqBuilder).ReqBuilder
+[http/reqBuilder](/docs/modules/http_reqBuilder).ReqBuilder
 
 Contains node definitions for a request.
 
@@ -15,28 +14,28 @@ Contains node definitions for a request.
 
 ### Constructors
 
-- [constructor](./http_reqBuilder.ReqBuilder#constructor)
+- [constructor](/docs/classes/http_reqBuilder.ReqBuilder#constructor)
 
 ### Properties
 
-- [#body](./http_reqBuilder.ReqBuilder##body)
-- [#hash](./http_reqBuilder.ReqBuilder##hash)
-- [#headers](./http_reqBuilder.ReqBuilder##headers)
-- [#queryParams](./http_reqBuilder.ReqBuilder##queryparams)
-- [baseHeaders](./http_reqBuilder.ReqBuilder#baseheaders)
-- [pathParams](./http_reqBuilder.ReqBuilder#pathparams)
+- [#body](/docs/classes/http_reqBuilder.ReqBuilder##body)
+- [#hash](/docs/classes/http_reqBuilder.ReqBuilder##hash)
+- [#headers](/docs/classes/http_reqBuilder.ReqBuilder##headers)
+- [#queryParams](/docs/classes/http_reqBuilder.ReqBuilder##queryparams)
+- [baseHeaders](/docs/classes/http_reqBuilder.ReqBuilder#baseheaders)
+- [pathParams](/docs/classes/http_reqBuilder.ReqBuilder#pathparams)
 
 ### Accessors
 
-- [body](./http_reqBuilder.ReqBuilder#body)
-- [headers](./http_reqBuilder.ReqBuilder#headers)
-- [query](./http_reqBuilder.ReqBuilder#query)
+- [body](/docs/classes/http_reqBuilder.ReqBuilder#body)
+- [headers](/docs/classes/http_reqBuilder.ReqBuilder#headers)
+- [query](/docs/classes/http_reqBuilder.ReqBuilder#query)
 
 ## Constructors
 
 ### constructor
 
-• **new ReqBuilder**(`«destructured»`): [`ReqBuilder`](./http_reqBuilder.ReqBuilder)
+• **new ReqBuilder**(`«destructured»`): [`ReqBuilder`](/docs/classes/http_reqBuilder.ReqBuilder)
 
 #### Parameters
 
@@ -47,21 +46,21 @@ Contains node definitions for a request.
 
 #### Returns
 
-[`ReqBuilder`](./http_reqBuilder.ReqBuilder)
+[`ReqBuilder`](/docs/classes/http_reqBuilder.ReqBuilder)
 
 #### Defined in
 
-[src/http/reqBuilder.ts:12](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/reqBuilder.ts#L12)
+[src/http/reqBuilder.ts:12](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/reqBuilder.ts#L12)
 
 ## Properties
 
 ### #body
 
-• `Private` **#body**: [`InputNode`](./core_inputNode.InputNode)
+• `Private` **#body**: [`InputNode`](/docs/classes/core_inputNode.InputNode)
 
 #### Defined in
 
-[src/http/reqBuilder.ts:9](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/reqBuilder.ts#L9)
+[src/http/reqBuilder.ts:9](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/reqBuilder.ts#L9)
 
 ___
 
@@ -71,61 +70,61 @@ ___
 
 #### Defined in
 
-[src/http/reqBuilder.ts:10](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/reqBuilder.ts#L10)
+[src/http/reqBuilder.ts:10](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/reqBuilder.ts#L10)
 
 ___
 
 ### #headers
 
-• `Private` **#headers**: [`InputNode`](./core_inputNode.InputNode)
+• `Private` **#headers**: [`InputNode`](/docs/classes/core_inputNode.InputNode)
 
 #### Defined in
 
-[src/http/reqBuilder.ts:6](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/reqBuilder.ts#L6)
+[src/http/reqBuilder.ts:6](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/reqBuilder.ts#L6)
 
 ___
 
 ### #queryParams
 
-• `Private` **#queryParams**: [`InputNode`](./core_inputNode.InputNode)
+• `Private` **#queryParams**: [`InputNode`](/docs/classes/core_inputNode.InputNode)
 
 #### Defined in
 
-[src/http/reqBuilder.ts:8](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/reqBuilder.ts#L8)
+[src/http/reqBuilder.ts:8](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/reqBuilder.ts#L8)
 
 ___
 
 ### baseHeaders
 
-• **baseHeaders**: [`InputNode`](./core_inputNode.InputNode)
+• **baseHeaders**: [`InputNode`](/docs/classes/core_inputNode.InputNode)
 
 #### Defined in
 
-[src/http/reqBuilder.ts:5](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/reqBuilder.ts#L5)
+[src/http/reqBuilder.ts:5](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/reqBuilder.ts#L5)
 
 ___
 
 ### pathParams
 
-• **pathParams**: [`InputNode`](./core_inputNode.InputNode)
+• **pathParams**: [`InputNode`](/docs/classes/core_inputNode.InputNode)
 
 #### Defined in
 
-[src/http/reqBuilder.ts:7](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/reqBuilder.ts#L7)
+[src/http/reqBuilder.ts:7](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/reqBuilder.ts#L7)
 
 ## Accessors
 
 ### body
 
-• `get` **body**(): [`InputNode`](./core_inputNode.InputNode)
+• `get` **body**(): [`InputNode`](/docs/classes/core_inputNode.InputNode)
 
 #### Returns
 
-[`InputNode`](./core_inputNode.InputNode)
+[`InputNode`](/docs/classes/core_inputNode.InputNode)
 
 #### Defined in
 
-[src/http/reqBuilder.ts:21](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/reqBuilder.ts#L21)
+[src/http/reqBuilder.ts:21](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/reqBuilder.ts#L21)
 
 • `set` **body**(`payload`): `void`
 
@@ -141,21 +140,21 @@ ___
 
 #### Defined in
 
-[src/http/reqBuilder.ts:25](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/reqBuilder.ts#L25)
+[src/http/reqBuilder.ts:25](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/reqBuilder.ts#L25)
 
 ___
 
 ### headers
 
-• `get` **headers**(): [`InputNode`](./core_inputNode.InputNode)
+• `get` **headers**(): [`InputNode`](/docs/classes/core_inputNode.InputNode)
 
 #### Returns
 
-[`InputNode`](./core_inputNode.InputNode)
+[`InputNode`](/docs/classes/core_inputNode.InputNode)
 
 #### Defined in
 
-[src/http/reqBuilder.ts:43](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/reqBuilder.ts#L43)
+[src/http/reqBuilder.ts:43](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/reqBuilder.ts#L43)
 
 • `set` **headers**(`params`): `void`
 
@@ -171,21 +170,21 @@ ___
 
 #### Defined in
 
-[src/http/reqBuilder.ts:47](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/reqBuilder.ts#L47)
+[src/http/reqBuilder.ts:47](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/reqBuilder.ts#L47)
 
 ___
 
 ### query
 
-• `get` **query**(): [`InputNode`](./core_inputNode.InputNode)
+• `get` **query**(): [`InputNode`](/docs/classes/core_inputNode.InputNode)
 
 #### Returns
 
-[`InputNode`](./core_inputNode.InputNode)
+[`InputNode`](/docs/classes/core_inputNode.InputNode)
 
 #### Defined in
 
-[src/http/reqBuilder.ts:32](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/reqBuilder.ts#L32)
+[src/http/reqBuilder.ts:32](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/reqBuilder.ts#L32)
 
 • `set` **query**(`params`): `void`
 
@@ -201,4 +200,4 @@ ___
 
 #### Defined in
 
-[src/http/reqBuilder.ts:36](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/reqBuilder.ts#L36)
+[src/http/reqBuilder.ts:36](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/reqBuilder.ts#L36)

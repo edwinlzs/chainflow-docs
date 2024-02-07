@@ -1,9 +1,8 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-chainflow / [Modules](./modules)
+chainflow / [Modules](/docs/modules)
 
 <!-- README -->
 

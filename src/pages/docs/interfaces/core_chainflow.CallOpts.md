@@ -1,13 +1,12 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / [core/chainflow](../modules/core_chainflow) / CallOpts
+[chainflow](/docs/README) / [Modules](/docs/modules) / [core/chainflow](/docs/modules/core_chainflow) / CallOpts
 
 # Interface: CallOpts
 
-[core/chainflow](../modules/core_chainflow).CallOpts
+[core/chainflow](/docs/modules/core_chainflow).CallOpts
 
 Options for configuring an endpoint call.
 
@@ -15,10 +14,10 @@ Options for configuring an endpoint call.
 
 ### Properties
 
-- [body](./core_chainflow.CallOpts#body)
-- [headers](./core_chainflow.CallOpts#headers)
-- [pathParams](./core_chainflow.CallOpts#pathparams)
-- [query](./core_chainflow.CallOpts#query)
+- [body](/docs/interfaces/core_chainflow.CallOpts#body)
+- [headers](/docs/interfaces/core_chainflow.CallOpts#headers)
+- [pathParams](/docs/interfaces/core_chainflow.CallOpts#pathparams)
+- [query](/docs/interfaces/core_chainflow.CallOpts#query)
 
 ## Properties
 
@@ -28,7 +27,7 @@ Options for configuring an endpoint call.
 
 #### Defined in
 
-[src/core/chainflow.ts:36](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/chainflow.ts#L36)
+[src/core/chainflow.ts:36](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/chainflow.ts#L36)
 
 ___
 
@@ -38,7 +37,7 @@ ___
 
 #### Defined in
 
-[src/core/chainflow.ts:33](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/chainflow.ts#L33)
+[src/core/chainflow.ts:33](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/chainflow.ts#L33)
 
 ___
 
@@ -48,7 +47,7 @@ ___
 
 #### Defined in
 
-[src/core/chainflow.ts:35](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/chainflow.ts#L35)
+[src/core/chainflow.ts:35](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/chainflow.ts#L35)
 
 ___
 
@@ -58,4 +57,4 @@ ___
 
 #### Defined in
 
-[src/core/chainflow.ts:34](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/chainflow.ts#L34)
+[src/core/chainflow.ts:34](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/chainflow.ts#L34)

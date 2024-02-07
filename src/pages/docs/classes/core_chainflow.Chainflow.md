@@ -1,42 +1,41 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / [core/chainflow](../modules/core_chainflow) / Chainflow
+[chainflow](/docs/README) / [Modules](/docs/modules) / [core/chainflow](/docs/modules/core_chainflow) / Chainflow
 
 # Class: Chainflow
 
-[core/chainflow](../modules/core_chainflow).Chainflow
+[core/chainflow](/docs/modules/core_chainflow).Chainflow
 
 ## Table of contents
 
 ### Constructors
 
-- [constructor](./core_chainflow.Chainflow#constructor)
+- [constructor](/docs/classes/core_chainflow.Chainflow#constructor)
 
 ### Properties
 
-- [#callstack](./core_chainflow.Chainflow##callstack)
-- [#sources](./core_chainflow.Chainflow##sources)
+- [#callstack](/docs/classes/core_chainflow.Chainflow##callstack)
+- [#sources](/docs/classes/core_chainflow.Chainflow##sources)
 
 ### Methods
 
-- [call](./core_chainflow.Chainflow#call)
-- [clone](./core_chainflow.Chainflow#clone)
-- [extend](./core_chainflow.Chainflow#extend)
-- [reset](./core_chainflow.Chainflow#reset)
-- [run](./core_chainflow.Chainflow#run)
+- [call](/docs/classes/core_chainflow.Chainflow#call)
+- [clone](/docs/classes/core_chainflow.Chainflow#clone)
+- [extend](/docs/classes/core_chainflow.Chainflow#extend)
+- [reset](/docs/classes/core_chainflow.Chainflow#reset)
+- [run](/docs/classes/core_chainflow.Chainflow#run)
 
 ## Constructors
 
 ### constructor
 
-• **new Chainflow**(): [`Chainflow`](./core_chainflow.Chainflow)
+• **new Chainflow**(): [`Chainflow`](/docs/classes/core_chainflow.Chainflow)
 
 #### Returns
 
-[`Chainflow`](./core_chainflow.Chainflow)
+[`Chainflow`](/docs/classes/core_chainflow.Chainflow)
 
 ## Properties
 
@@ -46,26 +45,26 @@ sidebar: true
 
 #### Defined in
 
-[src/core/chainflow.ts:56](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/chainflow.ts#L56)
+[src/core/chainflow.ts:56](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/chainflow.ts#L56)
 
 ___
 
 ### #sources
 
-• `Private` **#sources**: [`SourceValues`](../modules/core_inputNode#sourcevalues)
+• `Private` **#sources**: [`SourceValues`](/docs/modules/core_inputNode#sourcevalues)
 
 Stores sources such as the seed or values accumulated from
 endpoint calls in the current flow.
 
 #### Defined in
 
-[src/core/chainflow.ts:53](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/chainflow.ts#L53)
+[src/core/chainflow.ts:53](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/chainflow.ts#L53)
 
 ## Methods
 
 ### call
 
-▸ **call**(`endpoint`, `opts?`): [`Chainflow`](./core_chainflow.Chainflow)
+▸ **call**(`endpoint`, `opts?`): [`Chainflow`](/docs/classes/core_chainflow.Chainflow)
 
 Adds an endpoint call to the callchain.
 
@@ -73,39 +72,39 @@ Adds an endpoint call to the callchain.
 
 | Name | Type |
 | :------ | :------ |
-| `endpoint` | [`IEndpoint`](../interfaces/core_chainflow.IEndpoint) |
-| `opts?` | [`CallOpts`](../interfaces/core_chainflow.CallOpts) |
+| `endpoint` | [`IEndpoint`](/docs/interfaces/core_chainflow.IEndpoint) |
+| `opts?` | [`CallOpts`](/docs/interfaces/core_chainflow.CallOpts) |
 
 #### Returns
 
-[`Chainflow`](./core_chainflow.Chainflow)
+[`Chainflow`](/docs/classes/core_chainflow.Chainflow)
 
 #### Defined in
 
-[src/core/chainflow.ts:87](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/chainflow.ts#L87)
+[src/core/chainflow.ts:87](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/chainflow.ts#L87)
 
 ___
 
 ### clone
 
-▸ **clone**(): [`Chainflow`](./core_chainflow.Chainflow)
+▸ **clone**(): [`Chainflow`](/docs/classes/core_chainflow.Chainflow)
 
 Creates a clone of this chainflow and its callstack
  which can be extended and run independently.
 
 #### Returns
 
-[`Chainflow`](./core_chainflow.Chainflow)
+[`Chainflow`](/docs/classes/core_chainflow.Chainflow)
 
 #### Defined in
 
-[src/core/chainflow.ts:99](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/chainflow.ts#L99)
+[src/core/chainflow.ts:99](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/chainflow.ts#L99)
 
 ___
 
 ### extend
 
-▸ **extend**(`cf`): [`Chainflow`](./core_chainflow.Chainflow)
+▸ **extend**(`cf`): [`Chainflow`](/docs/classes/core_chainflow.Chainflow)
 
 Extends this chainflow's callstack with that of another flow.
 
@@ -113,15 +112,15 @@ Extends this chainflow's callstack with that of another flow.
 
 | Name | Type |
 | :------ | :------ |
-| `cf` | [`Chainflow`](./core_chainflow.Chainflow) |
+| `cf` | [`Chainflow`](/docs/classes/core_chainflow.Chainflow) |
 
 #### Returns
 
-[`Chainflow`](./core_chainflow.Chainflow)
+[`Chainflow`](/docs/classes/core_chainflow.Chainflow)
 
 #### Defined in
 
-[src/core/chainflow.ts:106](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/chainflow.ts#L106)
+[src/core/chainflow.ts:106](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/chainflow.ts#L106)
 
 ___
 
@@ -137,13 +136,13 @@ Resets the chainflow's state by clearing its accumulated sources.
 
 #### Defined in
 
-[src/core/chainflow.ts:93](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/chainflow.ts#L93)
+[src/core/chainflow.ts:93](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/chainflow.ts#L93)
 
 ___
 
 ### run
 
-▸ **run**(`opts?`): `Promise`\<[`SourceValues`](../modules/core_inputNode#sourcevalues)\>
+▸ **run**(`opts?`): `Promise`\<[`SourceValues`](/docs/modules/core_inputNode#sourcevalues)\>
 
 Run the set up chain
 
@@ -151,12 +150,12 @@ Run the set up chain
 
 | Name | Type |
 | :------ | :------ |
-| `opts?` | [`RunOpts`](../interfaces/core_chainflow.RunOpts) |
+| `opts?` | [`RunOpts`](/docs/interfaces/core_chainflow.RunOpts) |
 
 #### Returns
 
-`Promise`\<[`SourceValues`](../modules/core_inputNode#sourcevalues)\>
+`Promise`\<[`SourceValues`](/docs/modules/core_inputNode#sourcevalues)\>
 
 #### Defined in
 
-[src/core/chainflow.ts:59](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/chainflow.ts#L59)
+[src/core/chainflow.ts:59](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/chainflow.ts#L59)

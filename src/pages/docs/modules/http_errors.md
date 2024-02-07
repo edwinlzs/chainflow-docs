@@ -1,9 +1,8 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / http/errors
+[chainflow](/docs/README) / [Modules](/docs/modules) / http/errors
 
 # Module: http/errors
 
@@ -11,6 +10,6 @@ sidebar: true
 
 ### Classes
 
-- [InvalidResponseError](../classes/http_errors.InvalidResponseError)
-- [RequiredValuesNotFoundError](../classes/http_errors.RequiredValuesNotFoundError)
-- [UnsupportedMethodError](../classes/http_errors.UnsupportedMethodError)
+- [InvalidResponseError](/docs/classes/http_errors.InvalidResponseError)
+- [RequiredValuesNotFoundError](/docs/classes/http_errors.RequiredValuesNotFoundError)
+- [UnsupportedMethodError](/docs/classes/http_errors.UnsupportedMethodError)

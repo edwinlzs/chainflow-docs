@@ -1,13 +1,12 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / [core/inputNode](../modules/core_inputNode) / InputNode
+[chainflow](/docs/README) / [Modules](/docs/modules) / [core/inputNode](/docs/modules/core_inputNode) / InputNode
 
 # Class: InputNode
 
-[core/inputNode](../modules/core_inputNode).InputNode
+[core/inputNode](/docs/modules/core_inputNode).InputNode
 
 A data node for constructing an input object.
 
@@ -21,36 +20,36 @@ Key-values under this node, if this node represents an object.
 
 ### Constructors
 
-- [constructor](./core_inputNode.InputNode#constructor)
+- [constructor](/docs/classes/core_inputNode.InputNode#constructor)
 
 ### Properties
 
-- [#default](./core_inputNode.InputNode##default)
-- [#generator](./core_inputNode.InputNode##generator)
-- [#required](./core_inputNode.InputNode##required)
-- [#sources](./core_inputNode.InputNode##sources)
-- [#valuePool](./core_inputNode.InputNode##valuepool)
-- [#valuePoolSelect](./core_inputNode.InputNode##valuepoolselect)
-- [[nodeHash]](core_inputNode.InputNode#[nodehash])
+- [#default](/docs/classes/core_inputNode.InputNode##default)
+- [#generator](/docs/classes/core_inputNode.InputNode##generator)
+- [#required](/docs/classes/core_inputNode.InputNode##required)
+- [#sources](/docs/classes/core_inputNode.InputNode##sources)
+- [#valuePool](/docs/classes/core_inputNode.InputNode##valuepool)
+- [#valuePoolSelect](/docs/classes/core_inputNode.InputNode##valuepoolselect)
+- [[nodeHash]](/docs/classes/core_inputNode.InputNode#[nodehash])
 
 ### Methods
 
-- [#accessSource](./core_inputNode.InputNode##accesssource)
-- [#getMultiSourceNodeValues](./core_inputNode.InputNode##getmultisourcenodevalues)
-- [#getSingleSourceNodeValue](./core_inputNode.InputNode##getsinglesourcenodevalue)
-- [#matchSourceHash](./core_inputNode.InputNode##matchsourcehash)
-- [#selectValue](./core_inputNode.InputNode##selectvalue)
-- [[getNodeValue]](core_inputNode.InputNode#[getnodevalue])
-- [[setSource]](core_inputNode.InputNode#[setsource])
-- [[setSources]](core_inputNode.InputNode#[setsources])
-- [[setValuePool]](core_inputNode.InputNode#[setvaluepool])
-- [buildObject](./core_inputNode.InputNode#buildobject)
+- [#accessSource](/docs/classes/core_inputNode.InputNode##accesssource)
+- [#getMultiSourceNodeValues](/docs/classes/core_inputNode.InputNode##getmultisourcenodevalues)
+- [#getSingleSourceNodeValue](/docs/classes/core_inputNode.InputNode##getsinglesourcenodevalue)
+- [#matchSourceHash](/docs/classes/core_inputNode.InputNode##matchsourcehash)
+- [#selectValue](/docs/classes/core_inputNode.InputNode##selectvalue)
+- [[getNodeValue]](/docs/classes/core_inputNode.InputNode#[getnodevalue])
+- [[setSource]](/docs/classes/core_inputNode.InputNode#[setsource])
+- [[setSources]](/docs/classes/core_inputNode.InputNode#[setsources])
+- [[setValuePool]](/docs/classes/core_inputNode.InputNode#[setvaluepool])
+- [buildObject](/docs/classes/core_inputNode.InputNode#buildobject)
 
 ## Constructors
 
 ### constructor
 
-• **new InputNode**(`«destructured»`): [`InputNode`](./core_inputNode.InputNode)
+• **new InputNode**(`«destructured»`): [`InputNode`](/docs/classes/core_inputNode.InputNode)
 
 #### Parameters
 
@@ -62,11 +61,11 @@ Key-values under this node, if this node represents an object.
 
 #### Returns
 
-[`InputNode`](./core_inputNode.InputNode)
+[`InputNode`](/docs/classes/core_inputNode.InputNode)
 
 #### Defined in
 
-[src/core/inputNode.ts:74](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L74)
+[src/core/inputNode.ts:74](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L74)
 
 ## Properties
 
@@ -78,7 +77,7 @@ Default value of this node
 
 #### Defined in
 
-[src/core/inputNode.ts:62](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L62)
+[src/core/inputNode.ts:62](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L62)
 
 ___
 
@@ -90,7 +89,7 @@ Generator function to generate values on demand for this node.
 
 #### Defined in
 
-[src/core/inputNode.ts:72](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L72)
+[src/core/inputNode.ts:72](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L72)
 
 ___
 
@@ -102,7 +101,7 @@ Whether this node requires a value from a source object.
 
 #### Defined in
 
-[src/core/inputNode.ts:64](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L64)
+[src/core/inputNode.ts:64](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L64)
 
 ___
 
@@ -118,7 +117,7 @@ Stores what source node values can be passed into this node.
 
 #### Defined in
 
-[src/core/inputNode.ts:66](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L66)
+[src/core/inputNode.ts:66](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L66)
 
 ___
 
@@ -130,19 +129,19 @@ Stores possible values this node can take.
 
 #### Defined in
 
-[src/core/inputNode.ts:68](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L68)
+[src/core/inputNode.ts:68](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L68)
 
 ___
 
 ### #valuePoolSelect
 
-• `Private` **#valuePoolSelect**: [`UNIFORM`](../enums/core_inputNode.VALUE_POOL_SELECT#uniform) = `VALUE_POOL_SELECT.UNIFORM`
+• `Private` **#valuePoolSelect**: [`UNIFORM`](/docs/enums/core_inputNode.VALUE_POOL_SELECT#uniform) = `VALUE_POOL_SELECT.UNIFORM`
 
 Determines what strategy to select from pool of values
 
 #### Defined in
 
-[src/core/inputNode.ts:70](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L70)
+[src/core/inputNode.ts:70](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L70)
 
 ___
 
@@ -154,7 +153,7 @@ TODO: may not be useful. currently only identifying base object this input node 
 
 #### Defined in
 
-[src/core/inputNode.ts:60](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L60)
+[src/core/inputNode.ts:60](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L60)
 
 ## Methods
 
@@ -179,7 +178,7 @@ Access the source node value in a source object
 
 #### Defined in
 
-[src/core/inputNode.ts:228](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L228)
+[src/core/inputNode.ts:228](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L228)
 
 ___
 
@@ -194,7 +193,7 @@ Attempts to retrieve values for an input node from multiple source nodes.
 | Name | Type |
 | :------ | :------ |
 | `sources` | `ISources` |
-| `sourceValues` | [`SourceValues`](../modules/core_inputNode#sourcevalues) |
+| `sourceValues` | [`SourceValues`](/docs/modules/core_inputNode#sourcevalues) |
 
 #### Returns
 
@@ -202,7 +201,7 @@ Attempts to retrieve values for an input node from multiple source nodes.
 
 #### Defined in
 
-[src/core/inputNode.ts:260](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L260)
+[src/core/inputNode.ts:260](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L260)
 
 ___
 
@@ -218,7 +217,7 @@ Attempts to retrieve values for an input node from a single source node.
 | :------ | :------ |
 | `hash` | `string` |
 | `path` | `string`[] |
-| `sourceValues` | [`SourceValues`](../modules/core_inputNode#sourcevalues) |
+| `sourceValues` | [`SourceValues`](/docs/modules/core_inputNode#sourcevalues) |
 | `undefinedAllowed?` | `boolean` |
 
 #### Returns
@@ -227,7 +226,7 @@ Attempts to retrieve values for an input node from a single source node.
 
 #### Defined in
 
-[src/core/inputNode.ts:247](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L247)
+[src/core/inputNode.ts:247](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L247)
 
 ___
 
@@ -242,7 +241,7 @@ Retrieves a matching source hash from this node's sources, if any,
 
 | Name | Type |
 | :------ | :------ |
-| `sourceValues` | [`SourceValues`](../modules/core_inputNode#sourcevalues) |
+| `sourceValues` | [`SourceValues`](/docs/modules/core_inputNode#sourcevalues) |
 | `usedSources` | `string`[] |
 
 #### Returns
@@ -251,7 +250,7 @@ Retrieves a matching source hash from this node's sources, if any,
 
 #### Defined in
 
-[src/core/inputNode.ts:209](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L209)
+[src/core/inputNode.ts:209](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L209)
 
 ___
 
@@ -267,7 +266,7 @@ Selects a value from the value pool based on the value pool select strategy.
 
 #### Defined in
 
-[src/core/inputNode.ts:272](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L272)
+[src/core/inputNode.ts:272](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L272)
 
 ___
 
@@ -281,7 +280,7 @@ Retrieve value of a node.
 
 | Name | Type |
 | :------ | :------ |
-| `sourceValues` | [`SourceValues`](../modules/core_inputNode#sourcevalues) |
+| `sourceValues` | [`SourceValues`](/docs/modules/core_inputNode#sourcevalues) |
 | `missingValues` | `string`[][] |
 | `currentPath` | `string`[] |
 
@@ -291,7 +290,7 @@ Retrieve value of a node.
 
 #### Defined in
 
-[src/core/inputNode.ts:157](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L157)
+[src/core/inputNode.ts:157](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L157)
 
 ___
 
@@ -305,7 +304,7 @@ Sets a source node for this input node.
 
 | Name | Type |
 | :------ | :------ |
-| `source` | [`SourceNode`](../interfaces/core_sourceNode.SourceNode) |
+| `source` | [`SourceNode`](/docs/interfaces/core_sourceNode.SourceNode) |
 | `callback?` | (`val`: `any`) => `any` |
 
 #### Returns
@@ -314,7 +313,7 @@ Sets a source node for this input node.
 
 #### Defined in
 
-[src/core/inputNode.ts:124](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L124)
+[src/core/inputNode.ts:124](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L124)
 
 ___
 
@@ -337,7 +336,7 @@ Sets multiple source nodes to be combined into a single value for this input nod
 
 #### Defined in
 
-[src/core/inputNode.ts:133](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L133)
+[src/core/inputNode.ts:133](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L133)
 
 ___
 
@@ -359,7 +358,7 @@ Sets the pool of values for this input node.
 
 #### Defined in
 
-[src/core/inputNode.ts:152](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L152)
+[src/core/inputNode.ts:152](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L152)
 
 ___
 
@@ -376,7 +375,7 @@ any available linked sources.
 | :------ | :------ |
 | `currentPath` | `string`[] |
 | `missingValues` | `string`[][] |
-| `sourceValues` | [`SourceValues`](../modules/core_inputNode#sourcevalues) |
+| `sourceValues` | [`SourceValues`](/docs/modules/core_inputNode#sourcevalues) |
 
 #### Returns
 
@@ -384,4 +383,4 @@ any available linked sources.
 
 #### Defined in
 
-[src/core/inputNode.ts:284](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L284)
+[src/core/inputNode.ts:284](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L284)

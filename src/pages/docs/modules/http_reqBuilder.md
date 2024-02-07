@@ -1,9 +1,8 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / http/reqBuilder
+[chainflow](/docs/README) / [Modules](/docs/modules) / http/reqBuilder
 
 # Module: http/reqBuilder
 
@@ -11,4 +10,4 @@ sidebar: true
 
 ### Classes
 
-- [ReqBuilder](../classes/http_reqBuilder.ReqBuilder)
+- [ReqBuilder](/docs/classes/http_reqBuilder.ReqBuilder)

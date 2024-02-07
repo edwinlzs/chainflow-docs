@@ -1,13 +1,12 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / [core/chainflow](../modules/core_chainflow) / RunOpts
+[chainflow](/docs/README) / [Modules](/docs/modules) / [core/chainflow](/docs/modules/core_chainflow) / RunOpts
 
 # Interface: RunOpts
 
-[core/chainflow](../modules/core_chainflow).RunOpts
+[core/chainflow](/docs/modules/core_chainflow).RunOpts
 
 Options for running chainflow.
 
@@ -15,7 +14,7 @@ Options for running chainflow.
 
 ### Properties
 
-- [seed](./core_chainflow.RunOpts#seed)
+- [seed](/docs/interfaces/core_chainflow.RunOpts#seed)
 
 ## Properties
 
@@ -25,4 +24,4 @@ Options for running chainflow.
 
 #### Defined in
 
-[src/core/chainflow.ts:41](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/chainflow.ts#L41)
+[src/core/chainflow.ts:41](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/chainflow.ts#L41)

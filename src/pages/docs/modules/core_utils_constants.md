@@ -1,9 +1,8 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / core/utils/constants
+[chainflow](/docs/README) / [Modules](/docs/modules) / core/utils/constants
 
 # Module: core/utils/constants
 
@@ -11,8 +10,8 @@ sidebar: true
 
 ### Variables
 
-- [SEED\_HASH](./core_utils_constants#seed_hash)
-- [STORE\_HASH](./core_utils_constants#store_hash)
+- [SEED\_HASH](/docs/modules/core_utils_constants#seed_hash)
+- [STORE\_HASH](/docs/modules/core_utils_constants#store_hash)
 
 ## Variables
 
@@ -22,7 +21,7 @@ sidebar: true
 
 #### Defined in
 
-src/core/utils/constants.ts:1
+[src/core/utils/constants.ts:1](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/utils/constants.ts#L1)
 
 ___
 
@@ -32,4 +31,4 @@ ___
 
 #### Defined in
 
-src/core/utils/constants.ts:2
+[src/core/utils/constants.ts:2](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/utils/constants.ts#L2)

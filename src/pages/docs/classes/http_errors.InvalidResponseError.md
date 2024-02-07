@@ -1,13 +1,12 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / [http/errors](../modules/http_errors) / InvalidResponseError
+[chainflow](/docs/README) / [Modules](/docs/modules) / [http/errors](/docs/modules/http_errors) / InvalidResponseError
 
 # Class: InvalidResponseError
 
-[http/errors](../modules/http_errors).InvalidResponseError
+[http/errors](/docs/modules/http_errors).InvalidResponseError
 
 ## Hierarchy
 
@@ -19,26 +18,26 @@ sidebar: true
 
 ### Constructors
 
-- [constructor](./http_errors.InvalidResponseError#constructor)
+- [constructor](/docs/classes/http_errors.InvalidResponseError#constructor)
 
 ### Properties
 
-- [cause](./http_errors.InvalidResponseError#cause)
-- [message](./http_errors.InvalidResponseError#message)
-- [name](./http_errors.InvalidResponseError#name)
-- [stack](./http_errors.InvalidResponseError#stack)
-- [prepareStackTrace](./http_errors.InvalidResponseError#preparestacktrace)
-- [stackTraceLimit](./http_errors.InvalidResponseError#stacktracelimit)
+- [cause](/docs/classes/http_errors.InvalidResponseError#cause)
+- [message](/docs/classes/http_errors.InvalidResponseError#message)
+- [name](/docs/classes/http_errors.InvalidResponseError#name)
+- [stack](/docs/classes/http_errors.InvalidResponseError#stack)
+- [prepareStackTrace](/docs/classes/http_errors.InvalidResponseError#preparestacktrace)
+- [stackTraceLimit](/docs/classes/http_errors.InvalidResponseError#stacktracelimit)
 
 ### Methods
 
-- [captureStackTrace](./http_errors.InvalidResponseError#capturestacktrace)
+- [captureStackTrace](/docs/classes/http_errors.InvalidResponseError#capturestacktrace)
 
 ## Constructors
 
 ### constructor
 
-• **new InvalidResponseError**(`msg?`): [`InvalidResponseError`](./http_errors.InvalidResponseError)
+• **new InvalidResponseError**(`msg?`): [`InvalidResponseError`](/docs/classes/http_errors.InvalidResponseError)
 
 #### Parameters
 
@@ -48,7 +47,7 @@ sidebar: true
 
 #### Returns
 
-[`InvalidResponseError`](./http_errors.InvalidResponseError)
+[`InvalidResponseError`](/docs/classes/http_errors.InvalidResponseError)
 
 #### Overrides
 
@@ -56,7 +55,7 @@ Error.constructor
 
 #### Defined in
 
-[src/http/errors.ts:22](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/errors.ts#L22)
+[src/http/errors.ts:22](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/errors.ts#L22)
 
 ## Properties
 

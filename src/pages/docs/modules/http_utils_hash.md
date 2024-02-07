@@ -1,9 +1,8 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / http/utils/hash
+[chainflow](/docs/README) / [Modules](/docs/modules) / http/utils/hash
 
 # Module: http/utils/hash
 
@@ -11,7 +10,7 @@ sidebar: true
 
 ### Functions
 
-- [hashEndpoint](./http_utils_hash#hashendpoint)
+- [hashEndpoint](/docs/modules/http_utils_hash#hashendpoint)
 
 ## Functions
 
@@ -33,4 +32,4 @@ sidebar: true
 
 #### Defined in
 
-[src/http/utils/hash.ts:1](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/utils/hash.ts#L1)
+[src/http/utils/hash.ts:1](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/utils/hash.ts#L1)

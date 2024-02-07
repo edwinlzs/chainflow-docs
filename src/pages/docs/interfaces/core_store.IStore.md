@@ -1,13 +1,12 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / [core/store](../modules/core_store) / IStore
+[chainflow](/docs/README) / [Modules](/docs/modules) / [core/store](/docs/modules/core_store) / IStore
 
 # Interface: IStore\<T\>
 
-[core/store](../modules/core_store).IStore
+[core/store](/docs/modules/core_store).IStore
 
 ## Type parameters
 
@@ -17,4 +16,4 @@ sidebar: true
 
 ## Indexable
 
-▪ [key: `string`]: [`StoreValue`](../modules/core_store#storevalue)\<`T`\>
+▪ [key: `string`]: [`StoreValue`](/docs/modules/core_store#storevalue)\<`T`\>

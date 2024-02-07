@@ -1,9 +1,8 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / core/inputNode
+[chainflow](/docs/README) / [Modules](/docs/modules) / core/inputNode
 
 # Module: core/inputNode
 
@@ -11,16 +10,16 @@ sidebar: true
 
 ### Enumerations
 
-- [NodeValue](../enums/core_inputNode.NodeValue)
-- [VALUE\_POOL\_SELECT](../enums/core_inputNode.VALUE_POOL_SELECT)
+- [NodeValue](/docs/enums/core_inputNode.NodeValue)
+- [VALUE\_POOL\_SELECT](/docs/enums/core_inputNode.VALUE_POOL_SELECT)
 
 ### Classes
 
-- [InputNode](../classes/core_inputNode.InputNode)
+- [InputNode](/docs/classes/core_inputNode.InputNode)
 
 ### Type Aliases
 
-- [SourceValues](./core_inputNode#sourcevalues)
+- [SourceValues](/docs/modules/core_inputNode#sourcevalues)
 
 ## Type Aliases
 
@@ -34,4 +33,4 @@ sidebar: true
 
 #### Defined in
 
-[src/core/inputNode.ts:53](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/inputNode.ts#L53)
+[src/core/inputNode.ts:53](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/inputNode.ts#L53)

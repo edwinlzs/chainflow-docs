@@ -1,26 +1,25 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / [http/endpoint](../modules/http_endpoint) / INodeWithValue
+[chainflow](/docs/README) / [Modules](/docs/modules) / [http/endpoint](/docs/modules/http_endpoint) / INodeWithValue
 
 # Interface: INodeWithValue
 
-[http/endpoint](../modules/http_endpoint).INodeWithValue
+[http/endpoint](/docs/modules/http_endpoint).INodeWithValue
 
 ## Table of contents
 
 ### Properties
 
-- [[nodeValueIdentifier]](http_endpoint.INodeWithValue#[nodevalueidentifier])
+- [[nodeValueIdentifier]](/docs/interfaces/http_endpoint.INodeWithValue#[nodevalueidentifier])
 
 ## Properties
 
 ### [nodeValueIdentifier]
 
-• **[nodeValueIdentifier]**: [`NodeValue`](../enums/core_inputNode.NodeValue)
+• **[nodeValueIdentifier]**: [`NodeValue`](/docs/enums/core_inputNode.NodeValue)
 
 #### Defined in
 
-[src/http/endpoint.ts:26](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/endpoint.ts#L26)
+[src/http/endpoint.ts:26](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/endpoint.ts#L26)

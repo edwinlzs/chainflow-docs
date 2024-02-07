@@ -1,9 +1,8 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / core/chainflow
+[chainflow](/docs/README) / [Modules](/docs/modules) / core/chainflow
 
 # Module: core/chainflow
 
@@ -11,58 +10,58 @@ sidebar: true
 
 ### Classes
 
-- [Chainflow](../classes/core_chainflow.Chainflow)
+- [Chainflow](/docs/classes/core_chainflow.Chainflow)
 
 ### Interfaces
 
-- [CallOpts](../interfaces/core_chainflow.CallOpts)
-- [CallResult](../interfaces/core_chainflow.CallResult)
-- [IEndpoint](../interfaces/core_chainflow.IEndpoint)
-- [RunOpts](../interfaces/core_chainflow.RunOpts)
+- [CallOpts](/docs/interfaces/core_chainflow.CallOpts)
+- [CallResult](/docs/interfaces/core_chainflow.CallResult)
+- [IEndpoint](/docs/interfaces/core_chainflow.IEndpoint)
+- [RunOpts](/docs/interfaces/core_chainflow.RunOpts)
 
 ### Variables
 
-- [seed](./core_chainflow#seed)
-- [store](./core_chainflow#store)
+- [seed](/docs/modules/core_chainflow#seed)
+- [store](/docs/modules/core_chainflow#store)
 
 ### Functions
 
-- [chainflow](./core_chainflow#chainflow)
+- [chainflow](/docs/modules/core_chainflow#chainflow)
 
 ## Variables
 
 ### seed
 
-• `Const` **seed**: [`SourceNode`](../interfaces/core_sourceNode.SourceNode)
+• `Const` **seed**: [`SourceNode`](/docs/interfaces/core_sourceNode.SourceNode)
 
 Special object used to link an InputNode to a chainflow seed.
 
 #### Defined in
 
-[src/core/chainflow.ts:45](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/chainflow.ts#L45)
+[src/core/chainflow.ts:45](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/chainflow.ts#L45)
 
 ___
 
 ### store
 
-• `Const` **store**: [`SourceNode`](../interfaces/core_sourceNode.SourceNode)
+• `Const` **store**: [`SourceNode`](/docs/interfaces/core_sourceNode.SourceNode)
 
 Special object that acts as a central "gateway" between input and source values.
 
 #### Defined in
 
-[src/core/chainflow.ts:48](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/chainflow.ts#L48)
+[src/core/chainflow.ts:48](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/chainflow.ts#L48)
 
 ## Functions
 
 ### chainflow
 
-▸ **chainflow**(): [`Chainflow`](../classes/core_chainflow.Chainflow)
+▸ **chainflow**(): [`Chainflow`](/docs/classes/core_chainflow.Chainflow)
 
 #### Returns
 
-[`Chainflow`](../classes/core_chainflow.Chainflow)
+[`Chainflow`](/docs/classes/core_chainflow.Chainflow)
 
 #### Defined in
 
-[src/core/chainflow.ts:112](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/chainflow.ts#L112)
+[src/core/chainflow.ts:112](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/chainflow.ts#L112)

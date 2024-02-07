@@ -1,9 +1,8 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / http/utils/client
+[chainflow](/docs/README) / [Modules](/docs/modules) / http/utils/client
 
 # Module: http/utils/client
 
@@ -11,12 +10,12 @@ sidebar: true
 
 ### Type Aliases
 
-- [SUPPORTED\_METHOD\_UPPERCASE](./http_utils_client#supported_method_uppercase)
+- [SUPPORTED\_METHOD\_UPPERCASE](/docs/modules/http_utils_client#supported_method_uppercase)
 
 ### Variables
 
-- [default](./http_utils_client#default)
-- [defaultHeaders](./http_utils_client#defaultheaders)
+- [default](/docs/modules/http_utils_client#default)
+- [defaultHeaders](/docs/modules/http_utils_client#defaultheaders)
 
 ## Type Aliases
 
@@ -26,7 +25,7 @@ sidebar: true
 
 #### Defined in
 
-[src/http/utils/client.ts:4](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/utils/client.ts#L4)
+[src/http/utils/client.ts:4](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/utils/client.ts#L4)
 
 ## Variables
 
@@ -38,11 +37,11 @@ sidebar: true
 
 | Name | Type |
 | :------ | :------ |
-| `httpReq` | (`__namedParameters`: \{ `addr`: `string` ; `body?`: `any` ; `headers?`: `Record`\<`string`, `string`\> ; `method`: [`SUPPORTED_METHOD_UPPERCASE`](./http_utils_client#supported_method_uppercase) ; `path`: `string`  }) => `Promise`\<``null`` \| `ResponseData`\> |
+| `httpReq` | (`__namedParameters`: \{ `addr`: `string` ; `body?`: `any` ; `headers?`: `Record`\<`string`, `string`\> ; `method`: [`SUPPORTED_METHOD_UPPERCASE`](/docs/modules/http_utils_client#supported_method_uppercase) ; `path`: `string`  }) => `Promise`\<``null`` \| `ResponseData`\> |
 
 #### Defined in
 
-[src/http/utils/client.ts:52](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/utils/client.ts#L52)
+[src/http/utils/client.ts:52](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/utils/client.ts#L52)
 
 ___
 
@@ -60,4 +59,4 @@ ___
 
 #### Defined in
 
-[src/http/utils/client.ts:6](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/utils/client.ts#L6)
+[src/http/utils/client.ts:6](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/utils/client.ts#L6)

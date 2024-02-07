@@ -1,9 +1,8 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / core/utils/source
+[chainflow](/docs/README) / [Modules](/docs/modules) / core/utils/source
 
 # Module: core/utils/source
 
@@ -11,8 +10,8 @@ sidebar: true
 
 ### Functions
 
-- [source](./core_utils_source#source)
-- [sources](./core_utils_source#sources)
+- [source](/docs/modules/core_utils_source#source)
+- [sources](/docs/modules/core_utils_source#sources)
 
 ## Functions
 
@@ -24,7 +23,7 @@ sidebar: true
 
 | Name | Type |
 | :------ | :------ |
-| `source` | [`SourceNode`](../interfaces/core_sourceNode.SourceNode) |
+| `source` | [`SourceNode`](/docs/interfaces/core_sourceNode.SourceNode) |
 | `callback?` | (`val`: `any`) => `any` |
 
 #### Returns
@@ -33,13 +32,13 @@ sidebar: true
 
 | Name | Type |
 | :------ | :------ |
-| `[nodeValueIdentifier]` | [`NodeValue`](../enums/core_inputNode.NodeValue) |
+| `[nodeValueIdentifier]` | [`NodeValue`](/docs/enums/core_inputNode.NodeValue) |
 | `callback` | `undefined` \| (`val`: `any`) => `any` |
-| `source` | [`SourceNode`](../interfaces/core_sourceNode.SourceNode) |
+| `source` | [`SourceNode`](/docs/interfaces/core_sourceNode.SourceNode) |
 
 #### Defined in
 
-[src/core/utils/source.ts:5](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/utils/source.ts#L5)
+[src/core/utils/source.ts:5](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/utils/source.ts#L5)
 
 ___
 
@@ -51,7 +50,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `sources` | [`SourceNode`](../interfaces/core_sourceNode.SourceNode)[] |
+| `sources` | [`SourceNode`](/docs/interfaces/core_sourceNode.SourceNode)[] |
 | `callback?` | (`val`: `any`) => `any` |
 
 #### Returns
@@ -60,10 +59,10 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `[nodeValueIdentifier]` | [`NodeValue`](../enums/core_inputNode.NodeValue) |
+| `[nodeValueIdentifier]` | [`NodeValue`](/docs/enums/core_inputNode.NodeValue) |
 | `callback` | `undefined` \| (`val`: `any`) => `any` |
-| `sources` | [`SourceNode`](../interfaces/core_sourceNode.SourceNode)[] |
+| `sources` | [`SourceNode`](/docs/interfaces/core_sourceNode.SourceNode)[] |
 
 #### Defined in
 
-[src/core/utils/source.ts:11](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/utils/source.ts#L11)
+[src/core/utils/source.ts:11](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/utils/source.ts#L11)

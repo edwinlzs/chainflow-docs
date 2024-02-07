@@ -1,9 +1,8 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / core/store
+[chainflow](/docs/README) / [Modules](/docs/modules) / core/store
 
 # Module: core/store
 
@@ -11,21 +10,21 @@ sidebar: true
 
 ### Classes
 
-- [Store](../classes/core_store.Store)
+- [Store](/docs/classes/core_store.Store)
 
 ### Interfaces
 
-- [IStore](../interfaces/core_store.IStore)
+- [IStore](/docs/interfaces/core_store.IStore)
 
 ### Type Aliases
 
-- [StoreValue](./core_store#storevalue)
+- [StoreValue](/docs/modules/core_store#storevalue)
 
 ## Type Aliases
 
 ### StoreValue
 
-Ƭ **StoreValue**\<`T`\>: [`IStore`](../interfaces/core_store.IStore)\<`T`\> \| `T`
+Ƭ **StoreValue**\<`T`\>: [`IStore`](/docs/interfaces/core_store.IStore)\<`T`\> \| `T`
 
 #### Type parameters
 
@@ -35,4 +34,4 @@ sidebar: true
 
 #### Defined in
 
-[src/core/store.ts:5](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/store.ts#L5)
+[src/core/store.ts:5](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/store.ts#L5)

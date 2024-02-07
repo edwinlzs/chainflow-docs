@@ -1,9 +1,8 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / http/originServer
+[chainflow](/docs/README) / [Modules](/docs/modules) / http/originServer
 
 # Module: http/originServer
 
@@ -11,11 +10,11 @@ sidebar: true
 
 ### Type Aliases
 
-- [Origin](./http_originServer#origin)
+- [Origin](/docs/modules/http_originServer#origin)
 
 ### Functions
 
-- [originServer](./http_originServer#originserver)
+- [originServer](/docs/modules/http_originServer#originserver)
 
 ## Type Aliases
 
@@ -25,13 +24,13 @@ sidebar: true
 
 #### Defined in
 
-[src/http/originServer.ts:11](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/originServer.ts#L11)
+[src/http/originServer.ts:11](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/originServer.ts#L11)
 
 ## Functions
 
 ### originServer
 
-▸ **originServer**(`addr?`): [`Origin`](./http_originServer#origin)
+▸ **originServer**(`addr?`): [`Origin`](/docs/modules/http_originServer#origin)
 
 Convenience function for creating an endpoint builder with supported methods defined on it.
 
@@ -43,8 +42,8 @@ Convenience function for creating an endpoint builder with supported methods def
 
 #### Returns
 
-[`Origin`](./http_originServer#origin)
+[`Origin`](/docs/modules/http_originServer#origin)
 
 #### Defined in
 
-[src/http/originServer.ts:6](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/originServer.ts#L6)
+[src/http/originServer.ts:6](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/originServer.ts#L6)

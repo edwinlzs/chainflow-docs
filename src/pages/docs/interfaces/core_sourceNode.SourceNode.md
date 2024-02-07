@@ -1,13 +1,12 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / [core/sourceNode](../modules/core_sourceNode) / SourceNode
+[chainflow](/docs/README) / [Modules](/docs/modules) / [core/sourceNode](/docs/modules/core_sourceNode) / SourceNode
 
 # Interface: SourceNode
 
-[core/sourceNode](../modules/core_sourceNode).SourceNode
+[core/sourceNode](/docs/modules/core_sourceNode).SourceNode
 
 Describes a value in a source node e.g. the output of an endpoint call.
 
@@ -19,10 +18,10 @@ Describes a value in a source node e.g. the output of an endpoint call.
 
 ### Properties
 
-- [[nodeHash]](core_sourceNode.SourceNode#[nodehash])
-- [[nodePath]](core_sourceNode.SourceNode#[nodepath])
-- [[nodeValueIdentifier]](core_sourceNode.SourceNode#[nodevalueidentifier])
-- [[undefinedAllowed]](core_sourceNode.SourceNode#[undefinedallowed])
+- [[nodeHash]](/docs/interfaces/core_sourceNode.SourceNode#[nodehash])
+- [[nodePath]](/docs/interfaces/core_sourceNode.SourceNode#[nodepath])
+- [[nodeValueIdentifier]](/docs/interfaces/core_sourceNode.SourceNode#[nodevalueidentifier])
+- [[undefinedAllowed]](/docs/interfaces/core_sourceNode.SourceNode#[undefinedallowed])
 
 ## Properties
 
@@ -32,7 +31,7 @@ Describes a value in a source node e.g. the output of an endpoint call.
 
 #### Defined in
 
-[src/core/sourceNode.ts:10](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/sourceNode.ts#L10)
+[src/core/sourceNode.ts:10](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/sourceNode.ts#L10)
 
 ___
 
@@ -42,17 +41,17 @@ ___
 
 #### Defined in
 
-[src/core/sourceNode.ts:11](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/sourceNode.ts#L11)
+[src/core/sourceNode.ts:11](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/sourceNode.ts#L11)
 
 ___
 
 ### [nodeValueIdentifier]
 
-• **[nodeValueIdentifier]**: [`NodeValue`](../enums/core_inputNode.NodeValue)
+• **[nodeValueIdentifier]**: [`NodeValue`](/docs/enums/core_inputNode.NodeValue)
 
 #### Defined in
 
-[src/core/sourceNode.ts:13](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/sourceNode.ts#L13)
+[src/core/sourceNode.ts:13](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/sourceNode.ts#L13)
 
 ___
 
@@ -62,4 +61,4 @@ ___
 
 #### Defined in
 
-[src/core/sourceNode.ts:12](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/sourceNode.ts#L12)
+[src/core/sourceNode.ts:12](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/sourceNode.ts#L12)

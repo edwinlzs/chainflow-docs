@@ -1,9 +1,8 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / core/utils/link
+[chainflow](/docs/README) / [Modules](/docs/modules) / core/utils/link
 
 # Module: core/utils/link
 
@@ -11,15 +10,15 @@ sidebar: true
 
 ### Functions
 
-- [allowUndefined](./core_utils_link#allowundefined)
-- [link](./core_utils_link#link)
-- [linkMany](./core_utils_link#linkmany)
+- [allowUndefined](/docs/modules/core_utils_link#allowundefined)
+- [link](/docs/modules/core_utils_link#link)
+- [linkMany](/docs/modules/core_utils_link#linkmany)
 
 ## Functions
 
 ### allowUndefined
 
-▸ **allowUndefined**(`source`): [`SourceNode`](../interfaces/core_sourceNode.SourceNode)
+▸ **allowUndefined**(`source`): [`SourceNode`](/docs/interfaces/core_sourceNode.SourceNode)
 
 Modifier function that allows a SourceNode to return `undefined` values to an input node.
 Note that doing so will make it such that this SourceNode will ALWAYS be used to retrieve
@@ -29,15 +28,15 @@ a value for any linked input node, unless there is another SourceNode with highe
 
 | Name | Type |
 | :------ | :------ |
-| `source` | [`SourceNode`](../interfaces/core_sourceNode.SourceNode) |
+| `source` | [`SourceNode`](/docs/interfaces/core_sourceNode.SourceNode) |
 
 #### Returns
 
-[`SourceNode`](../interfaces/core_sourceNode.SourceNode)
+[`SourceNode`](/docs/interfaces/core_sourceNode.SourceNode)
 
 #### Defined in
 
-[src/core/utils/link.ts:34](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/utils/link.ts#L34)
+[src/core/utils/link.ts:34](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/utils/link.ts#L34)
 
 ___
 
@@ -51,8 +50,8 @@ Link a Source node to a Input node.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `dest` | [`InputNode`](../classes/core_inputNode.InputNode) | the input node that should take a value from a source. |
-| `source` | [`SourceNode`](../interfaces/core_sourceNode.SourceNode) | the source node that will provide the value for a input. |
+| `dest` | [`InputNode`](/docs/classes/core_inputNode.InputNode) | the input node that should take a value from a source. |
+| `source` | [`SourceNode`](/docs/interfaces/core_sourceNode.SourceNode) | the source node that will provide the value for a input. |
 | `callback?` | (`val`: `any`) => `any` | an optional function that is called on the source source value. |
 
 #### Returns
@@ -61,7 +60,7 @@ Link a Source node to a Input node.
 
 #### Defined in
 
-[src/core/utils/link.ts:11](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/utils/link.ts#L11)
+[src/core/utils/link.ts:11](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/utils/link.ts#L11)
 
 ___
 
@@ -75,7 +74,7 @@ Links multiple Source nodes to a Input node via a callback.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `dest` | [`InputNode`](../classes/core_inputNode.InputNode) | the input node that should take a value from the callback. |
+| `dest` | [`InputNode`](/docs/classes/core_inputNode.InputNode) | the input node that should take a value from the callback. |
 | `sources` | `Object` | an array of source nodes that will be passed into the callback. |
 | `callback` | (`val`: `any`) => `any` | a function to merge the sources into a single source for the dest. |
 
@@ -85,4 +84,4 @@ Links multiple Source nodes to a Input node via a callback.
 
 #### Defined in
 
-[src/core/utils/link.ts:21](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/core/utils/link.ts#L21)
+[src/core/utils/link.ts:21](https://github.com/edwinlzs/chainflow/blob/d682462/src/core/utils/link.ts#L21)

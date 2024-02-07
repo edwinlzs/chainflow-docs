@@ -1,13 +1,12 @@
 ---
 layout: /src/layouts/docs/DocsLayout.astro
-sidebar: true
 ---
 
-[chainflow](../README) / [Modules](../modules) / [http/errors](../modules/http_errors) / UnsupportedMethodError
+[chainflow](/docs/README) / [Modules](/docs/modules) / [http/errors](/docs/modules/http_errors) / UnsupportedMethodError
 
 # Class: UnsupportedMethodError
 
-[http/errors](../modules/http_errors).UnsupportedMethodError
+[http/errors](/docs/modules/http_errors).UnsupportedMethodError
 
 When an unsupported method is passed into an `Endpoint`.
 
@@ -21,26 +20,26 @@ When an unsupported method is passed into an `Endpoint`.
 
 ### Constructors
 
-- [constructor](./http_errors.UnsupportedMethodError#constructor)
+- [constructor](/docs/classes/http_errors.UnsupportedMethodError#constructor)
 
 ### Properties
 
-- [cause](./http_errors.UnsupportedMethodError#cause)
-- [message](./http_errors.UnsupportedMethodError#message)
-- [name](./http_errors.UnsupportedMethodError#name)
-- [stack](./http_errors.UnsupportedMethodError#stack)
-- [prepareStackTrace](./http_errors.UnsupportedMethodError#preparestacktrace)
-- [stackTraceLimit](./http_errors.UnsupportedMethodError#stacktracelimit)
+- [cause](/docs/classes/http_errors.UnsupportedMethodError#cause)
+- [message](/docs/classes/http_errors.UnsupportedMethodError#message)
+- [name](/docs/classes/http_errors.UnsupportedMethodError#name)
+- [stack](/docs/classes/http_errors.UnsupportedMethodError#stack)
+- [prepareStackTrace](/docs/classes/http_errors.UnsupportedMethodError#preparestacktrace)
+- [stackTraceLimit](/docs/classes/http_errors.UnsupportedMethodError#stacktracelimit)
 
 ### Methods
 
-- [captureStackTrace](./http_errors.UnsupportedMethodError#capturestacktrace)
+- [captureStackTrace](/docs/classes/http_errors.UnsupportedMethodError#capturestacktrace)
 
 ## Constructors
 
 ### constructor
 
-• **new UnsupportedMethodError**(`unsupportedMethod`): [`UnsupportedMethodError`](./http_errors.UnsupportedMethodError)
+• **new UnsupportedMethodError**(`unsupportedMethod`): [`UnsupportedMethodError`](/docs/classes/http_errors.UnsupportedMethodError)
 
 #### Parameters
 
@@ -50,7 +49,7 @@ When an unsupported method is passed into an `Endpoint`.
 
 #### Returns
 
-[`UnsupportedMethodError`](./http_errors.UnsupportedMethodError)
+[`UnsupportedMethodError`](/docs/classes/http_errors.UnsupportedMethodError)
 
 #### Overrides
 
@@ -58,7 +57,7 @@ Error.constructor
 
 #### Defined in
 
-[src/http/errors.ts:3](https://github.com/edwinlzs/chainflow/blob/b0b3282/src/http/errors.ts#L3)
+[src/http/errors.ts:3](https://github.com/edwinlzs/chainflow/blob/d682462/src/http/errors.ts#L3)
 
 ## Properties
 
