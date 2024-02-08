@@ -1,0 +1,36 @@
+---
+editUrl: false
+next: false
+prev: false
+title: "link"
+---
+
+> **link**(`dest`, `source`, `callback`?): `void`
+
+Link a Source node to a Input node.
+
+## Parameters
+
+• **dest**: [`InputNode`](/api/core/inputnode/classes/inputnode/)
+
+the input node that should take a value from a source.
+
+• **source**: [`SourceNode`](/api/core/sourcenode/interfaces/sourcenode/)
+
+the source node that will provide the value for a input.
+
+• **callback?**: (`val`) => `any`
+
+an optional function that is called on the source source value.
+
+## Returns
+
+`void`
+
+## Source
+
+[chainflow/src/core/utils/link.ts:11](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/utils/link.ts#L11)
+
+***
+
+Generated using [typedoc-plugin-markdown](https://www.npmjs.com/package/typedoc-plugin-markdown) and [TypeDoc](https://typedoc.org/)
