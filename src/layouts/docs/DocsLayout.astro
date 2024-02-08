@@ -1,10 +1,12 @@
 ---
 import Layout from "../Layout.astro";
 import EarlyStateBanner from "../../components/EarlyStateBanner.md";
+import Sidemenu from "../../components/Sidemenu.astro";
 ---
 
 <Layout>
   <section class="columns is-desktop is-fullheight px-4">
+    <Sidemenu />
     <div class="container column">
         <EarlyStateBanner />
         <slot />

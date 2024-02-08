@@ -1,32 +1,19 @@
 ---
-// const docs = await Astro.glob("../pages/docs/*.md");
+const docs = await Astro.glob("../pages/docs/**/*.md");
 const guides = await Astro.glob("../pages/guides/*.md");
 
 const pathname = Astro.url.pathname;
+
+// docs.map((doc) => {
+//   const filenameParts = doc.file.split('/chainflow-docs/src/pages/docs/');
+//   const filename = filenameParts[1];
+
+// })
 ---
 
 <div id="sidemenu" class="column is-one-fifth-desktop container">
   <aside class="menu">
-    <!-- <p class="menu-label">Documentation</p>
-    <ul class="menu-list">
-      {
-        docs
-          .sort((a, b) => a.frontmatter.order - b.frontmatter.order)
-          .map((doc) => (
-            <li>
-              <a
-                class="nostyle"
-                id={`${pathname === doc.url && "sidemenu-selected"}`}
-                href={doc.url}
-              >
-                {doc.frontmatter.title}
-              </a>
-            </li>
-          ))
-      }
-    </ul> -->
     <p class="menu-label">Guides</p>
-
     <ul class="menu-list">
       {
         guides
@@ -44,7 +31,29 @@ const pathname = Astro.url.pathname;
           ))
       }
     </ul>
-    <ul class="menu-list"></ul>
+    
+    <!-- <p class="menu-label">Documentation</p>
+    <ul class="menu-list">
+      {
+        docs
+          .map((doc) => {
+            const filenameParts = doc.file.split('/chainflow-docs/src/pages/docs/');
+            const filename = filenameParts[1];
+
+            return (
+            <li>
+              <a
+                class="nostyle"
+                id={`${pathname === doc.url && "sidemenu-selected"}`}
+                href={doc.url}
+              >
+                {filename}
+              </a>
+            </li>
+          )
+          })
+      }
+    </ul> -->
   </aside>
 </div>
 
