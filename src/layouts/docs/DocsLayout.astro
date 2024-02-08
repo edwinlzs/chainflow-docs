@@ -6,10 +6,8 @@ import EarlyStateBanner from "../../components/EarlyStateBanner.md";
 <Layout>
   <section class="columns is-desktop is-fullheight px-4">
     <div class="container column">
-      <!-- <div id="doc"> -->
         <EarlyStateBanner />
         <slot />
-      <!-- </div> -->
     </div>
   </section>
 </Layout>
@@ -18,5 +16,9 @@ import EarlyStateBanner from "../../components/EarlyStateBanner.md";
   .content {
     padding-top: 1.5em;
     border-left: 0.5px solid var(--bg-light);
+  }
+
+  a {
+    color: red !important;
   }
 </style>

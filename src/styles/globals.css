@@ -37,6 +37,10 @@ html {
 
 /* Removing default styles */
 
+a {
+  color: var(--secondary);
+}
+
 a.nostyle:link {
   text-decoration: inherit;
   color: inherit;

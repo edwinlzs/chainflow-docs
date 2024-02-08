@@ -2,7 +2,9 @@
 layout: /src/layouts/docs/DocsLayout.astro
 ---
 
-chainflow / [Modules](/docs/modules)
+**chainflow** • Readme \| [API](/docs/modules)
+
+***
 
 <!-- README -->
 
