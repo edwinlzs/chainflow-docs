@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "sourceNode"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **sourceNode**(`hash`): [`SourceNode`](/api/core/sourcenode/interfaces/sourcenode/)
@@ -19,7 +20,7 @@ Creates a new Source Node with the given hash.
 
 ## Source
 
-[chainflow/src/core/sourceNode.ts:5](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/sourceNode.ts#L5)
+[chainflow/src/core/sourceNode.ts:5](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/sourceNode.ts#L5)
 
 ***
 

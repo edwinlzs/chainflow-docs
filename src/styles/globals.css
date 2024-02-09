@@ -1,0 +1,51 @@
+html {
+  background: var(--bg-dark);
+  word-spacing: 0.18em;
+  font-family: Lato, "Sora", system-ui, sans-serif;
+}
+
+/* Removing default styles */
+
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+a.nostyle:active {
+  text-decoration: inherit;
+  color: var(--sl-color-accent);
+  background-color: inherit;
+  cursor: pointer;
+}
+
+a.nostyle:hover {
+  color: var(--sl-color-accent);
+}
+
+p {
+  line-height: 1.25;
+}
+
+/* Starlight customizations */
+body {
+  font-family: Lato, "Sora", system-ui, sans-serif;
+}
+
+.site-title {
+  font-family: "Sora", "Lato", system-ui, sans-serif;
+  font-weight: 300;
+}
+
+#_top {
+  font-family: "Sora", "Lato", system-ui, sans-serif;
+  font-weight: 300;
+}

@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "hashEndpoint"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **hashEndpoint**(`__namedParameters`): `string`
@@ -21,7 +22,7 @@ title: "hashEndpoint"
 
 ## Source
 
-[chainflow/src/http/utils/hash.ts:1](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/utils/hash.ts#L1)
+[chainflow/src/http/utils/hash.ts:1](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/utils/hash.ts#L1)
 
 ***
 

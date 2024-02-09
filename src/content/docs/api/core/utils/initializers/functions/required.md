@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "required"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **required**(): `Object`
@@ -21,7 +22,7 @@ as required to be taken from another source.
 
 ## Source
 
-[chainflow/src/core/utils/initializers.ts:18](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/utils/initializers.ts#L18)
+[chainflow/src/core/utils/initializers.ts:18](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/utils/initializers.ts#L18)
 
 ***
 

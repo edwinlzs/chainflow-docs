@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "SourceNode"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 Describes a value in a source node e.g. the output of an endpoint call.
@@ -19,7 +20,7 @@ Describes a value in a source node e.g. the output of an endpoint call.
 
 #### Source
 
-[chainflow/src/core/sourceNode.ts:10](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/sourceNode.ts#L10)
+[chainflow/src/core/sourceNode.ts:10](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/sourceNode.ts#L10)
 
 ***
 
@@ -29,7 +30,7 @@ Describes a value in a source node e.g. the output of an endpoint call.
 
 #### Source
 
-[chainflow/src/core/sourceNode.ts:11](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/sourceNode.ts#L11)
+[chainflow/src/core/sourceNode.ts:11](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/sourceNode.ts#L11)
 
 ***
 
@@ -39,7 +40,7 @@ Describes a value in a source node e.g. the output of an endpoint call.
 
 #### Source
 
-[chainflow/src/core/sourceNode.ts:13](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/sourceNode.ts#L13)
+[chainflow/src/core/sourceNode.ts:13](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/sourceNode.ts#L13)
 
 ***
 
@@ -49,7 +50,7 @@ Describes a value in a source node e.g. the output of an endpoint call.
 
 #### Source
 
-[chainflow/src/core/sourceNode.ts:12](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/sourceNode.ts#L12)
+[chainflow/src/core/sourceNode.ts:12](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/sourceNode.ts#L12)
 
 ***
 

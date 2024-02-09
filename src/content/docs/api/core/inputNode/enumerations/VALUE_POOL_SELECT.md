@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "VALUE_POOL_SELECT"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 ## Enumeration Members
@@ -13,7 +14,7 @@ title: "VALUE_POOL_SELECT"
 
 #### Source
 
-[chainflow/src/core/inputNode.ts:14](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/inputNode.ts#L14)
+[chainflow/src/core/inputNode.ts:14](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/inputNode.ts#L14)
 
 ***
 

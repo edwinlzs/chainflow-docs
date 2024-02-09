@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "Chainflow"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 ## Constructors
@@ -35,7 +36,7 @@ Adds an endpoint call to the callchain.
 
 #### Source
 
-[chainflow/src/core/chainflow.ts:87](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L87)
+[chainflow/src/core/chainflow.ts:87](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L87)
 
 ***
 
@@ -52,7 +53,7 @@ Creates a clone of this chainflow and its callstack
 
 #### Source
 
-[chainflow/src/core/chainflow.ts:99](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L99)
+[chainflow/src/core/chainflow.ts:99](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L99)
 
 ***
 
@@ -72,7 +73,7 @@ Extends this chainflow's callstack with that of another flow.
 
 #### Source
 
-[chainflow/src/core/chainflow.ts:106](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L106)
+[chainflow/src/core/chainflow.ts:106](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L106)
 
 ***
 
@@ -88,7 +89,7 @@ Resets the chainflow's state by clearing its accumulated sources.
 
 #### Source
 
-[chainflow/src/core/chainflow.ts:93](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L93)
+[chainflow/src/core/chainflow.ts:93](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L93)
 
 ***
 
@@ -108,7 +109,7 @@ Run the set up chain
 
 #### Source
 
-[chainflow/src/core/chainflow.ts:59](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L59)
+[chainflow/src/core/chainflow.ts:59](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L59)
 
 ***
 

@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "InvalidResponseError"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 ## Extends
@@ -29,7 +30,7 @@ title: "InvalidResponseError"
 
 #### Source
 
-[chainflow/src/http/errors.ts:22](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/errors.ts#L22)
+[chainflow/src/http/errors.ts:22](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/errors.ts#L22)
 
 ## Properties
 

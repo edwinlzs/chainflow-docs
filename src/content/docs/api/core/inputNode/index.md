@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "core/inputNode"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 ## Index

@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "IEndpoint"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 Defines an endpoint that a chainflow can call upon.
@@ -25,7 +26,7 @@ Defines an endpoint that a chainflow can call upon.
 
 #### Source
 
-[chainflow/src/core/chainflow.ts:21](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L21)
+[chainflow/src/core/chainflow.ts:21](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L21)
 
 ***
 
@@ -35,7 +36,7 @@ Defines an endpoint that a chainflow can call upon.
 
 #### Source
 
-[chainflow/src/core/chainflow.ts:20](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L20)
+[chainflow/src/core/chainflow.ts:20](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L20)
 
 ***
 

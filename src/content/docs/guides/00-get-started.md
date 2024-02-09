@@ -1,10 +1,13 @@
 ---
-layout: /src/layouts/DocsLayout.astro
 title: Get Started
-description: A guide in my new Starlight docs site.
+description: Getting started with Chainflow.
+layout: "/src/layouts/DocsLayout.astro"
+slug: "guides/get-started"
+sidebar:
+  order: 0
 ---
 
-Chainflow is an API call workflow library written in and for TypeScript. Its aim is to improve the developer experience in managing multiple sets of API calls, where values of the response to one endpoint call can be passed to the request payload of another endpoint further down a workflow.
+Chainflow is an API workflow library written in and for TypeScript. Its aim is to improve the developer experience in managing multiple sets of API calls, where values of the response to one endpoint call can be passed to the request payload of another endpoint further down a workflow.
 
 ## Installation
 
@@ -26,14 +29,14 @@ chainflow().call(createUser).call(addRole).run();
 
 ## Basic Example
 
-Below, we create endpoints for an origin server, define the input nodes on their request body/query parameters, and run a flow calling those endpoints.
+Below, we create endpoints for an origin server, define the input nodes on their request body/query parameters, and finally run a flow calling those endpoints.
 
 ```typescript
 import { originServer, chainflow } from "./chainflow";
 
 const origin = originServer("127.0.0.1:5000");
 
-// create endpoints
+// define endpoints
 const createUser = origin.post("/user").body({
   name: "Tom",
 });
@@ -47,6 +50,6 @@ const getUsersWithRole = origin.get("/user").query({
   role: "Engineer",
 });
 
-// create flow
+// define flow
 chainflow().call(createUser).call(addRole).call(getUsersWithRole).run();
 ```

@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "EndpointConfig"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 Configurations for the endpoint.
@@ -15,7 +16,7 @@ Configurations for the endpoint.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:39](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L39)
+[chainflow/src/http/endpoint.ts:39](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L39)
 
 ***
 
@@ -42,7 +43,7 @@ Configurations for the endpoint.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:40](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L40)
+[chainflow/src/http/endpoint.ts:40](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L40)
 
 ***
 

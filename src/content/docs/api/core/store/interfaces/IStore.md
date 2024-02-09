@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "IStore"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 ## Type parameters

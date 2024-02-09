@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "RunOpts"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 Options for running chainflow.
@@ -15,7 +16,7 @@ Options for running chainflow.
 
 #### Source
 
-[chainflow/src/core/chainflow.ts:41](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L41)
+[chainflow/src/core/chainflow.ts:41](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L41)
 
 ***
 

@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "link"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **link**(`dest`, `source`, `callback`?): `void`
@@ -29,7 +30,7 @@ an optional function that is called on the source source value.
 
 ## Source
 
-[chainflow/src/core/utils/link.ts:11](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/utils/link.ts#L11)
+[chainflow/src/core/utils/link.ts:11](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/utils/link.ts#L11)
 
 ***
 

@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "seed"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **`const`** **seed**: [`SourceNode`](/api/core/sourcenode/interfaces/sourcenode/)
@@ -11,7 +12,7 @@ Special object used to link an InputNode to a chainflow seed.
 
 ## Source
 
-[chainflow/src/core/chainflow.ts:45](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L45)
+[chainflow/src/core/chainflow.ts:45](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L45)
 
 ***
 

@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "HttpInputNodes"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 Describes all the possible input nodes of a HTTP request.
@@ -15,7 +16,7 @@ Describes all the possible input nodes of a HTTP request.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:32](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L32)
+[chainflow/src/http/endpoint.ts:32](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L32)
 
 ***
 
@@ -25,7 +26,7 @@ Describes all the possible input nodes of a HTTP request.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:34](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L34)
+[chainflow/src/http/endpoint.ts:34](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L34)
 
 ***
 
@@ -35,7 +36,7 @@ Describes all the possible input nodes of a HTTP request.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:31](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L31)
+[chainflow/src/http/endpoint.ts:31](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L31)
 
 ***
 
@@ -45,7 +46,7 @@ Describes all the possible input nodes of a HTTP request.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:33](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L33)
+[chainflow/src/http/endpoint.ts:33](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L33)
 
 ***
 

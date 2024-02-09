@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "defaultHeaders"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **`const`** **defaultHeaders**: `Object`
@@ -23,7 +24,7 @@ title: "defaultHeaders"
 
 ## Source
 
-[chainflow/src/http/utils/client.ts:6](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/utils/client.ts#L6)
+[chainflow/src/http/utils/client.ts:6](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/utils/client.ts#L6)
 
 ***
 

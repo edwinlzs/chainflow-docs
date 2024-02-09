@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "linkMany"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **linkMany**(`dest`, `sources`, `callback`): `void`
@@ -29,7 +30,7 @@ a function to merge the sources into a single source for the dest.
 
 ## Source
 
-[chainflow/src/core/utils/link.ts:21](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/utils/link.ts#L21)
+[chainflow/src/core/utils/link.ts:21](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/utils/link.ts#L21)
 
 ***
 

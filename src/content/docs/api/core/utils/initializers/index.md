@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "core/utils/initializers"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 ## Index

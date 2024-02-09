@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "store"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **`const`** **store**: [`SourceNode`](/api/core/sourcenode/interfaces/sourcenode/)
@@ -11,7 +12,7 @@ Special object that acts as a central "gateway" between input and source values.
 
 ## Source
 
-[chainflow/src/core/chainflow.ts:48](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L48)
+[chainflow/src/core/chainflow.ts:48](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L48)
 
 ***
 

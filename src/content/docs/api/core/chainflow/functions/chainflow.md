@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "chainflow"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **chainflow**(): [`Chainflow`](/api/core/chainflow/classes/chainflow/)
@@ -13,7 +14,7 @@ title: "chainflow"
 
 ## Source
 
-[chainflow/src/core/chainflow.ts:112](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L112)
+[chainflow/src/core/chainflow.ts:112](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L112)
 
 ***
 

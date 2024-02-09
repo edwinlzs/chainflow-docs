@@ -3,13 +3,14 @@ editUrl: false
 next: false
 prev: false
 title: "setSources"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **`const`** **setSources**: *typeof* [`setSources`](/api/core/utils/symbols/variables/setsources/)
 
 ## Source
 
-[chainflow/src/core/utils/symbols.ts:2](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/utils/symbols.ts#L2)
+[chainflow/src/core/utils/symbols.ts:2](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/utils/symbols.ts#L2)
 
 ***
 

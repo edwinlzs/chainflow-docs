@@ -3,13 +3,14 @@ editUrl: false
 next: false
 prev: false
 title: "SUPPORTED_METHOD"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **SUPPORTED\_METHOD**: `"get"` \| `"post"` \| `"put"` \| `"delete"` \| `"patch"` \| `"options"`
 
 ## Source
 
-[chainflow/src/http/utils/constants.ts:1](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/utils/constants.ts#L1)
+[chainflow/src/http/utils/constants.ts:1](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/utils/constants.ts#L1)
 
 ***
 

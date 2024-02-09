@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "SourceValues"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **SourceValues**: `Object`
@@ -13,7 +14,7 @@ title: "SourceValues"
 
 ## Source
 
-[chainflow/src/core/inputNode.ts:53](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/inputNode.ts#L53)
+[chainflow/src/core/inputNode.ts:53](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/inputNode.ts#L53)
 
 ***
 

@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "source"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **source**(`source`, `callback`?): `Object`
@@ -32,7 +33,7 @@ title: "source"
 
 ## Source
 
-[chainflow/src/core/utils/source.ts:5](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/utils/source.ts#L5)
+[chainflow/src/core/utils/source.ts:5](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/utils/source.ts#L5)
 
 ***
 

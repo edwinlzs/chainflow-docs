@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "pool"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **pool**(`valuePool`): `Object`
@@ -28,7 +29,7 @@ Defines a set of values to choose from when constructing an input.
 
 ## Source
 
-[chainflow/src/core/utils/initializers.ts:5](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/utils/initializers.ts#L5)
+[chainflow/src/core/utils/initializers.ts:5](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/utils/initializers.ts#L5)
 
 ***
 

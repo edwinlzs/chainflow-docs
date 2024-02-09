@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "ReqBuilder"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 Contains node definitions for a request.
@@ -25,7 +26,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[chainflow/src/http/reqBuilder.ts:12](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/reqBuilder.ts#L12)
+[chainflow/src/http/reqBuilder.ts:12](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/reqBuilder.ts#L12)
 
 ## Properties
 
@@ -35,7 +36,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[chainflow/src/http/reqBuilder.ts:5](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/reqBuilder.ts#L5)
+[chainflow/src/http/reqBuilder.ts:5](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/reqBuilder.ts#L5)
 
 ***
 
@@ -45,7 +46,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[chainflow/src/http/reqBuilder.ts:7](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/reqBuilder.ts#L7)
+[chainflow/src/http/reqBuilder.ts:7](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/reqBuilder.ts#L7)
 
 ## Accessors
 
@@ -65,7 +66,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[chainflow/src/http/reqBuilder.ts:21](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/reqBuilder.ts#L21)
+[chainflow/src/http/reqBuilder.ts:21](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/reqBuilder.ts#L21)
 
 ***
 
@@ -85,7 +86,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[chainflow/src/http/reqBuilder.ts:43](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/reqBuilder.ts#L43)
+[chainflow/src/http/reqBuilder.ts:43](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/reqBuilder.ts#L43)
 
 ***
 
@@ -105,7 +106,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[chainflow/src/http/reqBuilder.ts:32](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/reqBuilder.ts#L32)
+[chainflow/src/http/reqBuilder.ts:32](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/reqBuilder.ts#L32)
 
 ***
 

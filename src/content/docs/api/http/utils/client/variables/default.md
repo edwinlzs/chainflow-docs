@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "default"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **default**: `Object`
@@ -35,7 +36,7 @@ Sends a HTTP request.
 
 ## Source
 
-[chainflow/src/http/utils/client.ts:52](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/utils/client.ts#L52)
+[chainflow/src/http/utils/client.ts:52](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/utils/client.ts#L52)
 
 ***
 

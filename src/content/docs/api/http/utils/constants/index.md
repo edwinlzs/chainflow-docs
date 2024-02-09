@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "http/utils/constants"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 ## Index

@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "Origin"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **Origin**: `OriginBase` & `Object`
@@ -35,7 +36,7 @@ title: "Origin"
 
 ## Source
 
-[chainflow/src/http/originServer.ts:11](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/originServer.ts#L11)
+[chainflow/src/http/originServer.ts:11](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/originServer.ts#L11)
 
 ***
 

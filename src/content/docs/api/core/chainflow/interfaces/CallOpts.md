@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "CallOpts"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 Options for configuring an endpoint call.
@@ -15,7 +16,7 @@ Options for configuring an endpoint call.
 
 #### Source
 
-[chainflow/src/core/chainflow.ts:36](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L36)
+[chainflow/src/core/chainflow.ts:36](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L36)
 
 ***
 
@@ -25,7 +26,7 @@ Options for configuring an endpoint call.
 
 #### Source
 
-[chainflow/src/core/chainflow.ts:33](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L33)
+[chainflow/src/core/chainflow.ts:33](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L33)
 
 ***
 
@@ -35,7 +36,7 @@ Options for configuring an endpoint call.
 
 #### Source
 
-[chainflow/src/core/chainflow.ts:35](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L35)
+[chainflow/src/core/chainflow.ts:35](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L35)
 
 ***
 
@@ -45,7 +46,7 @@ Options for configuring an endpoint call.
 
 #### Source
 
-[chainflow/src/core/chainflow.ts:34](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L34)
+[chainflow/src/core/chainflow.ts:34](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L34)
 
 ***
 

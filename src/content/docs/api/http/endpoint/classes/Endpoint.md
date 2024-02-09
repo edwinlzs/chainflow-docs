@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "Endpoint"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 Manages request and response nodes,
@@ -34,7 +35,7 @@ as well as calls to that endpoint
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:69](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L69)
+[chainflow/src/http/endpoint.ts:69](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L69)
 
 ## Properties
 
@@ -50,7 +51,7 @@ A hash that uniquely identifies this endpoint.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:67](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L67)
+[chainflow/src/http/endpoint.ts:67](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L67)
 
 ## Accessors
 
@@ -64,7 +65,7 @@ A hash that uniquely identifies this endpoint.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:82](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L82)
+[chainflow/src/http/endpoint.ts:82](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L82)
 
 ***
 
@@ -78,7 +79,7 @@ A hash that uniquely identifies this endpoint.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:98](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L98)
+[chainflow/src/http/endpoint.ts:98](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L98)
 
 ## Methods
 
@@ -98,7 +99,7 @@ Sets headers provided by the originServer object.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:115](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L115)
+[chainflow/src/http/endpoint.ts:115](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L115)
 
 ***
 
@@ -118,7 +119,7 @@ Sets the request body.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:93](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L93)
+[chainflow/src/http/endpoint.ts:93](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L93)
 
 ***
 
@@ -144,7 +145,7 @@ Calls this endpoint with responses provided from earlier requests in the chain.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:127](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L127)
+[chainflow/src/http/endpoint.ts:127](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L127)
 
 ***
 
@@ -164,7 +165,7 @@ Configures this endpoint.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:87](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L87)
+[chainflow/src/http/endpoint.ts:87](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L87)
 
 ***
 
@@ -184,7 +185,7 @@ Sets custom headers for requests.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:109](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L109)
+[chainflow/src/http/endpoint.ts:109](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L109)
 
 ***
 
@@ -204,7 +205,7 @@ Sets the request query parameters.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:103](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L103)
+[chainflow/src/http/endpoint.ts:103](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L103)
 
 ***
 
@@ -224,7 +225,7 @@ Configure linking of this Req's input nodes.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:183](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L183)
+[chainflow/src/http/endpoint.ts:183](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L183)
 
 ***
 
@@ -244,7 +245,7 @@ Declare values to store from responses to this endpoint.
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:121](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L121)
+[chainflow/src/http/endpoint.ts:121](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L121)
 
 ***
 

@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "http/errors"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 ## Index

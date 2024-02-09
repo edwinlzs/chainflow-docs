@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "NodeValue"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 ## Enumeration Members
@@ -13,7 +14,7 @@ title: "NodeValue"
 
 #### Source
 
-[chainflow/src/core/inputNode.ts:19](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/inputNode.ts#L19)
+[chainflow/src/core/inputNode.ts:19](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/inputNode.ts#L19)
 
 ***
 
@@ -23,7 +24,7 @@ title: "NodeValue"
 
 #### Source
 
-[chainflow/src/core/inputNode.ts:20](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/inputNode.ts#L20)
+[chainflow/src/core/inputNode.ts:20](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/inputNode.ts#L20)
 
 ***
 
@@ -33,7 +34,7 @@ title: "NodeValue"
 
 #### Source
 
-[chainflow/src/core/inputNode.ts:21](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/inputNode.ts#L21)
+[chainflow/src/core/inputNode.ts:21](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/inputNode.ts#L21)
 
 ***
 
@@ -43,7 +44,7 @@ title: "NodeValue"
 
 #### Source
 
-[chainflow/src/core/inputNode.ts:22](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/inputNode.ts#L22)
+[chainflow/src/core/inputNode.ts:22](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/inputNode.ts#L22)
 
 ***
 
@@ -53,7 +54,7 @@ title: "NodeValue"
 
 #### Source
 
-[chainflow/src/core/inputNode.ts:23](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/inputNode.ts#L23)
+[chainflow/src/core/inputNode.ts:23](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/inputNode.ts#L23)
 
 ***
 
@@ -63,7 +64,7 @@ title: "NodeValue"
 
 #### Source
 
-[chainflow/src/core/inputNode.ts:18](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/inputNode.ts#L18)
+[chainflow/src/core/inputNode.ts:18](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/inputNode.ts#L18)
 
 ***
 

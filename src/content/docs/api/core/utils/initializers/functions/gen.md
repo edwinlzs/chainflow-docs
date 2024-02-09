@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "gen"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **gen**(`generator`): `Object`
@@ -32,7 +33,7 @@ Provides a generator function to produce a value for an input.
 
 ## Source
 
-[chainflow/src/core/utils/initializers.ts:11](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/utils/initializers.ts#L11)
+[chainflow/src/core/utils/initializers.ts:11](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/utils/initializers.ts#L11)
 
 ***
 

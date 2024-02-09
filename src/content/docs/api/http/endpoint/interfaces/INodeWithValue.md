@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "INodeWithValue"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 ## Properties
@@ -13,7 +14,7 @@ title: "INodeWithValue"
 
 #### Source
 
-[chainflow/src/http/endpoint.ts:26](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/endpoint.ts#L26)
+[chainflow/src/http/endpoint.ts:26](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/endpoint.ts#L26)
 
 ***
 

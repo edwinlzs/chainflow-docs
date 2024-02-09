@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "StoreValue"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **StoreValue**\<`T`\>: [`IStore`](/api/core/store/interfaces/istore/)\<`T`\> \| `T`
@@ -13,7 +14,7 @@ title: "StoreValue"
 
 ## Source
 
-[chainflow/src/core/store.ts:5](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/store.ts#L5)
+[chainflow/src/core/store.ts:5](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/store.ts#L5)
 
 ***
 

@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "SourceNodeHandler"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **`const`** **SourceNodeHandler**: `Object`
@@ -39,7 +40,7 @@ Generates proxies recursively to handle nested property access of a source signa
 
 ## Source
 
-[chainflow/src/core/sourceNode.ts:25](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/sourceNode.ts#L25)
+[chainflow/src/core/sourceNode.ts:25](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/sourceNode.ts#L25)
 
 ***
 

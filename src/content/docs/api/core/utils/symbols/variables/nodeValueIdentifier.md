@@ -3,13 +3,14 @@ editUrl: false
 next: false
 prev: false
 title: "nodeValueIdentifier"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **`const`** **nodeValueIdentifier**: *typeof* [`nodeValueIdentifier`](/api/core/utils/symbols/variables/nodevalueidentifier/)
 
 ## Source
 
-[chainflow/src/core/utils/symbols.ts:7](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/utils/symbols.ts#L7)
+[chainflow/src/core/utils/symbols.ts:7](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/utils/symbols.ts#L7)
 
 ***
 

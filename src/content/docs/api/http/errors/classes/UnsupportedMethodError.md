@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "UnsupportedMethodError"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 When an unsupported method is passed into an `Endpoint`.
@@ -31,7 +32,7 @@ When an unsupported method is passed into an `Endpoint`.
 
 #### Source
 
-[chainflow/src/http/errors.ts:3](https://github.com/edwinlzs/chainflow/blob/a27a974/src/http/errors.ts#L3)
+[chainflow/src/http/errors.ts:3](https://github.com/edwinlzs/chainflow/blob/99ff659/src/http/errors.ts#L3)
 
 ## Properties
 

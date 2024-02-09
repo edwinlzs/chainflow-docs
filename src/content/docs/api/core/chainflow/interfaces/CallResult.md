@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "CallResult"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 ## Properties
@@ -13,7 +14,7 @@ title: "CallResult"
 
 #### Source
 
-[chainflow/src/core/chainflow.ts:11](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L11)
+[chainflow/src/core/chainflow.ts:11](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L11)
 
 ***
 
@@ -23,7 +24,7 @@ title: "CallResult"
 
 #### Source
 
-[chainflow/src/core/chainflow.ts:12](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/chainflow.ts#L12)
+[chainflow/src/core/chainflow.ts:12](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/chainflow.ts#L12)
 
 ***
 

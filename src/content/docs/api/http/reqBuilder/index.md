@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "http/reqBuilder"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 ## Index

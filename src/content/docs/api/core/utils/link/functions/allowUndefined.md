@@ -3,6 +3,7 @@ editUrl: false
 next: false
 prev: false
 title: "allowUndefined"
+layout: "/src/layouts/DocsLayout.astro"
 ---
 
 > **allowUndefined**(`source`): [`SourceNode`](/api/core/sourcenode/interfaces/sourcenode/)
@@ -21,7 +22,7 @@ a value for any linked input node, unless there is another SourceNode with highe
 
 ## Source
 
-[chainflow/src/core/utils/link.ts:34](https://github.com/edwinlzs/chainflow/blob/a27a974/src/core/utils/link.ts#L34)
+[chainflow/src/core/utils/link.ts:34](https://github.com/edwinlzs/chainflow/blob/99ff659/src/core/utils/link.ts#L34)
 
 ***
 
