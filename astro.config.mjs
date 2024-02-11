@@ -16,12 +16,16 @@ export default defineConfig({
         plugins: [
           pluginCollapsibleSections(),
         ],
-        // styleOverrides: {
-        //   // You can optionally override the plugin's default styles here
-        //   collapsibleSections: {
-        //     closedBackgroundColor: '#68F',
-        //   },
-        // },
+        styleOverrides: {
+          collapsibleSections: {
+            closedBackgroundColor: '#FFFFFF12',
+            closedTextColor: '#FFFFFF55',
+          },
+          textMarkers: {
+            markBackground: '#FFFFFF17',
+            markBorderColor: '#FFFFFF40',
+          }
+        },
       },
       social: {
         github: "https://github.com/edwinlzs/chainflow",
@@ -54,10 +58,12 @@ export default defineConfig({
       plugins: [
         starlightTypeDoc({
           tsconfig: "../chainflow/tsconfig.json",
-          entryPoints: ["../chainflow/src/core/", "../chainflow/src/http/"],
+          entryPoints: ["../chainflow/src/index.ts"],
           typeDoc: {
-            entryPointStrategy: "expand",
+            entryPointStrategy: "resolve",
             exclude: ["**/*.test.ts", "**/logger.ts"],
+            excludeInternal: true,
+            // excludeReferences: true,
           },
           sidebar: {
             collapsed: true,

@@ -41,7 +41,9 @@ getProfile.headers({
 ```typescript
 createUser.body({
   name: 'Tom',
-  age: 42,
+  details: {
+    age: 42,
+  },
 });
 ```
 
@@ -69,13 +71,12 @@ All of these methods are chainable as per the Builder pattern, e.g.:
 const createUser = origin
   .post('/user')
   .headers({
-    token: 'some-token',
+    token: 'some-value',
   })
   .body({
     name: 'Tom',
+    details: {
+      age: 42,
+    },
   });
 ```
-
-Defining the inputs as shown above will create and store `InputNode` instances in the endpoint definition. For example, the snippet creates the `token` input node on the endpoint's request headers, and the `name` input node on the request body.
-
-Right now, we have only initialized these input nodes with _default values_. The next chapter will cover how we can make inputs more flexible and dynamic!

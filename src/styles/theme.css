@@ -29,9 +29,9 @@
 	--sl-color-black: #ffffff;
 }
 
-code {
+/* code {
     color: #ed6363;
-}
+} */
 
 .site-title, svg {
     color: var(--sl-color-gray-1);
