@@ -22,7 +22,7 @@ as required to be taken from another source.
 
 ## Source
 
-[core/utils/initializers.ts:18](https://github.com/edwinlzs/chainflow/blob/902c18e/src/core/utils/initializers.ts#L18)
+[core/utils/initializers.ts:18](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/utils/initializers.ts#L18)
 
 ***
 

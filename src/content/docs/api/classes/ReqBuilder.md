@@ -26,7 +26,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[http/reqBuilder.ts:12](https://github.com/edwinlzs/chainflow/blob/902c18e/src/http/reqBuilder.ts#L12)
+[http/reqBuilder.ts:12](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/reqBuilder.ts#L12)
 
 ## Properties
 
@@ -36,7 +36,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[http/reqBuilder.ts:5](https://github.com/edwinlzs/chainflow/blob/902c18e/src/http/reqBuilder.ts#L5)
+[http/reqBuilder.ts:5](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/reqBuilder.ts#L5)
 
 ***
 
@@ -46,7 +46,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[http/reqBuilder.ts:7](https://github.com/edwinlzs/chainflow/blob/902c18e/src/http/reqBuilder.ts#L7)
+[http/reqBuilder.ts:7](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/reqBuilder.ts#L7)
 
 ## Accessors
 
@@ -66,7 +66,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[http/reqBuilder.ts:21](https://github.com/edwinlzs/chainflow/blob/902c18e/src/http/reqBuilder.ts#L21)
+[http/reqBuilder.ts:21](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/reqBuilder.ts#L21)
 
 ***
 
@@ -86,7 +86,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[http/reqBuilder.ts:43](https://github.com/edwinlzs/chainflow/blob/902c18e/src/http/reqBuilder.ts#L43)
+[http/reqBuilder.ts:43](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/reqBuilder.ts#L43)
 
 ***
 
@@ -106,7 +106,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[http/reqBuilder.ts:32](https://github.com/edwinlzs/chainflow/blob/902c18e/src/http/reqBuilder.ts#L32)
+[http/reqBuilder.ts:32](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/reqBuilder.ts#L32)
 
 ***
 

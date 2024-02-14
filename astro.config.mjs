@@ -32,6 +32,10 @@ export default defineConfig({
       },
       sidebar: [
         {
+          label: "QUICKSTART",
+          autogenerate: { directory: "quickstart" },
+        },
+        {
           label: "GUIDES",
           // items: [
           // Each item here is one entry in the navigation menu.

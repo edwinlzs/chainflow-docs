@@ -32,7 +32,7 @@ A data node for constructing an input object.
 
 #### Source
 
-[core/inputNode.ts:74](https://github.com/edwinlzs/chainflow/blob/902c18e/src/core/inputNode.ts#L74)
+[core/inputNode.ts:74](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/inputNode.ts#L74)
 
 ## Properties
 
@@ -44,7 +44,7 @@ TODO: may not be useful. currently only identifying base object this input node 
 
 #### Source
 
-[core/inputNode.ts:60](https://github.com/edwinlzs/chainflow/blob/902c18e/src/core/inputNode.ts#L60)
+[core/inputNode.ts:60](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/inputNode.ts#L60)
 
 ## Methods
 
@@ -68,7 +68,7 @@ Retrieve value of a node.
 
 #### Source
 
-[core/inputNode.ts:157](https://github.com/edwinlzs/chainflow/blob/902c18e/src/core/inputNode.ts#L157)
+[core/inputNode.ts:157](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/inputNode.ts#L157)
 
 ***
 
@@ -90,7 +90,7 @@ Sets a source node for this input node.
 
 #### Source
 
-[core/inputNode.ts:124](https://github.com/edwinlzs/chainflow/blob/902c18e/src/core/inputNode.ts#L124)
+[core/inputNode.ts:124](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/inputNode.ts#L124)
 
 ***
 
@@ -112,7 +112,7 @@ Sets multiple source nodes to be combined into a single value for this input nod
 
 #### Source
 
-[core/inputNode.ts:133](https://github.com/edwinlzs/chainflow/blob/902c18e/src/core/inputNode.ts#L133)
+[core/inputNode.ts:133](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/inputNode.ts#L133)
 
 ***
 
@@ -132,7 +132,7 @@ Sets the pool of values for this input node.
 
 #### Source
 
-[core/inputNode.ts:152](https://github.com/edwinlzs/chainflow/blob/902c18e/src/core/inputNode.ts#L152)
+[core/inputNode.ts:152](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/inputNode.ts#L152)
 
 ***
 
@@ -157,7 +157,7 @@ any available linked sources.
 
 #### Source
 
-[core/inputNode.ts:284](https://github.com/edwinlzs/chainflow/blob/902c18e/src/core/inputNode.ts#L284)
+[core/inputNode.ts:284](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/inputNode.ts#L284)
 
 ***
 

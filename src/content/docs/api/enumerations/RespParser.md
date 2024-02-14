@@ -16,7 +16,7 @@ Formats to parse the response body.
 
 #### Source
 
-[http/endpoint.ts:48](https://github.com/edwinlzs/chainflow/blob/902c18e/src/http/endpoint.ts#L48)
+[http/endpoint.ts:48](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/endpoint.ts#L48)
 
 ***
 
@@ -26,7 +26,7 @@ Formats to parse the response body.
 
 #### Source
 
-[http/endpoint.ts:49](https://github.com/edwinlzs/chainflow/blob/902c18e/src/http/endpoint.ts#L49)
+[http/endpoint.ts:49](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/endpoint.ts#L49)
 
 ***
 
@@ -36,7 +36,7 @@ Formats to parse the response body.
 
 #### Source
 
-[http/endpoint.ts:50](https://github.com/edwinlzs/chainflow/blob/902c18e/src/http/endpoint.ts#L50)
+[http/endpoint.ts:50](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/endpoint.ts#L50)
 
 ***
 
@@ -46,7 +46,7 @@ Formats to parse the response body.
 
 #### Source
 
-[http/endpoint.ts:51](https://github.com/edwinlzs/chainflow/blob/902c18e/src/http/endpoint.ts#L51)
+[http/endpoint.ts:51](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/endpoint.ts#L51)
 
 ***
 

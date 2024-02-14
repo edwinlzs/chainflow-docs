@@ -16,7 +16,7 @@ Options for running chainflow.
 
 #### Source
 
-[core/chainflow.ts:41](https://github.com/edwinlzs/chainflow/blob/902c18e/src/core/chainflow.ts#L41)
+[core/chainflow.ts:41](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/chainflow.ts#L41)
 
 ***
 

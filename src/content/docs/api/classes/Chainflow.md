@@ -36,7 +36,7 @@ Adds an endpoint call to the callchain.
 
 #### Source
 
-[core/chainflow.ts:87](https://github.com/edwinlzs/chainflow/blob/902c18e/src/core/chainflow.ts#L87)
+[core/chainflow.ts:87](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/chainflow.ts#L87)
 
 ***
 
@@ -44,7 +44,7 @@ Adds an endpoint call to the callchain.
 
 > **clone**(): [`Chainflow`](/api/classes/chainflow/)
 
-Creates a clone of this chainflow and its callstack
+Creates a clone of this chainflow and its callqueue
  which can be extended and run independently.
 
 #### Returns
@@ -53,7 +53,7 @@ Creates a clone of this chainflow and its callstack
 
 #### Source
 
-[core/chainflow.ts:99](https://github.com/edwinlzs/chainflow/blob/902c18e/src/core/chainflow.ts#L99)
+[core/chainflow.ts:99](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/chainflow.ts#L99)
 
 ***
 
@@ -61,7 +61,7 @@ Creates a clone of this chainflow and its callstack
 
 > **extend**(`cf`): [`Chainflow`](/api/classes/chainflow/)
 
-Extends this chainflow's callstack with that of another flow.
+Extends this chainflow's callqueue with that of another flow.
 
 #### Parameters
 
@@ -73,7 +73,7 @@ Extends this chainflow's callstack with that of another flow.
 
 #### Source
 
-[core/chainflow.ts:106](https://github.com/edwinlzs/chainflow/blob/902c18e/src/core/chainflow.ts#L106)
+[core/chainflow.ts:106](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/chainflow.ts#L106)
 
 ***
 
@@ -89,7 +89,7 @@ Resets the chainflow's state by clearing its accumulated sources.
 
 #### Source
 
-[core/chainflow.ts:93](https://github.com/edwinlzs/chainflow/blob/902c18e/src/core/chainflow.ts#L93)
+[core/chainflow.ts:93](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/chainflow.ts#L93)
 
 ***
 
@@ -109,7 +109,7 @@ Run the set up chain
 
 #### Source
 
-[core/chainflow.ts:59](https://github.com/edwinlzs/chainflow/blob/902c18e/src/core/chainflow.ts#L59)
+[core/chainflow.ts:59](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/chainflow.ts#L59)
 
 ***
 

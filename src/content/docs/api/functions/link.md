@@ -30,7 +30,7 @@ an optional function that is called on the source source value.
 
 ## Source
 
-[core/utils/link.ts:11](https://github.com/edwinlzs/chainflow/blob/902c18e/src/core/utils/link.ts#L11)
+[core/utils/link.ts:11](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/utils/link.ts#L11)
 
 ***
 

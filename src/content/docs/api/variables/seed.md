@@ -12,7 +12,7 @@ Special object used to link an InputNode to a chainflow seed.
 
 ## Source
 
-[core/chainflow.ts:45](https://github.com/edwinlzs/chainflow/blob/902c18e/src/core/chainflow.ts#L45)
+[core/chainflow.ts:45](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/chainflow.ts#L45)
 
 ***
 
