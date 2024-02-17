@@ -66,6 +66,8 @@ A required input node must take a value from elsewhere. There are two possible w
 
 ## Linked Values
 
+### Direct
+
 Links are what give chainflows high dynamism by allowing outputs from one endpoint to flow to the inputs of another. Below is the simplest way of creating a link: 
 
 ```typescript {2}
@@ -84,7 +86,7 @@ The source node tracks how you accessed it and passes that information to the in
 In the above snippet's context, the source node `createUser.resp` was accessed with `.body.id` by us. This tells the linked `userId` input node to take the path `.body.id` to access a value from the response to `createUser`.
 
 ```json
-// example JSON response to `createUser`
+// example response to `createUser`
 {
   headers: ...,
   body: {
@@ -96,6 +98,8 @@ In the above snippet's context, the source node `createUser.resp` was accessed w
 ```
 
 Once a link between nodes on two endpoints are established, if the endpoint with a linked output node is called first, the value in its response will be taken and used at the linked input node on the second endpoint when it is called next.
+
+### `set`
 
 The below snippet shows another way of defining links:
 

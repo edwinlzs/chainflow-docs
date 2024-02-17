@@ -33,7 +33,7 @@ Provides a generator function to produce a value for an input.
 
 ## Source
 
-[core/utils/initializers.ts:11](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/utils/initializers.ts#L11)
+[core/utils/initializers.ts:11](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/utils/initializers.ts#L11)
 
 ***
 

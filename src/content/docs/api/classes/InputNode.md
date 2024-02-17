@@ -14,17 +14,13 @@ A data node for constructing an input object.
 
 ## Constructors
 
-### new InputNode(__namedParameters)
+### new InputNode(val)
 
-> **new InputNode**(`__namedParameters`): [`InputNode`](/api/classes/inputnode/)
+> **new InputNode**(`val`): [`InputNode`](/api/classes/inputnode/)
 
 #### Parameters
 
-• **\_\_namedParameters**: `Object`
-
-• **\_\_namedParameters\.hash**: `string`
-
-• **\_\_namedParameters\.val**: `any`
+• **val**: `any`
 
 #### Returns
 
@@ -32,19 +28,7 @@ A data node for constructing an input object.
 
 #### Source
 
-[core/inputNode.ts:74](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/inputNode.ts#L74)
-
-## Properties
-
-### [nodeHash]
-
-> **[nodeHash]**: `string`
-
-TODO: may not be useful. currently only identifying base object this input node is on.
-
-#### Source
-
-[core/inputNode.ts:60](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/inputNode.ts#L60)
+[core/inputNode.ts:75](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L75)
 
 ## Methods
 
@@ -68,7 +52,7 @@ Retrieve value of a node.
 
 #### Source
 
-[core/inputNode.ts:157](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/inputNode.ts#L157)
+[core/inputNode.ts:158](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L158)
 
 ***
 
@@ -90,7 +74,7 @@ Sets a source node for this input node.
 
 #### Source
 
-[core/inputNode.ts:124](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/inputNode.ts#L124)
+[core/inputNode.ts:125](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L125)
 
 ***
 
@@ -112,7 +96,7 @@ Sets multiple source nodes to be combined into a single value for this input nod
 
 #### Source
 
-[core/inputNode.ts:133](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/inputNode.ts#L133)
+[core/inputNode.ts:134](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L134)
 
 ***
 
@@ -132,15 +116,15 @@ Sets the pool of values for this input node.
 
 #### Source
 
-[core/inputNode.ts:152](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/inputNode.ts#L152)
+[core/inputNode.ts:153](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L153)
 
 ***
 
-### buildObject()
+### buildKvObject()
 
-> **buildObject**(`currentPath`, `missingValues`, `sourceValues`): `any`
+> **buildKvObject**(`currentPath`, `missingValues`, `sourceValues`): `any`
 
-Builds a JSON object from input node values and
+Builds a key-value object from input node values and
 any available linked sources.
 
 #### Parameters
@@ -157,7 +141,7 @@ any available linked sources.
 
 #### Source
 
-[core/inputNode.ts:284](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/inputNode.ts#L284)
+[core/inputNode.ts:286](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L286)
 
 ***
 

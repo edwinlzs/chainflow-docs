@@ -14,7 +14,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 #### Source
 
-[core/chainflow.ts:11](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/chainflow.ts#L11)
+[core/chainflow.ts:11](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L11)
 
 ***
 
@@ -24,7 +24,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 #### Source
 
-[core/chainflow.ts:12](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/chainflow.ts#L12)
+[core/chainflow.ts:12](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L12)
 
 ***
 

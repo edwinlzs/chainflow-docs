@@ -56,7 +56,7 @@ getSubmission.set(({ pathParams: { submissionId } }) => {
 });
 ```
 
-## Constructing Chainflow
+## Constructing a Chainflow
 
 ```typescript title="index.js"
 import { chainflow } from 'chainflow';

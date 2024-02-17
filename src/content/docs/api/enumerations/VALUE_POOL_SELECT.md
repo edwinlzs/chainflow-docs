@@ -6,6 +6,12 @@ title: "VALUE_POOL_SELECT"
 layout: "/src/layouts/DocsLayout.astro"
 ---
 
+How a value pool should choose its values.
+
+:::caution[Experimental]
+This API should not be used in production and may be trimmed from a public release.
+:::
+
 ## Enumeration Members
 
 ### UNIFORM
@@ -14,7 +20,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 #### Source
 
-[core/inputNode.ts:14](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/inputNode.ts#L14)
+[core/inputNode.ts:15](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L15)
 
 ***
 

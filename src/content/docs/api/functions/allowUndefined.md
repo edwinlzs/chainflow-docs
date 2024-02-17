@@ -22,7 +22,7 @@ a value for any linked input node, unless there is another SourceNode with highe
 
 ## Source
 
-[core/utils/link.ts:34](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/utils/link.ts#L34)
+[core/utils/link.ts:34](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/utils/link.ts#L34)
 
 ***
 

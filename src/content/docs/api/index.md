@@ -27,7 +27,6 @@ layout: "/src/layouts/DocsLayout.astro"
 - [HttpInputNodes](/api/interfaces/httpinputnodes/)
 - [IEndpoint](/api/interfaces/iendpoint/)
 - [INodeWithValue](/api/interfaces/inodewithvalue/)
-- [RunOpts](/api/interfaces/runopts/)
 
 ## Type Aliases
 
@@ -49,6 +48,8 @@ layout: "/src/layouts/DocsLayout.astro"
 - [originServer](/api/functions/originserver/)
 - [pool](/api/functions/pool/)
 - [required](/api/functions/required/)
+- [source](/api/functions/source/)
+- [sources](/api/functions/sources/)
 
 ***
 

@@ -20,7 +20,7 @@ Convenience function for creating an endpoint builder with supported methods def
 
 ## Source
 
-[http/originServer.ts:6](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/originServer.ts#L6)
+[http/originServer.ts:6](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/originServer.ts#L6)
 
 ***
 

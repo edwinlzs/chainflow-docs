@@ -29,7 +29,7 @@ Defines a set of values to choose from when constructing an input.
 
 ## Source
 
-[core/utils/initializers.ts:5](https://github.com/edwinlzs/chainflow/blob/a565c76/src/core/utils/initializers.ts#L5)
+[core/utils/initializers.ts:5](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/utils/initializers.ts#L5)
 
 ***
 

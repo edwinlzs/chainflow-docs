@@ -10,15 +10,9 @@ Contains node definitions for a request.
 
 ## Constructors
 
-### new ReqBuilder(__namedParameters)
+### new ReqBuilder()
 
-> **new ReqBuilder**(`__namedParameters`): [`ReqBuilder`](/api/classes/reqbuilder/)
-
-#### Parameters
-
-• **\_\_namedParameters**: `Object`
-
-• **\_\_namedParameters\.hash**: `string`
+> **new ReqBuilder**(): [`ReqBuilder`](/api/classes/reqbuilder/)
 
 #### Returns
 
@@ -26,7 +20,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[http/reqBuilder.ts:12](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/reqBuilder.ts#L12)
+[http/reqBuilder.ts:11](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/reqBuilder.ts#L11)
 
 ## Properties
 
@@ -36,7 +30,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[http/reqBuilder.ts:5](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/reqBuilder.ts#L5)
+[http/reqBuilder.ts:5](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/reqBuilder.ts#L5)
 
 ***
 
@@ -46,7 +40,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[http/reqBuilder.ts:7](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/reqBuilder.ts#L7)
+[http/reqBuilder.ts:7](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/reqBuilder.ts#L7)
 
 ## Accessors
 
@@ -66,7 +60,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[http/reqBuilder.ts:21](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/reqBuilder.ts#L21)
+[http/reqBuilder.ts:19](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/reqBuilder.ts#L19)
 
 ***
 
@@ -86,7 +80,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[http/reqBuilder.ts:43](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/reqBuilder.ts#L43)
+[http/reqBuilder.ts:35](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/reqBuilder.ts#L35)
 
 ***
 
@@ -106,7 +100,7 @@ Contains node definitions for a request.
 
 #### Source
 
-[http/reqBuilder.ts:32](https://github.com/edwinlzs/chainflow/blob/a565c76/src/http/reqBuilder.ts#L32)
+[http/reqBuilder.ts:27](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/reqBuilder.ts#L27)
 
 ***
 

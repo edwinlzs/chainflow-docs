@@ -9,7 +9,7 @@ sidebar:
 
 ## The Chainflow
 
-A chainflow is where you define a series of endpoints to be called and also run those calls.
+A chainflow is where you define and run a series of endpoint calls.
 
 Create a new chainflow with the `chainflow` function. Add endpoint calls to a chainflow by passing in endpoints to the `call` method (note that this does _not_ make the actual endpoint request yet, it only adds the endpoint call to the chainflow's queue). Finally, the `run` method will *actually* execute the series of endpoint calls in the order you defined.
 
@@ -45,15 +45,95 @@ As a `SourceNode`, the `seed` works the same way as the `.resp` property on any 
 
 The actual seed value is an argument you can pass in when executing `run` on a chainflow.
 
-```typescript {5-7}
+```typescript {5}
 chainflow()
   .call(createUser)
   .call(addRole)
-  .run({
-    seed: {
-      role: 'admin',
-    },
-  });
+  .seed({
+    role: 'admin'
+  })
+  .run();
 ```
 
-In this snippet, we pass to the `run` method a `seed` with the key `role` bearing a value of `admin`. Since we have linked the `role` input node in `addRole` with `seed.role`, during this chainflow run `addRole` will have the body `{ ..., role: 'admin' }`.
+In this snippet, we call the `seed` method on a chainflow and pass in a value of `admin` for the `role` key. Since we have linked the `role` input node in `addRole` with `seed.role`, during this chainflow run `addRole` will have the body `{ ..., role: 'admin' }`.
+
+## Composability
+
+> 👋 _Looking for feedback on this section - are the method names clear or too confusing?_
+
+There are several methods to help you build complex chainflows composed of simpler ones.
+
+### `clone`
+
+The `clone` method creates a new chainflow with the same callqueue. This clone can be independently modified with further calls to create a more complex chainflow.
+
+```typescript {5} {11}
+const createUserFlow = chainflow().call(createUser).call(addRole);
+
+// this calls: createUser, addRole, createGroup and sendMessage
+const sendGroupMessageFlow = createUserFlow
+  .clone()
+  .call(createGroup)
+  .call(sendMessage);
+
+// this calls: createUser, addRole, joinGroup and getMessages
+const receiveGroupMessageFlow = createUserFlow
+  .clone()
+  .call(joinGroup)
+  .call(getMessages);
+```
+
+The above snippet shows that we can create two independent flows that both use the `createUserFlow` as a starting template via the `clone` method, and added on their own calls.
+
+### `extend`
+
+The `extend` method adds to the callqueue of a chainflow with the callqueue from another chainflow passed in as the argument.
+
+```typescript {4, 7}
+const deleteUserFlow = chainflow().call(removeRole).call(deleteUser);
+
+// this calls: endpoints in sendGroupMessageFlow + removeRole and deleteUser
+sendGroupMessageFlow.extend(deleteUserFlow);
+
+// this calls: endpoints in receiveGroupMessageFlow + removeRole and deleteUser
+receiveGroupMessageFlow.extend(deleteUserFlow);
+```
+
+In the snippet above, we used `extend` to add on to the chainflows we made earlier with the calls defined in `deleteUserFlow`.
+
+### `continuesFrom`
+
+After a run, each chainflow stores the responses accumulated from calling endpoints. Another chainflow can use the `continuesFrom` method to store a copy of those accumulated responses before making its own run.
+
+```typescript collapse={1-9} {21}
+const login = origin.post('/user').body({
+  username: 'admin',
+});
+
+const createGroup = origin.post('/group').headers({
+  Authorization: login.resp.body.authToken,
+}).body({
+  groupName: seed.groupName,
+})
+
+// loggedInFlow stores a response from the login call
+// containing the user's auth token
+const loggedInFlow = chainflow()
+  .call(login)
+  .run();
+
+// createGroupFlow will copy the response that
+// loggedInFlow received and use the auth token in its own calls
+const createGroupFlow = chainflow()
+  .call(createGroup)
+  .continuesFrom(loggedInFlow);
+
+const groupNames = ['RapGPT', 'Averageexpedition', 'Shaky Osmosis'];
+for (const groupName in groupNames) {
+  createGroupFlow.seed({ groupName }).run();
+}
+```
+
+We run a chainflow that calls `login` to get a response from the login endpoint and save that flow to the `loggedInFlow` variable.
+
+Using the `continuesFrom` method, `createGroupFlow` will copy the state of source values (i.e. responses) from `loggedInFlow`. This means `createGroupFlow` will now have the logged in user's `authToken` received from calling `login`, and will use it when calling `createGroup` thrice for each group name in the `groupNames` array.
