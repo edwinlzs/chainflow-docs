@@ -14,7 +14,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 #### Source
 
-[core/inputNode.ts:20](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L20)
+core/inputNode.d.ts:9
 
 ***
 
@@ -24,7 +24,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 #### Source
 
-[core/inputNode.ts:21](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L21)
+core/inputNode.d.ts:10
 
 ***
 
@@ -34,7 +34,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 #### Source
 
-[core/inputNode.ts:22](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L22)
+core/inputNode.d.ts:11
 
 ***
 
@@ -44,7 +44,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 #### Source
 
-[core/inputNode.ts:23](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L23)
+core/inputNode.d.ts:12
 
 ***
 
@@ -54,7 +54,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 #### Source
 
-[core/inputNode.ts:24](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L24)
+core/inputNode.d.ts:13
 
 ***
 
@@ -64,7 +64,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 #### Source
 
-[core/inputNode.ts:19](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L19)
+core/inputNode.d.ts:8
 
 ***
 

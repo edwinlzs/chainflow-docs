@@ -14,7 +14,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 #### Source
 
-[http/endpoint.ts:26](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L26)
+http/endpoint.d.ts:9
 
 ***
 

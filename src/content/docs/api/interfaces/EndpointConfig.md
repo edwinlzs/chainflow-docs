@@ -16,7 +16,7 @@ Configurations for the endpoint.
 
 #### Source
 
-[http/endpoint.ts:39](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L39)
+http/endpoint.d.ts:20
 
 ***
 
@@ -43,7 +43,7 @@ Configurations for the endpoint.
 
 #### Source
 
-[http/endpoint.ts:40](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L40)
+http/endpoint.d.ts:21
 
 ***
 

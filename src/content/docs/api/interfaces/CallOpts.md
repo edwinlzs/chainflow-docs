@@ -20,7 +20,7 @@ to decouple from chainflow in future versions.
 
 #### Source
 
-[core/chainflow.ts:36](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L36)
+core/chainflow.d.ts:18
 
 ***
 
@@ -30,7 +30,7 @@ to decouple from chainflow in future versions.
 
 #### Source
 
-[core/chainflow.ts:33](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L33)
+core/chainflow.d.ts:15
 
 ***
 
@@ -40,7 +40,7 @@ to decouple from chainflow in future versions.
 
 #### Source
 
-[core/chainflow.ts:35](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L35)
+core/chainflow.d.ts:17
 
 ***
 
@@ -50,7 +50,7 @@ to decouple from chainflow in future versions.
 
 #### Source
 
-[core/chainflow.ts:34](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L34)
+core/chainflow.d.ts:16
 
 ***
 

@@ -20,7 +20,7 @@ This API should not be used in production and may be trimmed from a public relea
 
 #### Source
 
-[core/inputNode.ts:15](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L15)
+core/inputNode.d.ts:5
 
 ***
 

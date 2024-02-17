@@ -28,7 +28,7 @@ A data node for constructing an input object.
 
 #### Source
 
-[core/inputNode.ts:75](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L75)
+core/inputNode.d.ts:24
 
 ## Methods
 
@@ -52,7 +52,7 @@ Retrieve value of a node.
 
 #### Source
 
-[core/inputNode.ts:158](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L158)
+core/inputNode.d.ts:34
 
 ***
 
@@ -74,7 +74,7 @@ Sets a source node for this input node.
 
 #### Source
 
-[core/inputNode.ts:125](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L125)
+core/inputNode.d.ts:26
 
 ***
 
@@ -96,7 +96,7 @@ Sets multiple source nodes to be combined into a single value for this input nod
 
 #### Source
 
-[core/inputNode.ts:134](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L134)
+core/inputNode.d.ts:28
 
 ***
 
@@ -116,7 +116,7 @@ Sets the pool of values for this input node.
 
 #### Source
 
-[core/inputNode.ts:153](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L153)
+core/inputNode.d.ts:32
 
 ***
 
@@ -141,7 +141,7 @@ any available linked sources.
 
 #### Source
 
-[core/inputNode.ts:286](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L286)
+core/inputNode.d.ts:39
 
 ***
 

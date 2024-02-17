@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@astrojs/check':
     specifier: ^0.4.1
@@ -13,6 +17,9 @@ dependencies:
   astro:
     specifier: ^4.2.1
     version: 4.3.5(sass@1.70.0)(typescript@5.3.3)
+  chainflow:
+    specifier: edwinlzs/chainflow
+    version: github.com/edwinlzs/chainflow/b77a21895580c33d3f714f69fafd70ecdc77d833
   sharp:
     specifier: ^0.32.5
     version: 0.32.6
@@ -699,6 +706,15 @@ packages:
       '@expressive-code/core': 0.32.4
       hastscript: 7.2.0
       unist-util-visit-parents: 5.1.3
+    dev: false
+
+  /@fastify/busboy@2.1.0:
+    resolution: {integrity: sha512-+KpH+QxZU7O4675t3mnkQKcZZg56u+K/Ct2K+N2AZYNVK8kyeo/bI18tI8aPm3tvNNRyTWfj6s5tnGNlcbQRsA==}
+    engines: {node: '>=14'}
+    dev: false
+
+  /@fastify/deepmerge@1.3.0:
+    resolution: {integrity: sha512-J8TOSBq3SoZbDhM9+R/u77hP93gz/rajSA+K2kGyijPpORPWUXHUpTaleoj+92As0S9uPRP7Oi8IqMf0u+ro6A==}
     dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -4224,6 +4240,13 @@ packages:
     hasBin: true
     dev: false
 
+  /undici@6.6.2:
+    resolution: {integrity: sha512-vSqvUE5skSxQJ5sztTZ/CdeJb1Wq0Hf44hlYMciqHghvz+K88U0l7D6u1VsndoFgskDcnU+nG3gYmMzJVzd9Qg==}
+    engines: {node: '>=18.0'}
+    dependencies:
+      '@fastify/busboy': 2.1.0
+    dev: false
+
   /unherit@3.0.1:
     resolution: {integrity: sha512-akOOQ/Yln8a2sgcLj4U0Jmx0R5jpIg2IUyRrWOzmEbjBtGzBdHtSeFKgoEcoH4KYIG/Pb8GQ/BwtYm0GCq1Sqg==}
     dev: false
@@ -4718,6 +4741,16 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
+  github.com/edwinlzs/chainflow/b77a21895580c33d3f714f69fafd70ecdc77d833:
+    resolution: {tarball: https://codeload.github.com/edwinlzs/chainflow/tar.gz/b77a21895580c33d3f714f69fafd70ecdc77d833}
+    name: chainflow
+    version: 0.1.0
+    prepare: true
+    requiresBuild: true
+    dependencies:
+      '@fastify/deepmerge': 1.3.0
+      debug: 4.3.4
+      undici: 6.6.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: false

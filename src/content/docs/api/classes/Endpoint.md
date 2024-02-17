@@ -35,7 +35,7 @@ as well as calls to that endpoint
 
 #### Source
 
-[http/endpoint.ts:69](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L69)
+http/endpoint.d.ts:41
 
 ## Properties
 
@@ -51,7 +51,7 @@ A hash that uniquely identifies this endpoint.
 
 #### Source
 
-[http/endpoint.ts:67](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L67)
+http/endpoint.d.ts:40
 
 ## Accessors
 
@@ -65,7 +65,7 @@ A hash that uniquely identifies this endpoint.
 
 #### Source
 
-[http/endpoint.ts:83](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L83)
+http/endpoint.d.ts:46
 
 ***
 
@@ -79,13 +79,13 @@ A hash that uniquely identifies this endpoint.
 
 #### Source
 
-[http/endpoint.ts:99](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L99)
+http/endpoint.d.ts:51
 
 ## Methods
 
 ### baseHeaders()
 
-> **baseHeaders**(`node`): [`Endpoint`](/api/classes/endpoint/)
+> **baseHeaders**(`node`): `this`
 
 Sets headers provided by the originServer object.
 
@@ -95,17 +95,17 @@ Sets headers provided by the originServer object.
 
 #### Returns
 
-[`Endpoint`](/api/classes/endpoint/)
+`this`
 
 #### Source
 
-[http/endpoint.ts:116](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L116)
+http/endpoint.d.ts:57
 
 ***
 
 ### body()
 
-> **body**(`payload`): [`Endpoint`](/api/classes/endpoint/)
+> **body**(`payload`): `this`
 
 Sets the request body.
 
@@ -115,11 +115,11 @@ Sets the request body.
 
 #### Returns
 
-[`Endpoint`](/api/classes/endpoint/)
+`this`
 
 #### Source
 
-[http/endpoint.ts:94](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L94)
+http/endpoint.d.ts:50
 
 ***
 
@@ -145,13 +145,13 @@ Calls this endpoint with responses provided from earlier requests in the chain.
 
 #### Source
 
-[http/endpoint.ts:128](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L128)
+http/endpoint.d.ts:61
 
 ***
 
 ### config()
 
-> **config**(`config`): [`Endpoint`](/api/classes/endpoint/)
+> **config**(`config`): `this`
 
 Configures this endpoint.
 
@@ -161,17 +161,17 @@ Configures this endpoint.
 
 #### Returns
 
-[`Endpoint`](/api/classes/endpoint/)
+`this`
 
 #### Source
 
-[http/endpoint.ts:88](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L88)
+http/endpoint.d.ts:48
 
 ***
 
 ### headers()
 
-> **headers**(`params`): [`Endpoint`](/api/classes/endpoint/)
+> **headers**(`params`): `this`
 
 Sets custom headers for requests.
 
@@ -181,17 +181,17 @@ Sets custom headers for requests.
 
 #### Returns
 
-[`Endpoint`](/api/classes/endpoint/)
+`this`
 
 #### Source
 
-[http/endpoint.ts:110](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L110)
+http/endpoint.d.ts:55
 
 ***
 
 ### query()
 
-> **query**(`params`): [`Endpoint`](/api/classes/endpoint/)
+> **query**(`params`): `this`
 
 Sets the request query parameters.
 
@@ -201,17 +201,17 @@ Sets the request query parameters.
 
 #### Returns
 
-[`Endpoint`](/api/classes/endpoint/)
+`this`
 
 #### Source
 
-[http/endpoint.ts:104](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L104)
+http/endpoint.d.ts:53
 
 ***
 
 ### set()
 
-> **set**(`setter`): [`Endpoint`](/api/classes/endpoint/)
+> **set**(`setter`): `this`
 
 Passes the request input nodes of this endpoint to a callback.
 
@@ -221,17 +221,17 @@ Passes the request input nodes of this endpoint to a callback.
 
 #### Returns
 
-[`Endpoint`](/api/classes/endpoint/)
+`this`
 
 #### Source
 
-[http/endpoint.ts:184](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L184)
+http/endpoint.d.ts:63
 
 ***
 
 ### store()
 
-> **store**(`callback`): [`Endpoint`](/api/classes/endpoint/)
+> **store**(`callback`): `this`
 
 Declare values to store from responses to this endpoint.
 
@@ -241,11 +241,11 @@ Declare values to store from responses to this endpoint.
 
 #### Returns
 
-[`Endpoint`](/api/classes/endpoint/)
+`this`
 
 #### Source
 
-[http/endpoint.ts:122](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L122)
+http/endpoint.d.ts:59
 
 ***
 

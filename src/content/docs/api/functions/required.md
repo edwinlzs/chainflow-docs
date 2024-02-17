@@ -17,12 +17,12 @@ as required to be taken from another source.
 
 > ### [nodeValueIdentifier]
 >
-> > **[nodeValueIdentifier]**: [`NodeValue`](/api/enumerations/nodevalue/) = `NodeValue.Required`
+> > **[nodeValueIdentifier]**: [`NodeValue`](/api/enumerations/nodevalue/)
 >
 
 ## Source
 
-[core/utils/initializers.ts:18](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/utils/initializers.ts#L18)
+core/utils/initializers.d.ts:15
 
 ***
 

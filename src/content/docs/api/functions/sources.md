@@ -20,7 +20,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 > ### [nodeValueIdentifier]
 >
-> > **[nodeValueIdentifier]**: [`NodeValue`](/api/enumerations/nodevalue/) = `NodeValue.Sources`
+> > **[nodeValueIdentifier]**: [`NodeValue`](/api/enumerations/nodevalue/)
 >
 > ### callback
 >
@@ -33,7 +33,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ## Source
 
-[core/utils/source.ts:11](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/utils/source.ts#L11)
+core/utils/source.d.ts:9
 
 ***
 

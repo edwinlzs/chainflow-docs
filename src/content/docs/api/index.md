@@ -2,7 +2,7 @@
 editUrl: false
 next: false
 prev: false
-title: "chainflow"
+title: "Documentation"
 layout: "/src/layouts/DocsLayout.astro"
 ---
 

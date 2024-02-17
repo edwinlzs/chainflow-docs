@@ -16,7 +16,7 @@ Describes all the possible input nodes of a HTTP request.
 
 #### Source
 
-[http/endpoint.ts:32](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L32)
+http/endpoint.d.ts:14
 
 ***
 
@@ -26,7 +26,7 @@ Describes all the possible input nodes of a HTTP request.
 
 #### Source
 
-[http/endpoint.ts:34](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L34)
+http/endpoint.d.ts:16
 
 ***
 
@@ -36,7 +36,7 @@ Describes all the possible input nodes of a HTTP request.
 
 #### Source
 
-[http/endpoint.ts:31](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L31)
+http/endpoint.d.ts:13
 
 ***
 
@@ -46,7 +46,7 @@ Describes all the possible input nodes of a HTTP request.
 
 #### Source
 
-[http/endpoint.ts:33](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/endpoint.ts#L33)
+http/endpoint.d.ts:15
 
 ***
 

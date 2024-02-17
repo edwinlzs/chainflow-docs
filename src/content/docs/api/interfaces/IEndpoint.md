@@ -26,7 +26,7 @@ Defines an endpoint that a chainflow can call upon.
 
 #### Source
 
-[core/chainflow.ts:21](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L21)
+core/chainflow.d.ts:10
 
 ***
 
@@ -36,7 +36,7 @@ Defines an endpoint that a chainflow can call upon.
 
 #### Source
 
-[core/chainflow.ts:20](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L20)
+core/chainflow.d.ts:9
 
 ***
 

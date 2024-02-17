@@ -18,7 +18,8 @@
     "starlight-typedoc": "^0.8.0",
     "typedoc": "^0.25.7",
     "typedoc-plugin-markdown": "4.0.0-next.38",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "chainflow": "edwinlzs/chainflow"
   },
   "devDependencies": {
     "sass": "^1.70.0"

@@ -36,7 +36,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ## Source
 
-[http/originServer.ts:11](https://github.com/edwinlzs/chainflow/blob/022a530/src/http/originServer.ts#L11)
+http/originServer.d.ts:7
 
 ***
 

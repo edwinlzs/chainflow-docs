@@ -20,7 +20,7 @@ Defines a set of values to choose from when constructing an input.
 
 > ### [nodeValueIdentifier]
 >
-> > **[nodeValueIdentifier]**: [`NodeValue`](/api/enumerations/nodevalue/) = `NodeValue.ValuePool`
+> > **[nodeValueIdentifier]**: [`NodeValue`](/api/enumerations/nodevalue/)
 >
 > ### valuePool
 >
@@ -29,7 +29,7 @@ Defines a set of values to choose from when constructing an input.
 
 ## Source
 
-[core/utils/initializers.ts:5](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/utils/initializers.ts#L5)
+core/utils/initializers.d.ts:4
 
 ***
 

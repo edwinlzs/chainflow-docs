@@ -61,8 +61,8 @@ export default defineConfig({
       customCss: ["./src/styles/globals.css", "./src/styles/theme.css"],
       plugins: [
         starlightTypeDoc({
-          tsconfig: "https://github.com/edwinlzs/chainflow/blob/main/tsconfig.json",
-          entryPoints: ["https://github.com/edwinlzs/chainflow/blob/main/src/index.ts"],
+          tsconfig: "./chainflow.tsconfig.json",
+          entryPoints: ["./node_modules/chainflow/src/index.ts"],
           typeDoc: {
             entryPointStrategy: "resolve",
             exclude: ["**/*.test.ts", "**/logger.ts"],

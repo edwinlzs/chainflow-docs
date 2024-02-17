@@ -30,7 +30,7 @@ a function to merge the sources into a single source for the dest.
 
 ## Source
 
-[core/utils/link.ts:21](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/utils/link.ts#L21)
+core/utils/link.d.ts:16
 
 ***
 

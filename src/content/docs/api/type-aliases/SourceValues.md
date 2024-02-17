@@ -14,7 +14,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ## Source
 
-[core/inputNode.ts:54](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/inputNode.ts#L54)
+core/inputNode.d.ts:16
 
 ***
 

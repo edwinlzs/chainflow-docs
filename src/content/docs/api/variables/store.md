@@ -12,7 +12,7 @@ Special object that acts as a central "gateway" between input and source values.
 
 ## Source
 
-[core/chainflow.ts:43](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L43)
+core/chainflow.d.ts:23
 
 ***
 

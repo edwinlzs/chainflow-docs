@@ -20,7 +20,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ### call()
 
-> **call**(`endpoint`, `opts`?): [`Chainflow`](/api/classes/chainflow/)
+> **call**(`endpoint`, `opts`?): `this`
 
 Adds an endpoint call to the callchain.
 
@@ -32,11 +32,11 @@ Adds an endpoint call to the callchain.
 
 #### Returns
 
-[`Chainflow`](/api/classes/chainflow/)
+`this`
 
 #### Source
 
-[core/chainflow.ts:85](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L85)
+core/chainflow.d.ts:31
 
 ***
 
@@ -44,7 +44,7 @@ Adds an endpoint call to the callchain.
 
 > **clone**(): [`Chainflow`](/api/classes/chainflow/)
 
-Creates a clone of this chainflow with its state and callqueue
+Creates a clone of this chainflow's callqueue and initial sources
  which can be extended and run independently.
 
 #### Returns
@@ -53,13 +53,13 @@ Creates a clone of this chainflow with its state and callqueue
 
 #### Source
 
-[core/chainflow.ts:97](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L97)
+core/chainflow.d.ts:36
 
 ***
 
 ### continuesFrom()
 
-> **continuesFrom**(`cf`): [`Chainflow`](/api/classes/chainflow/)
+> **continuesFrom**(`cf`): `this`
 
 Causes this chainflow to continue from the state of
 sources values of another chainflow.
@@ -70,17 +70,17 @@ sources values of another chainflow.
 
 #### Returns
 
-[`Chainflow`](/api/classes/chainflow/)
+`this`
 
 #### Source
 
-[core/chainflow.ts:112](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L112)
+core/chainflow.d.ts:41
 
 ***
 
 ### extend()
 
-> **extend**(`cf`): [`Chainflow`](/api/classes/chainflow/)
+> **extend**(`cf`): `this`
 
 Extends this chainflow's callqueue with that of another flow.
 
@@ -90,11 +90,11 @@ Extends this chainflow's callqueue with that of another flow.
 
 #### Returns
 
-[`Chainflow`](/api/classes/chainflow/)
+`this`
 
 #### Source
 
-[core/chainflow.ts:105](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L105)
+core/chainflow.d.ts:38
 
 ***
 
@@ -110,7 +110,7 @@ Resets the chainflow's state by clearing its accumulated sources.
 
 #### Source
 
-[core/chainflow.ts:91](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L91)
+core/chainflow.d.ts:33
 
 ***
 
@@ -128,7 +128,7 @@ Returns the accumulated responses of this chainflow.
 
 #### Source
 
-[core/chainflow.ts:117](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L117)
+core/chainflow.d.ts:42
 
 ***
 
@@ -144,13 +144,13 @@ Run the set up chain
 
 #### Source
 
-[core/chainflow.ts:54](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L54)
+core/chainflow.d.ts:27
 
 ***
 
 ### seed()
 
-> **seed**(`seed`): [`Chainflow`](/api/classes/chainflow/)
+> **seed**(`seed`): `this`
 
 Adds a seed to this chainflow.
 
@@ -160,11 +160,11 @@ Adds a seed to this chainflow.
 
 #### Returns
 
-[`Chainflow`](/api/classes/chainflow/)
+`this`
 
 #### Source
 
-[core/chainflow.ts:79](https://github.com/edwinlzs/chainflow/blob/022a530/src/core/chainflow.ts#L79)
+core/chainflow.d.ts:29
 
 ***
 
