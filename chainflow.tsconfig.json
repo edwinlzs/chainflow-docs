@@ -15,5 +15,6 @@
     "lib": ["ES2022"],
     "resolveJsonModule": true
   },
-  "include": ["node_modules/chainflow"]
+  "include": ["src"],
+  "exclude": ["examples", "src/demo", "src/**/*.test.ts"]
 }
