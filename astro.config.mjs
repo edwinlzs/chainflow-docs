@@ -62,7 +62,7 @@ export default defineConfig({
       plugins: [
         starlightTypeDoc({
           tsconfig: "./chainflow.tsconfig.json",
-          entryPoints: ["./node_modules/chainflow/src/index.ts"],
+          entryPoints: ["./node_modules/chainflow/dist/index.d.ts"],
           typeDoc: {
             entryPointStrategy: "resolve",
             exclude: ["**/*.test.ts", "**/logger.ts"],
