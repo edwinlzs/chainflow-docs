@@ -2,7 +2,7 @@
 title: Get Started
 description: Getting started with Chainflow.
 layout: "/src/layouts/DocsLayout.astro"
-slug: "chainflow-docs/guides/get-started"
+slug: "guides/get-started"
 sidebar:
   order: 0
 ---
