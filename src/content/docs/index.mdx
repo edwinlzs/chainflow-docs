@@ -3,14 +3,30 @@ title: 🌊hainflow
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Enhance your data setup and backend testing with powerful API callchains.
+  tagline: Enhance your data setup and backend testing with flexible API call workflows.
   actions:
     - text: Get Started
       link: guides/get-started/
       variant: primary
 ---
 
+import { CardGrid, Card } from '@astrojs/starlight/components';
 import Footer from '~/components/Footer.astro';
+
+<CardGrid stagger>
+  <Card title="Empower your development" icon="rocket">
+    Compose your own API workflow scripts to speed up your development.
+  </Card>
+  <Card title="Setup your test data" icon="add-document">
+    Use fewer SQL scripts to setup data for tests or demos.
+    Leverage your backend APIs to ensure important app logic
+    and side effects are run properly!
+  </Card>
+  <Card title="Simulate your frontend" icon="add-document">
+    Treat API call workflows as if it were a frontend calling
+    your server for UI-agnostic end-to-end API testing purposes.
+  </Card>
+</CardGrid>
 
 {/* TODO: Graphics, Future Features */}
 <Footer />

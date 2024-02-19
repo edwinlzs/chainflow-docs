@@ -9,8 +9,8 @@ dependencies:
     specifier: ^0.4.1
     version: 0.4.1(typescript@5.3.3)
   '@astrojs/starlight':
-    specifier: ^0.17.3
-    version: 0.17.3(astro@4.3.5)
+    specifier: ^0.19.0
+    version: 0.19.0(astro@4.3.5)
   '@expressive-code/plugin-collapsible-sections':
     specifier: ^0.32.4
     version: 0.32.4
@@ -25,7 +25,7 @@ dependencies:
     version: 0.32.6
   starlight-typedoc:
     specifier: ^0.8.0
-    version: 0.8.0(@astrojs/starlight@0.17.3)(astro@4.3.5)(typedoc-plugin-markdown@4.0.0-next.38)(typedoc@0.25.7)
+    version: 0.8.0(@astrojs/starlight@0.19.0)(astro@4.3.5)(typedoc-plugin-markdown@4.0.0-next.38)(typedoc@0.25.7)
   typedoc:
     specifier: ^0.25.7
     version: 0.25.7(typescript@5.3.3)
@@ -138,7 +138,7 @@ packages:
       astro: ^4.0.0
     dependencies:
       '@astrojs/markdown-remark': 4.2.1
-      '@mdx-js/mdx': 3.0.0
+      '@mdx-js/mdx': 3.0.1
       acorn: 8.11.3
       astro: 4.3.5(sass@1.70.0)(typescript@5.3.3)
       es-module-lexer: 1.4.1
@@ -171,10 +171,10 @@ packages:
       zod: 3.22.4
     dev: false
 
-  /@astrojs/starlight@0.17.3(astro@4.3.5):
-    resolution: {integrity: sha512-TEI34d0N9Q2YXOGMS6wYEwv1rLsSkbCMa1JWnJ67UWIZ+bWfcM+kwHLnenwEHs9fQ5e0HvS2GWQxvRBb/mwYkw==}
+  /@astrojs/starlight@0.19.0(astro@4.3.5):
+    resolution: {integrity: sha512-izNZLs99d4AAoN5eV6Ek71SVKEAs8N/GjT+n9J0Q8q1Zgtk/qcv3KzuPXBZmiAbPl/9E2+BG8f4dpdoc+F4U3g==}
     peerDependencies:
-      astro: ^4.0.0
+      astro: ^4.2.7
     dependencies:
       '@astrojs/mdx': 2.1.1(astro@4.3.5)
       '@astrojs/sitemap': 3.0.5
@@ -187,6 +187,7 @@ packages:
       hast-util-select: 6.0.2
       hastscript: 8.0.0
       mdast-util-directive: 3.0.0
+      mdast-util-to-markdown: 2.1.0
       pagefind: 1.0.4
       rehype: 13.0.1
       remark-directive: 3.0.0
@@ -747,8 +748,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: false
 
-  /@mdx-js/mdx@3.0.0:
-    resolution: {integrity: sha512-Icm0TBKBLYqroYbNW3BPnzMGn+7mwpQOK310aZ7+fkCtiU3aqv2cdcX+nd0Ydo3wI5Rx8bX2Z2QmGb/XcAClCw==}
+  /@mdx-js/mdx@3.0.1:
+    resolution: {integrity: sha512-eIQ4QTrOWyL3LWEe/bu6Taqzq2HQvHcyTMaOrI95P2/LmJE7AsfPfgJGuFLPVqBUE1BC1rik3VIhU+s9u72arA==}
     dependencies:
       '@types/estree': 1.0.5
       '@types/estree-jsx': 1.0.4
@@ -764,7 +765,7 @@ packages:
       hast-util-to-jsx-runtime: 2.3.0
       markdown-extensions: 2.0.0
       periscopic: 3.1.0
-      remark-mdx: 3.0.0
+      remark-mdx: 3.0.1
       remark-parse: 11.0.0
       remark-rehype: 11.1.0
       source-map: 0.7.4
@@ -2172,7 +2173,7 @@ packages:
       estree-util-is-identifier-name: 3.0.0
       hast-util-whitespace: 3.0.0
       mdast-util-mdx-expression: 2.0.0
-      mdast-util-mdx-jsx: 3.0.0
+      mdast-util-mdx-jsx: 3.1.0
       mdast-util-mdxjs-esm: 2.0.1
       property-information: 6.4.1
       space-separated-tokens: 2.0.2
@@ -2227,7 +2228,7 @@ packages:
       estree-util-is-identifier-name: 3.0.0
       hast-util-whitespace: 3.0.0
       mdast-util-mdx-expression: 2.0.0
-      mdast-util-mdx-jsx: 3.0.0
+      mdast-util-mdx-jsx: 3.1.0
       mdast-util-mdxjs-esm: 2.0.1
       property-information: 6.4.1
       space-separated-tokens: 2.0.2
@@ -2739,8 +2740,8 @@ packages:
       - supports-color
     dev: false
 
-  /mdast-util-mdx-jsx@3.0.0:
-    resolution: {integrity: sha512-XZuPPzQNBPAlaqsTTgRrcJnyFbSOBovSadFgbFu8SnuNgm+6Bdx1K+IWoitsmj6Lq6MNtI+ytOqwN70n//NaBA==}
+  /mdast-util-mdx-jsx@3.1.0:
+    resolution: {integrity: sha512-A8AJHlR7/wPQ3+Jre1+1rq040fX9A4Q1jG8JxmSNp/PLPHg80A6475wxTp3KzHpApFH6yWxFotHrJQA3dXP6/w==}
     dependencies:
       '@types/estree-jsx': 1.0.4
       '@types/hast': 3.0.4
@@ -2764,7 +2765,7 @@ packages:
     dependencies:
       mdast-util-from-markdown: 2.0.0
       mdast-util-mdx-expression: 2.0.0
-      mdast-util-mdx-jsx: 3.0.0
+      mdast-util-mdx-jsx: 3.1.0
       mdast-util-mdxjs-esm: 2.0.1
       mdast-util-to-markdown: 2.1.0
     transitivePeerDependencies:
@@ -3689,8 +3690,8 @@ packages:
       - supports-color
     dev: false
 
-  /remark-mdx@3.0.0:
-    resolution: {integrity: sha512-O7yfjuC6ra3NHPbRVxfflafAj3LTwx3b73aBvkEFU5z4PsD6FD4vrqJAkE5iNGLz71GdjXfgRqm3SQ0h0VuE7g==}
+  /remark-mdx@3.0.1:
+    resolution: {integrity: sha512-3Pz3yPQ5Rht2pM5R+0J2MrGoBSrzf+tJG94N+t/ilfdh8YLyyKYtidAYwTveB20BoHAcwIopOUqhcmh2F7hGYA==}
     dependencies:
       mdast-util-mdx: 3.0.0
       micromark-extension-mdxjs: 3.0.0
@@ -3988,7 +3989,7 @@ packages:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
     dev: false
 
-  /starlight-typedoc@0.8.0(@astrojs/starlight@0.17.3)(astro@4.3.5)(typedoc-plugin-markdown@4.0.0-next.38)(typedoc@0.25.7):
+  /starlight-typedoc@0.8.0(@astrojs/starlight@0.19.0)(astro@4.3.5)(typedoc-plugin-markdown@4.0.0-next.38)(typedoc@0.25.7):
     resolution: {integrity: sha512-lqYZPSafk0Bhh8YHLl/BTt9nhd/aobovMeEkEwybcJ8ag+ro88LM1V/xEh9rgp6vkIgFfqG0iqwlCVgEsNUkeQ==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
@@ -3997,7 +3998,7 @@ packages:
       typedoc: '>=0.25.0'
       typedoc-plugin-markdown: '>=4.0.0-next.21'
     dependencies:
-      '@astrojs/starlight': 0.17.3(astro@4.3.5)
+      '@astrojs/starlight': 0.19.0(astro@4.3.5)
       astro: 4.3.5(sass@1.70.0)(typescript@5.3.3)
       github-slugger: 2.0.0
       typedoc: 0.25.7(typescript@5.3.3)
