@@ -55,6 +55,8 @@ getProfile.query({
 });
 ```
 
+This will cause the endpoint to be called with the URL `.../user/profile?age=42`.
+
 ### Path Parameters
 
 You can only define path parameters at the creation of the endpoint, using curly braces `{}` to denote the parameter and its key, like below.

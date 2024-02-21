@@ -44,7 +44,7 @@ layout: "/src/layouts/DocsLayout.astro"
 - [chainflow](/api/functions/chainflow/)
 - [gen](/api/functions/gen/)
 - [link](/api/functions/link/)
-- [linkMany](/api/functions/linkmany/)
+- [linkMerge](/api/functions/linkmerge/)
 - [originServer](/api/functions/originserver/)
 - [pool](/api/functions/pool/)
 - [required](/api/functions/required/)

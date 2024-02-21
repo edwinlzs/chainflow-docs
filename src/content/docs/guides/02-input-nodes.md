@@ -99,7 +99,7 @@ In the above snippet's context, the source node `createUser.resp` was accessed w
 
 Once a link between nodes on two endpoints are established, if the endpoint with a linked output node is called first, the value in its response will be taken and used at the linked input node on the second endpoint when it is called next.
 
-### `set`
+### `set` and `link`
 
 The below snippet shows another way of defining links:
 

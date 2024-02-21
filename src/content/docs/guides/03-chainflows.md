@@ -57,6 +57,22 @@ chainflow()
 
 In this snippet, we call the `seed` method on a chainflow and pass in a value of `admin` for the `role` key. Since we have linked the `role` input node in `addRole` with `seed.role`, during this chainflow run `addRole` will have the body `{ ..., role: 'admin' }`.
 
+## Call Options
+
+You can directly declare input values for an endpoint on a chainflow by passing a second argument to the `call` method.
+
+```typescript
+const createUser = origin.post('/user').body({
+  name: 'Tom',
+});
+
+chainflow()
+  .call(createUser, { body: { name: 'Harry' } })
+  .run();
+```
+
+Values passed this way have the highest priority and will override any defaults (in this case `Tom`) or linked values for affected input node.
+
 ## Composability
 
 > 👋 _Looking for feedback on this section - are the method names clear or too confusing?_
@@ -103,9 +119,9 @@ In the snippet above, we used `extend` to add on to the chainflows we made earli
 
 ### `continuesFrom`
 
-After a run, each chainflow stores the responses accumulated from calling endpoints. Another chainflow can use the `continuesFrom` method to store a copy of those accumulated responses before making its own run.
+After a run, each chainflow temporarily retains the responses accumulated from calling endpoints until its next run. Another chainflow can use the `continuesFrom` method to copy those accumulated responses into itself before making its own run.
 
-```typescript collapse={1-9} {21}
+```typescript collapse={1-9} {20}
 const login = origin.post('/user').body({
   username: 'admin',
 });
@@ -116,7 +132,7 @@ const createGroup = origin.post('/group').headers({
   groupName: seed.groupName,
 })
 
-// loggedInFlow stores a response from the login call
+// loggedInFlow now holds a response from the login call
 // containing the user's auth token
 const loggedInFlow = chainflow()
   .call(login)
@@ -125,8 +141,8 @@ const loggedInFlow = chainflow()
 // createGroupFlow will copy the response that
 // loggedInFlow received and use the auth token in its own calls
 const createGroupFlow = chainflow()
-  .call(createGroup)
-  .continuesFrom(loggedInFlow);
+  .continuesFrom(loggedInFlow)
+  .call(createGroup);
 
 const groupNames = ['RapGPT', 'Averageexpedition', 'Shaky Osmosis'];
 for (const groupName in groupNames) {

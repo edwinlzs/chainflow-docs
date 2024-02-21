@@ -80,15 +80,15 @@ core/inputNode.d.ts:26
 
 ### `[setSources]`()
 
-> **[setSources]**(`sources`, `callback`): `void`
+> **[setSources]**(`sources`, `callback`?): `void`
 
 Sets multiple source nodes to be combined into a single value for this input node
 
 #### Parameters
 
-• **sources**: `Object`
+• **sources**: `SourceNode`[] \| `Object`
 
-• **callback**: (`val`) => `any`
+• **callback?**: (`val`) => `any`
 
 #### Returns
 

@@ -9,22 +9,22 @@ sidebar:
 
 Chainflow is an API workflow library written in and for TypeScript. Its aim is to improve the developer experience in managing multiple sets of API calls, where values of the response to one endpoint call can be passed to the request payload of another endpoint further down a workflow.
 
-## Installation
-
-```shell
-npm install --save-dev chainflow
-```
-
 ## The Idea
 
 The concept behind Chainflow comes from "chaining" one API's outputs with another's inputs and running "flows" of API calls.
 
-Let's say a call to a `createUser` endpoint returns a new user's ID which can be passed to the request body of a call to the `addRole` endpoint to assign a role for that user. This represents a _"chain"_ between the two endpoints.
+Let's say a call to a `createUser` endpoint returns the user's `id` which can be passed to the request body of a call to the `addRole` endpoint to assign a role for that user. This represents one link that makes up the _"chain"_ between endpoints.
 
-We take advantage of that chain by writing a _"flow"_, where we explicitly instruct a `Chainflow` object to call `createUser` first, then `addRole` after. By ordering the flow in such a manner, we ensure that the user `id` response to `createUser` is dynamically used in the request body of `addRole`.
+We take advantage of links in a chain by writing a _"flow"_, where we explicitly instruct a `Chainflow` object to call `createUser` first, then `addRole` after. By ordering the flow in such a manner, we ensure that the user `id` response to `createUser` is dynamically used in the request body of `addRole`.
 
 ```typescript
 chainflow().call(createUser).call(addRole).run();
+```
+
+## Installation
+
+```shell
+npm install --save-dev chainflow
 ```
 
 ## Basic Example

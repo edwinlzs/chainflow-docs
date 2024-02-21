@@ -2,11 +2,11 @@
 editUrl: false
 next: false
 prev: false
-title: "linkMany"
+title: "linkMerge"
 layout: "/src/layouts/DocsLayout.astro"
 ---
 
-> **linkMany**(`dest`, `sources`, `callback`): `void`
+> **linkMerge**(`dest`, `sources`, `callback`?): `void`
 
 Links multiple Source nodes to a Input node via a callback.
 
@@ -16,11 +16,11 @@ Links multiple Source nodes to a Input node via a callback.
 
 the input node that should take a value from the callback.
 
-• **sources**: `Object`
+• **sources**: `SourceNode`[] \| `Object`
 
 an array of source nodes that will be passed into the callback.
 
-• **callback**: (`val`) => `any`
+• **callback?**: (`val`) => `any`
 
 a function to merge the sources into a single source for the dest.
 

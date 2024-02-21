@@ -8,6 +8,12 @@ layout: "/src/layouts/DocsLayout.astro"
 
 > **sources**(`sources`, `callback`?): `Object`
 
+- evaluating if this is important enough to retain
+
+:::caution[Experimental]
+This API should not be used in production and may be trimmed from a public release.
+:::
+
 ## Parameters
 
 • **sources**: `SourceNode`[]
@@ -33,7 +39,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ## Source
 
-core/utils/source.d.ts:9
+core/utils/source.d.ts:10
 
 ***
 

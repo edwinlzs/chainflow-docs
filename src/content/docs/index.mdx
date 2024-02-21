@@ -10,23 +10,25 @@ hero:
       variant: primary
 ---
 
-import { CardGrid, Card } from '@astrojs/starlight/components';
-import Footer from '~/components/Footer.astro';
+import { CardGrid, Card } from "@astrojs/starlight/components";
+import Footer from "~/components/Footer.astro";
 
 <CardGrid stagger>
   <Card title="Empower your development" icon="rocket">
-    Compose your own API workflow scripts to speed up your development.
+    Compose your own API workflow scripts to manipulate the state of your app
+    and data to speed up your development.
   </Card>
   <Card title="Setup your test data" icon="add-document">
-    Use fewer SQL scripts to setup data for tests or demos.
-    Leverage your backend APIs to ensure important app logic
-    and side effects are run properly!
+    Use fewer SQL scripts to setup data for tests or demos. Leverage your
+    backend APIs to ensure important app logic and side effects are run
+    properly!
   </Card>
-  <Card title="Simulate your frontend" icon="add-document">
-    Treat API call workflows as if it were a frontend calling
-    your server for UI-agnostic end-to-end API testing purposes.
+  <Card title="Simulate your frontend" icon="laptop">
+    Run UI-agnostic end-to-end API tests - treat an API call workflow as if it
+    were a frontend calling your server for.
   </Card>
 </CardGrid>
 
 {/* TODO: Graphics, Future Features */}
+
 <Footer />

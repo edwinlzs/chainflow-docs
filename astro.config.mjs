@@ -2,9 +2,8 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import starlightTypeDoc, { typeDocSidebarGroup } from "starlight-typedoc";
 import chainflowFrontmatter from "./src/plugins/ChainflowFrontmatter";
-import { pluginCollapsibleSections } from '@expressive-code/plugin-collapsible-sections'
+import { pluginCollapsibleSections } from "@expressive-code/plugin-collapsible-sections";
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [
     starlight({
@@ -12,19 +11,17 @@ export default defineConfig({
       description:
         "Lightweight and flexible API workflow library for TypeScript.",
       expressiveCode: {
-        themes: ['dark-plus'],
-        plugins: [
-          pluginCollapsibleSections(),
-        ],
+        themes: ["dark-plus"],
+        plugins: [pluginCollapsibleSections()],
         styleOverrides: {
           collapsibleSections: {
-            closedBackgroundColor: '#FFFFFF12',
-            closedTextColor: '#FFFFFF55',
+            closedBackgroundColor: "#FFFFFF12",
+            closedTextColor: "#FFFFFF55",
           },
           textMarkers: {
-            markBackground: '#FFFFFF17',
-            markBorderColor: '#FFFFFF40',
-          }
+            markBackground: "#FFFFFF17",
+            markBorderColor: "#FFFFFF40",
+          },
         },
       },
       social: {
@@ -37,16 +34,8 @@ export default defineConfig({
         },
         {
           label: "GUIDES",
-          // items: [
-          // Each item here is one entry in the navigation menu.
-          // { label: "Get Started", link: "/guides/get-started/" },
-          // ],
           autogenerate: { directory: "guides" },
         },
-        // {
-        //   label: "Reference",
-        //   autogenerate: { directory: "reference" },
-        // },
         typeDocSidebarGroup,
       ],
       head: [
@@ -67,11 +56,10 @@ export default defineConfig({
             entryPointStrategy: "resolve",
             exclude: ["**/*.test.ts", "**/logger.ts"],
             excludeInternal: true,
-            // excludeReferences: true,
           },
           sidebar: {
             collapsed: true,
-          }
+          },
         }),
         chainflowFrontmatter({
           docsDir: "./src/content/docs/api",
