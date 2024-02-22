@@ -14,7 +14,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ## Source
 
-core/inputNode.d.ts:16
+core/inputNode.d.ts:11
 
 ***
 

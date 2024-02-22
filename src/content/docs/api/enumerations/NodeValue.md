@@ -10,61 +10,51 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ### Generator
 
-> **Generator**: `1`
+> **Generator**: `0`
 
 #### Source
 
-core/inputNode.d.ts:9
+core/inputNode.d.ts:4
+
+***
+
+### MergeSourcesWithCallback
+
+> **MergeSourcesWithCallback**: `4`
+
+#### Source
+
+core/inputNode.d.ts:8
 
 ***
 
 ### Required
 
-> **Required**: `2`
+> **Required**: `1`
 
 #### Source
 
-core/inputNode.d.ts:10
+core/inputNode.d.ts:5
 
 ***
 
 ### Source
 
-> **Source**: `3`
+> **Source**: `2`
 
 #### Source
 
-core/inputNode.d.ts:11
+core/inputNode.d.ts:6
 
 ***
 
 ### SourceWithCallback
 
-> **SourceWithCallback**: `4`
+> **SourceWithCallback**: `3`
 
 #### Source
 
-core/inputNode.d.ts:12
-
-***
-
-### Sources
-
-> **Sources**: `5`
-
-#### Source
-
-core/inputNode.d.ts:13
-
-***
-
-### ValuePool
-
-> **ValuePool**: `0`
-
-#### Source
-
-core/inputNode.d.ts:8
+core/inputNode.d.ts:7
 
 ***
 

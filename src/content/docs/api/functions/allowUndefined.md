@@ -22,7 +22,7 @@ a value for any linked input node, unless there is another SourceNode with highe
 
 ## Source
 
-core/utils/link.d.ts:24
+core/utils/link.d.ts:70
 
 ***
 

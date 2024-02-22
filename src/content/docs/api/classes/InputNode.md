@@ -28,7 +28,7 @@ A data node for constructing an input object.
 
 #### Source
 
-core/inputNode.d.ts:24
+core/inputNode.d.ts:19
 
 ## Methods
 
@@ -52,7 +52,7 @@ Retrieve value of a node.
 
 #### Source
 
-core/inputNode.d.ts:34
+core/inputNode.d.ts:27
 
 ***
 
@@ -74,7 +74,7 @@ Sets a source node for this input node.
 
 #### Source
 
-core/inputNode.d.ts:26
+core/inputNode.d.ts:21
 
 ***
 
@@ -96,27 +96,7 @@ Sets multiple source nodes to be combined into a single value for this input nod
 
 #### Source
 
-core/inputNode.d.ts:28
-
-***
-
-### `[setValuePool]`()
-
-> **[setValuePool]**(`valuePool`): `void`
-
-Sets the pool of values for this input node.
-
-#### Parameters
-
-• **valuePool**: `any`[]
-
-#### Returns
-
-`void`
-
-#### Source
-
-core/inputNode.d.ts:32
+core/inputNode.d.ts:23
 
 ***
 
@@ -141,7 +121,7 @@ any available linked sources.
 
 #### Source
 
-core/inputNode.d.ts:39
+core/inputNode.d.ts:32
 
 ***
 

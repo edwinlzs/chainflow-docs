@@ -6,31 +6,109 @@ title: "linkMerge"
 layout: "/src/layouts/DocsLayout.astro"
 ---
 
-> **linkMerge**(`dest`, `sources`, `callback`?): `void`
+## linkMerge(sources, callback)
 
-Links multiple Source nodes to a Input node via a callback.
+> **linkMerge**(`sources`, `callback`?): `MergeSourcesInfo`
 
-## Parameters
+Links multiple Source nodes to an Input node via a callback.
 
-• **dest**: [`InputNode`](/api/classes/inputnode/)
+### Parameters
 
-the input node that should take a value from the callback.
+• **sources**: `SourceNode`[]
 
-• **sources**: `SourceNode`[] \| `Object`
-
-an array of source nodes that will be passed into the callback.
+an array of source nodes to merge values from.
 
 • **callback?**: (`val`) => `any`
 
 a function to merge the sources into a single source for the dest.
 
-## Returns
+### Returns
+
+`MergeSourcesInfo`
+
+### Source
+
+core/utils/link.d.ts:64
+
+## linkMerge(sources, callback)
+
+> **linkMerge**(`sources`, `callback`?): `void`
+
+Links multiple Source nodes to an Input node via a callback.
+
+### Parameters
+
+• **sources**: `Object`
+
+an object with source nodes to merge values from.
+
+• **callback?**: (`val`) => `any`
+
+a function to merge the sources into a single source for the dest.
+
+### Returns
 
 `void`
 
-## Source
+### Source
 
-core/utils/link.d.ts:16
+core/utils/link.d.ts:64
+
+## linkMerge(dest, sources, callback)
+
+> **linkMerge**(`dest`, `sources`, `callback`?): `void`
+
+Links multiple Source nodes to an Input node via a callback.
+
+### Parameters
+
+• **dest**: [`InputNode`](/api/classes/inputnode/)
+
+the input node that should take a value from the callback.
+
+• **sources**: `SourceNode`[]
+
+an array of source nodes to merge values from.
+
+• **callback?**: (`val`) => `any`
+
+a function to merge the sources into a single source for the dest.
+
+### Returns
+
+`void`
+
+### Source
+
+core/utils/link.d.ts:64
+
+## linkMerge(dest, sources, callback)
+
+> **linkMerge**(`dest`, `sources`, `callback`?): `void`
+
+Links multiple Source nodes to an Input node via a callback.
+
+### Parameters
+
+• **dest**: [`InputNode`](/api/classes/inputnode/)
+
+the input node that should take a value from the callback.
+
+• **sources**: `Object`
+
+an object with source nodes to merge values from.
+
+• **callback?**: (`val`) => `any`
+
+a function to merge the sources into a single source for the dest.
+
+### Returns
+
+`void`
+
+### Source
+
+core/utils/link.d.ts:64
 
 ***
 

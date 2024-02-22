@@ -33,7 +33,7 @@ Provides a generator function to produce a value for an input.
 
 ## Source
 
-core/utils/initializers.d.ts:9
+core/utils/initializers.d.ts:4
 
 ***
 

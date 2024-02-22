@@ -10,7 +10,6 @@ layout: "/src/layouts/DocsLayout.astro"
 
 - [NodeValue](/api/enumerations/nodevalue/)
 - [RespParser](/api/enumerations/respparser/)
-- [VALUE\_POOL\_SELECT](/api/enumerations/value_pool_select/)
 
 ## Classes
 
@@ -46,10 +45,7 @@ layout: "/src/layouts/DocsLayout.astro"
 - [link](/api/functions/link/)
 - [linkMerge](/api/functions/linkmerge/)
 - [originServer](/api/functions/originserver/)
-- [pool](/api/functions/pool/)
 - [required](/api/functions/required/)
-- [source](/api/functions/source/)
-- [sources](/api/functions/sources/)
 
 ***
 

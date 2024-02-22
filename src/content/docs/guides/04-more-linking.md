@@ -9,21 +9,13 @@ sidebar:
 
 This chapter covers additional ways to link endpoints together and their use cases.
 
-## Transforming Inputs
+## `link` with callback
 
-Sometimes, you might want to apply transformations to data before it is received by an input node. The following methods allow you to specify an optional callback which will take the value from a source node pass its return value to the input node.
+Sometimes, you might want to apply transformations to data before it is received by an input node. The `link` function actually takes an optional callback which will parses the source value and outputs a final value for the input node.
 
-### `source`
+### with `set`
 
-```typescript {2}
-const sendMessage = origin.post('/message').body({
-  msg: source(createUser.resp.body.name, createGreeting),
-});
-```
-
-Use `source` when you want to immediately specify a link at the creation of the input node (`msg` in this example).
-
-### `link`
+Pass the callback (`createGreeting` in this snippet) as the third argument when using `link` with the `set` method.
 
 ```typescript {4}
 const createGreeting = (username: string) => `Hi, ${username} here!`;
@@ -33,14 +25,94 @@ sendMessage.set(({ body: { msg } }) => {
 });
 ```
 
-Otherwise, pass the callback as a 3rd parameter to the `link` method (introduced in Chapter 2) in combination with the `set` method on an endpoint.
+### at input node creation
 
-## Multiple sources, one input
+Alternatively, the `link` function has an overload allowing you to use it directly at the point of creation with a callback of an input node like below:
+
+```typescript {2}
+const sendMessage = origin.post('/message').body({
+  msg: link(createUser.resp.body.name, createGreeting),
+});
+```
+
+## `linkMerge`
 
 Should an input node need to take values from multiple sources at the same time, you can use the `linkMerge` utility function to help with that.
 
-### `linkMerge`
+### Array of Source Nodes
 
 ```typescript
+// note the callback has an array parameter
+const mergeValues = ([name, favAnimal]: [string, string]) =>
+  `${name} likes ${favAnimal}.`;
 
+const createMessage = origin.post('message').body({
+  msg: linkMerge(
+    // array of source nodes
+    [getUser.resp.body.name, getFavAnimal.resp.body.favAnimal],
+    mergeValues,
+  );
+});
+```
+
+In this first snippet, we pass an array of source nodes to `linkMerge` followed by an optional callback. Note the callback's parameter takes an array of expected source values similar to how we defined the array of source nodes.
+
+`linkMerge` has multiple other function signatures covered below.
+
+### Object with Source Nodes
+
+Instead of using an array, you can define an object with named keys and source nodes as the values:
+
+```typescript
+// note the callback has an object parameter
+const mergeValues = ({
+  userName,
+  favAnimal,
+}: {
+  userName: string;
+  favAnimal: string;
+}) => `${userName} likes ${favAnimal}.`;
+
+
+const createMessage = origin.post('message').body({
+  msg: linkMerge(
+    // object of source nodes
+    {
+      userName: getUser.resp.body.name,
+      favAnimal: getFavAnimal.resp.body.favAnimal,
+    },
+    mergeValues,
+  );
+});
+```
+
+Note that the callback used should have its parameter adjusted accordingly, like above.
+
+### Array of Source Nodes + `set`
+
+You can also use `linkMerge` with `set`:
+
+```typescript
+createMessage.set(({ body: { msg } }) => {
+  linkMerge(
+    msg, // the input node
+    [getUser.resp.body.name, getFavAnimal.resp.body.favAnimal],
+    mergeValues,
+  );
+});
+```
+
+### Object with Source Nodes + `set`
+
+```typescript
+createMessage.set(({ body: { msg } }) => {
+  linkMerge(
+    msg, // the input node
+    {
+      userName: getUser.resp.body.name,
+      favAnimal: getFavAnimal.resp.body.favAnimal,
+    },
+    mergeValues,
+  );
+});
 ```
