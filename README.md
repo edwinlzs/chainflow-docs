@@ -14,10 +14,8 @@ Checklist
 - [x] gen
 - [x] direct links
 - [x] set
-- [x] source
-- [ ] sources
 - [x] link
-- [ ] linkMerge
+- [x] linkMerge
 - [x] Call Options
 - [x] seed
 - [ ] allowUndefined
