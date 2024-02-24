@@ -10,7 +10,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ### [nodeValueIdentifier]
 
-> **[nodeValueIdentifier]**: [`NodeValue`](/api/enumerations/nodevalue/)
+> **[nodeValueIdentifier]**: [`NODE_VALUE`](/api/enumerations/node_value/)
 
 #### Source
 

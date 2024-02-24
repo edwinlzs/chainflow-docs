@@ -17,7 +17,7 @@ as required to be taken from another source.
 
 > ### [nodeValueIdentifier]
 >
-> > **[nodeValueIdentifier]**: [`NodeValue`](/api/enumerations/nodevalue/)
+> > **[nodeValueIdentifier]**: [`NODE_VALUE`](/api/enumerations/node_value/)
 >
 
 ## Source

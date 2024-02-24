@@ -20,7 +20,7 @@ Provides a generator function to produce a value for an input.
 
 > ### [nodeValueIdentifier]
 >
-> > **[nodeValueIdentifier]**: [`NodeValue`](/api/enumerations/nodevalue/)
+> > **[nodeValueIdentifier]**: [`NODE_VALUE`](/api/enumerations/node_value/)
 >
 > ### generator
 >

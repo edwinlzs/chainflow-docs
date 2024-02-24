@@ -8,8 +8,8 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ## Enumerations
 
-- [NodeValue](/api/enumerations/nodevalue/)
-- [RespParser](/api/enumerations/respparser/)
+- [NODE\_VALUE](/api/enumerations/node_value/)
+- [RESP\_PARSER](/api/enumerations/resp_parser/)
 
 ## Classes
 
@@ -39,8 +39,8 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ## Functions
 
-- [allowUndefined](/api/functions/allowundefined/)
 - [chainflow](/api/functions/chainflow/)
+- [config](/api/functions/config/)
 - [gen](/api/functions/gen/)
 - [link](/api/functions/link/)
 - [linkMerge](/api/functions/linkmerge/)

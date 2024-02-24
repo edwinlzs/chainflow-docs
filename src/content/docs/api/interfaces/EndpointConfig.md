@@ -26,7 +26,7 @@ http/endpoint.d.ts:20
 
 #### Parameters
 
-• **resp**: `ResponseData`
+• **resp**: `ParsedResponse`
 
 #### Returns
 

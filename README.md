@@ -18,11 +18,12 @@ Checklist
 - [x] linkMerge
 - [x] Call Options
 - [x] seed
-- [ ] allowUndefined
+- [ ] config
+  - [ ] allowUndefined
 - [x] clone
 - [x] extend
 - [x] continuesFrom
-- [ ] config (endpoint)
+- [ ] endpoint.config
   - [ ] respValidator
   - [ ] respParser
 - [ ] store

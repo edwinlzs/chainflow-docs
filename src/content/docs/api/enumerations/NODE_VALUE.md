@@ -2,15 +2,15 @@
 editUrl: false
 next: false
 prev: false
-title: "NodeValue"
+title: "NODE_VALUE"
 layout: "/src/layouts/DocsLayout.astro"
 ---
 
 ## Enumeration Members
 
-### Generator
+### GENERATOR
 
-> **Generator**: `0`
+> **GENERATOR**: `0`
 
 #### Source
 
@@ -18,9 +18,9 @@ core/inputNode.d.ts:4
 
 ***
 
-### MergeSourcesWithCallback
+### MERGE\_SOURCES\_WITH\_CALLBACK
 
-> **MergeSourcesWithCallback**: `4`
+> **MERGE\_SOURCES\_WITH\_CALLBACK**: `4`
 
 #### Source
 
@@ -28,9 +28,9 @@ core/inputNode.d.ts:8
 
 ***
 
-### Required
+### REQUIRED
 
-> **Required**: `1`
+> **REQUIRED**: `1`
 
 #### Source
 
@@ -38,9 +38,9 @@ core/inputNode.d.ts:5
 
 ***
 
-### Source
+### SOURCE
 
-> **Source**: `2`
+> **SOURCE**: `2`
 
 #### Source
 
@@ -48,9 +48,9 @@ core/inputNode.d.ts:6
 
 ***
 
-### SourceWithCallback
+### SOURCE\_WITH\_CALLBACK
 
-> **SourceWithCallback**: `3`
+> **SOURCE\_WITH\_CALLBACK**: `3`
 
 #### Source
 

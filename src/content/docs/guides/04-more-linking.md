@@ -17,10 +17,11 @@ Sometimes, you might want to apply transformations to data before it is received
 
 Pass the callback (`createGreeting` in this snippet) as the third argument when using `link` with the `set` method.
 
-```typescript {4}
+```typescript {5}
 const createGreeting = (username: string) => `Hi, ${username} here!`;
 
 sendMessage.set(({ body: { msg } }) => {
+  // link(InputNode, SourceNode, callback)
   link(msg, createUser.resp.body.name, createGreeting);
 });
 ```
@@ -29,8 +30,9 @@ sendMessage.set(({ body: { msg } }) => {
 
 Alternatively, the `link` function has an overload allowing you to use it directly at the point of creation with a callback of an input node like below:
 
-```typescript {2}
+```typescript {3}
 const sendMessage = origin.post('/message').body({
+  // link(SourceNode, callback)
   msg: link(createUser.resp.body.name, createGreeting),
 });
 ```
@@ -41,14 +43,14 @@ Should an input node need to take values from multiple sources at the same time,
 
 ### Array of Source Nodes
 
-```typescript
+```typescript {7-9}
 // note the callback has an array parameter
 const mergeValues = ([name, favAnimal]: [string, string]) =>
   `${name} likes ${favAnimal}.`;
 
 const createMessage = origin.post('message').body({
+  // linkMerge(Array<SourceNode>, callback)
   msg: linkMerge(
-    // array of source nodes
     [getUser.resp.body.name, getFavAnimal.resp.body.favAnimal],
     mergeValues,
   );
@@ -63,7 +65,7 @@ In this first snippet, we pass an array of source nodes to `linkMerge` followed 
 
 Instead of using an array, you can define an object with named keys and source nodes as the values:
 
-```typescript
+```typescript {13-18}
 // note the callback has an object parameter
 const mergeValues = ({
   userName,
@@ -75,8 +77,8 @@ const mergeValues = ({
 
 
 const createMessage = origin.post('message').body({
+  // linkMerge(Record<string, SourceNode>, callback)
   msg: linkMerge(
-    // object of source nodes
     {
       userName: getUser.resp.body.name,
       favAnimal: getFavAnimal.resp.body.favAnimal,
@@ -92,10 +94,11 @@ Note that the callback used should have its parameter adjusted accordingly, like
 
 You can also use `linkMerge` with `set`:
 
-```typescript
+```typescript {3-6}
 createMessage.set(({ body: { msg } }) => {
+  // linkMerge(InputNode, Array<SourceNode>, callback)
   linkMerge(
-    msg, // the input node
+    msg,
     [getUser.resp.body.name, getFavAnimal.resp.body.favAnimal],
     mergeValues,
   );
@@ -104,10 +107,11 @@ createMessage.set(({ body: { msg } }) => {
 
 ### Object with Source Nodes + `set`
 
-```typescript
+```typescript {3-9}
 createMessage.set(({ body: { msg } }) => {
+  // linkMerge(InputNode, Record<string, SourceNode>, callback)
   linkMerge(
-    msg, // the input node
+    msg,
     {
       userName: getUser.resp.body.name,
       favAnimal: getFavAnimal.resp.body.favAnimal,
@@ -116,3 +120,5 @@ createMessage.set(({ body: { msg } }) => {
   );
 });
 ```
+
+The above snippets show 4 different overloads for the `linkMerge` function that you can use flexibly depending on how many links an input node needs and how you'd prefer to structure the source data and your callbacks.

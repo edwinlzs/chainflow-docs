@@ -18,8 +18,8 @@ dependencies:
     specifier: ^4.2.1
     version: 4.3.5(sass@1.70.0)(typescript@5.3.3)
   chainflow:
-    specifier: ^0.1.2
-    version: 0.1.2
+    specifier: ^0.1.4
+    version: 0.1.4
   sharp:
     specifier: ^0.32.5
     version: 0.32.6
@@ -1438,8 +1438,8 @@ packages:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
     dev: false
 
-  /chainflow@0.1.2:
-    resolution: {integrity: sha512-EG/6CRYmr5vVbrdI6h2vAdCCk2ogP/aEhZmUoRl70sUotP/0QkP+LD75t+8ftEU+rXIqdwrMBIUa7Ps8FOfPDg==}
+  /chainflow@0.1.4:
+    resolution: {integrity: sha512-La0mCvfpVkAyAyVFlPXjhdlyG+oDB8Xfl61ecovQH+vituDCCC6WztjnxDQjl5fwdUxDou4eQMkaEDbny5rH0Q==}
     dependencies:
       '@fastify/deepmerge': 1.3.0
       debug: 4.3.4

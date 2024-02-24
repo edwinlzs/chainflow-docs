@@ -35,7 +35,7 @@ as well as calls to that endpoint
 
 #### Source
 
-http/endpoint.d.ts:41
+http/endpoint.d.ts:44
 
 ## Properties
 
@@ -51,7 +51,7 @@ A hash that uniquely identifies this endpoint.
 
 #### Source
 
-http/endpoint.d.ts:40
+http/endpoint.d.ts:43
 
 ## Accessors
 
@@ -65,7 +65,7 @@ http/endpoint.d.ts:40
 
 #### Source
 
-http/endpoint.d.ts:46
+http/endpoint.d.ts:49
 
 ***
 
@@ -79,7 +79,7 @@ http/endpoint.d.ts:46
 
 #### Source
 
-http/endpoint.d.ts:51
+http/endpoint.d.ts:54
 
 ## Methods
 
@@ -99,7 +99,7 @@ Sets headers provided by the originServer object.
 
 #### Source
 
-http/endpoint.d.ts:57
+http/endpoint.d.ts:60
 
 ***
 
@@ -119,7 +119,7 @@ Sets the request body.
 
 #### Source
 
-http/endpoint.d.ts:50
+http/endpoint.d.ts:53
 
 ***
 
@@ -145,7 +145,7 @@ Calls this endpoint with responses provided from earlier requests in the chain.
 
 #### Source
 
-http/endpoint.d.ts:61
+http/endpoint.d.ts:64
 
 ***
 
@@ -165,7 +165,7 @@ Configures this endpoint.
 
 #### Source
 
-http/endpoint.d.ts:48
+http/endpoint.d.ts:51
 
 ***
 
@@ -185,7 +185,7 @@ Sets custom headers for requests.
 
 #### Source
 
-http/endpoint.d.ts:55
+http/endpoint.d.ts:58
 
 ***
 
@@ -205,7 +205,7 @@ Sets the request query parameters.
 
 #### Source
 
-http/endpoint.d.ts:53
+http/endpoint.d.ts:56
 
 ***
 
@@ -225,7 +225,7 @@ Passes the request input nodes of this endpoint to a callback.
 
 #### Source
 
-http/endpoint.d.ts:63
+http/endpoint.d.ts:66
 
 ***
 
@@ -245,7 +245,7 @@ Declare values to store from responses to this endpoint.
 
 #### Source
 
-http/endpoint.d.ts:59
+http/endpoint.d.ts:62
 
 ***
 
