@@ -8,7 +8,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ## linkMerge(sources, callback)
 
-> **linkMerge**(`sources`, `callback`?): `MergeSourcesInfo`
+> **linkMerge**(`sources`, `callback`?): [`MergeSourcesInfo`](/api/interfaces/mergesourcesinfo/)
 
 Links multiple Source nodes to an Input node via a callback.
 
@@ -24,7 +24,7 @@ a function to merge the sources into a single source for the dest.
 
 ### Returns
 
-`MergeSourcesInfo`
+[`MergeSourcesInfo`](/api/interfaces/mergesourcesinfo/)
 
 ### Source
 

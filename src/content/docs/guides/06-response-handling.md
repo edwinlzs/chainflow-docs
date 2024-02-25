@@ -52,4 +52,27 @@ Your custom validator should have the return type:
 
 ## `config` utility for `SourceNode`
 
-> TODO: allow undefined
+By default, a source node's value is considered unavailable if it is `undefined` or the path to its value does not exist. When this happens, the linked input node will _not_ take that source node's value.
+
+```typescript {1} {12} {15}
+import { config } from 'chainflow';
+
+const getUser = origin.get("/user").query({
+  name: "Tom",
+});
+
+const addRole = origin.post("/role").body({
+  userId: "some-default-id",
+  role: "ENGINEER",
+});
+
+const getUserId = config(getUser.resp.body.id, { allowUndefined: true });
+
+addRole.set(({ body: { userId } }) => {
+  link(userId, getUserId);
+});
+
+chainflow().call(getUser).call(addRole).run();
+```
+
+Above, if the response to `getUser` does not have a value at `body.id`, the `userId` input node on `addRole` would _normally_ ignore the link with the `getUser.resp.body.id` source node and use the default value of `'some-default-id'`. However, since we have configured the source node with the `config` utility and specified `allowUndefined` as `true`, `addRole` will use the value `undefined` for `userId` instead.

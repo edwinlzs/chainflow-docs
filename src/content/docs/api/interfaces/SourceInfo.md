@@ -2,7 +2,7 @@
 editUrl: false
 next: false
 prev: false
-title: "INodeWithValue"
+title: "SourceInfo"
 layout: "/src/layouts/DocsLayout.astro"
 ---
 
@@ -14,7 +14,27 @@ layout: "/src/layouts/DocsLayout.astro"
 
 #### Source
 
-http/endpoint.d.ts:10
+core/utils/link.d.ts:5
+
+***
+
+### callback
+
+> **callback**: `undefined` \| (`val`) => `any`
+
+#### Source
+
+core/utils/link.d.ts:7
+
+***
+
+### source
+
+> **source**: `SourceNode`
+
+#### Source
+
+core/utils/link.d.ts:6
 
 ***
 

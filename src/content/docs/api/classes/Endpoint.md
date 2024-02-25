@@ -35,7 +35,7 @@ as well as calls to that endpoint
 
 #### Source
 
-http/endpoint.d.ts:44
+http/endpoint.d.ts:45
 
 ## Properties
 
@@ -51,7 +51,7 @@ A hash that uniquely identifies this endpoint.
 
 #### Source
 
-http/endpoint.d.ts:43
+http/endpoint.d.ts:44
 
 ## Accessors
 
@@ -65,7 +65,7 @@ http/endpoint.d.ts:43
 
 #### Source
 
-http/endpoint.d.ts:49
+http/endpoint.d.ts:50
 
 ***
 
@@ -79,7 +79,7 @@ http/endpoint.d.ts:49
 
 #### Source
 
-http/endpoint.d.ts:54
+http/endpoint.d.ts:55
 
 ## Methods
 
@@ -99,7 +99,7 @@ Sets headers provided by the originServer object.
 
 #### Source
 
-http/endpoint.d.ts:60
+http/endpoint.d.ts:63
 
 ***
 
@@ -119,7 +119,7 @@ Sets the request body.
 
 #### Source
 
-http/endpoint.d.ts:53
+http/endpoint.d.ts:54
 
 ***
 
@@ -145,7 +145,7 @@ Calls this endpoint with responses provided from earlier requests in the chain.
 
 #### Source
 
-http/endpoint.d.ts:64
+http/endpoint.d.ts:67
 
 ***
 
@@ -165,7 +165,7 @@ Configures this endpoint.
 
 #### Source
 
-http/endpoint.d.ts:51
+http/endpoint.d.ts:52
 
 ***
 
@@ -185,7 +185,27 @@ Sets custom headers for requests.
 
 #### Source
 
-http/endpoint.d.ts:58
+http/endpoint.d.ts:59
+
+***
+
+### pathParams()
+
+> **pathParams**(`params`): `this`
+
+Sets the path params (if they exist in the URL).
+
+#### Parameters
+
+• **params**: `Record`\<`string`, `string` \| `SourceNode` \| [`SourceInfo`](/api/interfaces/sourceinfo/) \| [`MergeSourcesInfo`](/api/interfaces/mergesourcesinfo/)\>
+
+#### Returns
+
+`this`
+
+#### Source
+
+http/endpoint.d.ts:61
 
 ***
 
@@ -205,7 +225,7 @@ Sets the request query parameters.
 
 #### Source
 
-http/endpoint.d.ts:56
+http/endpoint.d.ts:57
 
 ***
 
@@ -225,7 +245,7 @@ Passes the request input nodes of this endpoint to a callback.
 
 #### Source
 
-http/endpoint.d.ts:66
+http/endpoint.d.ts:69
 
 ***
 
@@ -245,7 +265,7 @@ Declare values to store from responses to this endpoint.
 
 #### Source
 
-http/endpoint.d.ts:62
+http/endpoint.d.ts:65
 
 ***
 

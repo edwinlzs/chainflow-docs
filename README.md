@@ -8,7 +8,7 @@ Checklist
 - [x] path params
 - [x] query
 - [x] headers (endpoint)
-- [ ] headers (originServer)
+- [x] headers (originServer)
 - [x] default values
 - [x] required
 - [x] gen
@@ -18,13 +18,13 @@ Checklist
 - [x] linkMerge
 - [x] Call Options
 - [x] seed
-- [ ] config
-  - [ ] allowUndefined
+- [x] config
+  - [x] allowUndefined
 - [x] clone
 - [x] extend
 - [x] continuesFrom
-- [ ] endpoint.config
-  - [ ] respValidator
-  - [ ] respParser
-- [ ] store
+- [x] endpoint.config
+  - [x] respValidator
+  - [x] respParser
+- [x] store
 - [ ] logging

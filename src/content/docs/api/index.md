@@ -26,6 +26,8 @@ layout: "/src/layouts/DocsLayout.astro"
 - [HttpInputNodes](/api/interfaces/httpinputnodes/)
 - [IEndpoint](/api/interfaces/iendpoint/)
 - [INodeWithValue](/api/interfaces/inodewithvalue/)
+- [MergeSourcesInfo](/api/interfaces/mergesourcesinfo/)
+- [SourceInfo](/api/interfaces/sourceinfo/)
 
 ## Type Aliases
 

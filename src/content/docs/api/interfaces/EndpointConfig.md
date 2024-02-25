@@ -16,7 +16,7 @@ Configurations for the endpoint.
 
 #### Source
 
-http/endpoint.d.ts:20
+http/endpoint.d.ts:21
 
 ***
 
@@ -43,7 +43,7 @@ http/endpoint.d.ts:20
 
 #### Source
 
-http/endpoint.d.ts:21
+http/endpoint.d.ts:22
 
 ***
 

@@ -8,7 +8,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ## link(source, callback)
 
-> **link**(`source`, `callback`?): `SourceInfo`
+> **link**(`source`, `callback`?): [`SourceInfo`](/api/interfaces/sourceinfo/)
 
 Link a Source node to an Input node.
 
@@ -24,7 +24,7 @@ an optional function that is called on the source source value.
 
 ### Returns
 
-`SourceInfo`
+[`SourceInfo`](/api/interfaces/sourceinfo/)
 
 ### Source
 

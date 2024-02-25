@@ -16,7 +16,7 @@ Formats to parse the response body.
 
 #### Source
 
-http/endpoint.d.ts:31
+http/endpoint.d.ts:32
 
 ***
 
@@ -26,7 +26,7 @@ http/endpoint.d.ts:31
 
 #### Source
 
-http/endpoint.d.ts:32
+http/endpoint.d.ts:33
 
 ***
 
@@ -36,7 +36,7 @@ http/endpoint.d.ts:32
 
 #### Source
 
-http/endpoint.d.ts:33
+http/endpoint.d.ts:34
 
 ***
 
@@ -46,7 +46,7 @@ http/endpoint.d.ts:33
 
 #### Source
 
-http/endpoint.d.ts:34
+http/endpoint.d.ts:35
 
 ***
 
