@@ -82,7 +82,7 @@ core/inputNode.d.ts:21
 
 > **[setSources]**(`sources`, `callback`?): `void`
 
-Sets multiple source nodes to be combined into a single value for this input node
+Sets multiple source nodes to be merged into a single value for this input node
 
 #### Parameters
 

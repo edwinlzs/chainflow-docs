@@ -8,6 +8,10 @@ layout: "/src/layouts/DocsLayout.astro"
 
 Defines an endpoint that a chainflow can call upon.
 
+## Type parameters
+
+• **T**
+
 ## Properties
 
 ### call
@@ -18,7 +22,7 @@ Defines an endpoint that a chainflow can call upon.
 
 • **sources**: [`SourceValues`](/api/type-aliases/sourcevalues/)
 
-• **opts?**: [`CallOpts`](/api/interfaces/callopts/)
+• **opts?**: `T`
 
 #### Returns
 

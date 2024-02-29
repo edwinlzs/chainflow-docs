@@ -18,9 +18,9 @@ core/chainflow.d.ts:4
 
 ***
 
-### store
+### store?
 
-> **store**: `IStore`\<`unknown`\>
+> **store**?: `IStore`\<`unknown`\>
 
 #### Source
 

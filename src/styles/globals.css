@@ -6,14 +6,7 @@ html {
 
 /* Removing default styles */
 
-a.nostyle:link {
-  text-decoration: inherit;
-  color: inherit;
-  background-color: inherit;
-  cursor: pointer;
-}
-
-a.nostyle:visited {
+a.nostyle:link, a.nostyle:visited {
   text-decoration: inherit;
   color: inherit;
   background-color: inherit;
@@ -40,12 +33,7 @@ body {
   font-family: Lato, "Sora", system-ui, sans-serif;
 }
 
-.site-title {
-  font-family: "Sora", "Lato", system-ui, sans-serif;
-  font-weight: 300;
-}
-
-#_top {
+.site-title, #_top {
   font-family: "Sora", "Lato", system-ui, sans-serif;
   font-weight: 300;
 }

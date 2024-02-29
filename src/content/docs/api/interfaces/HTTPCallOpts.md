@@ -2,15 +2,11 @@
 editUrl: false
 next: false
 prev: false
-title: "CallOpts"
+title: "HTTPCallOpts"
 layout: "/src/layouts/DocsLayout.astro"
 ---
 
 Options for configuring an endpoint call.
-
-## Todo
-
-to decouple from chainflow in future versions.
 
 ## Properties
 
@@ -20,7 +16,7 @@ to decouple from chainflow in future versions.
 
 #### Source
 
-core/chainflow.d.ts:18
+http/endpoint.d.ts:42
 
 ***
 
@@ -30,7 +26,7 @@ core/chainflow.d.ts:18
 
 #### Source
 
-core/chainflow.d.ts:15
+http/endpoint.d.ts:39
 
 ***
 
@@ -40,7 +36,7 @@ core/chainflow.d.ts:15
 
 #### Source
 
-core/chainflow.d.ts:17
+http/endpoint.d.ts:41
 
 ***
 
@@ -50,7 +46,7 @@ core/chainflow.d.ts:17
 
 #### Source
 
-core/chainflow.d.ts:16
+http/endpoint.d.ts:40
 
 ***
 

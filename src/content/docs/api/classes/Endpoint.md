@@ -11,7 +11,7 @@ as well as calls to that endpoint
 
 ## Implements
 
-- [`IEndpoint`](/api/interfaces/iendpoint/)
+- [`IEndpoint`](/api/interfaces/iendpoint/)\<[`HTTPCallOpts`](/api/interfaces/httpcallopts/)\>
 
 ## Constructors
 
@@ -35,7 +35,7 @@ as well as calls to that endpoint
 
 #### Source
 
-http/endpoint.d.ts:45
+http/endpoint.d.ts:52
 
 ## Properties
 
@@ -51,7 +51,7 @@ A hash that uniquely identifies this endpoint.
 
 #### Source
 
-http/endpoint.d.ts:44
+http/endpoint.d.ts:51
 
 ## Accessors
 
@@ -65,7 +65,7 @@ http/endpoint.d.ts:44
 
 #### Source
 
-http/endpoint.d.ts:50
+http/endpoint.d.ts:57
 
 ***
 
@@ -79,7 +79,7 @@ http/endpoint.d.ts:50
 
 #### Source
 
-http/endpoint.d.ts:55
+http/endpoint.d.ts:62
 
 ## Methods
 
@@ -99,7 +99,7 @@ Sets headers provided by the originServer object.
 
 #### Source
 
-http/endpoint.d.ts:63
+http/endpoint.d.ts:70
 
 ***
 
@@ -119,7 +119,7 @@ Sets the request body.
 
 #### Source
 
-http/endpoint.d.ts:54
+http/endpoint.d.ts:61
 
 ***
 
@@ -133,7 +133,7 @@ Calls this endpoint with responses provided from earlier requests in the chain.
 
 • **responses**: [`SourceValues`](/api/type-aliases/sourcevalues/)
 
-• **opts?**: [`CallOpts`](/api/interfaces/callopts/)
+• **opts?**: [`HTTPCallOpts`](/api/interfaces/httpcallopts/)
 
 #### Returns
 
@@ -145,7 +145,7 @@ Calls this endpoint with responses provided from earlier requests in the chain.
 
 #### Source
 
-http/endpoint.d.ts:67
+http/endpoint.d.ts:74
 
 ***
 
@@ -165,7 +165,7 @@ Configures this endpoint.
 
 #### Source
 
-http/endpoint.d.ts:52
+http/endpoint.d.ts:59
 
 ***
 
@@ -185,7 +185,7 @@ Sets custom headers for requests.
 
 #### Source
 
-http/endpoint.d.ts:59
+http/endpoint.d.ts:66
 
 ***
 
@@ -205,7 +205,7 @@ Sets the path params (if they exist in the URL).
 
 #### Source
 
-http/endpoint.d.ts:61
+http/endpoint.d.ts:68
 
 ***
 
@@ -225,7 +225,7 @@ Sets the request query parameters.
 
 #### Source
 
-http/endpoint.d.ts:57
+http/endpoint.d.ts:64
 
 ***
 
@@ -245,7 +245,7 @@ Passes the request input nodes of this endpoint to a callback.
 
 #### Source
 
-http/endpoint.d.ts:69
+http/endpoint.d.ts:76
 
 ***
 
@@ -265,7 +265,7 @@ Declare values to store from responses to this endpoint.
 
 #### Source
 
-http/endpoint.d.ts:65
+http/endpoint.d.ts:72
 
 ***
 

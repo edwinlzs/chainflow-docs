@@ -1,47 +1,58 @@
 /* Dark mode colors. */
 :root {
-	--sl-color-accent-low: #1a1a1b;
-	--sl-color-accent: #ecb365;
-	--sl-color-accent-high: #F6B17A;
-	--sl-color-white: #f4eeee;
-	--sl-color-gray-1: #eceef2;
-	--sl-color-gray-2: #c0c2c7;
-	--sl-color-gray-3: #888b96;
-	--sl-color-gray-4: #545861;
-	--sl-color-gray-5: #323232;
-	--sl-color-gray-6: #272121;
-	--sl-color-black: #1a1a1b;
-    /* --sl-font-mono: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, */
+  --sl-color-accent-low: #1a1a1b;
+  --sl-color-accent: #ecb365;
+  --sl-color-accent-high: #f6b17a;
+  --sl-color-white: #f4eeee;
+  --sl-color-gray-1: #eceef2;
+  --sl-color-gray-2: #c0c2c7;
+  --sl-color-gray-3: #888b96;
+  --sl-color-gray-4: #545861;
+  --sl-color-gray-5: #323232;
+  --sl-color-gray-6: #272121;
+  --sl-color-black: #1a1a1b;
+  /* --sl-font-mono: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, */
 }
 /* Light mode colors. */
-:root[data-theme='light'] {
-	--sl-color-accent-low: #c7d6ff;
-	--sl-color-accent: #364bff;
-	--sl-color-accent-high: #182775;
-	--sl-color-white: #17181c;
-	--sl-color-gray-1: #24272f;
-	--sl-color-gray-2: #353841;
-	--sl-color-gray-3: #545861;
-	--sl-color-gray-4: #888b96;
-	--sl-color-gray-5: #c0c2c7;
-	--sl-color-gray-6: #eceef2;
-	--sl-color-gray-7: #f5f6f8;
-	--sl-color-black: #ffffff;
+:root[data-theme="light"] {
+  --sl-color-accent-low: #c7d6ff;
+  --sl-color-accent: #364bff;
+  --sl-color-accent-high: #182775;
+  --sl-color-white: #17181c;
+  --sl-color-gray-1: #24272f;
+  --sl-color-gray-2: #353841;
+  --sl-color-gray-3: #545861;
+  --sl-color-gray-4: #888b96;
+  --sl-color-gray-5: #c0c2c7;
+  --sl-color-gray-6: #eceef2;
+  --sl-color-gray-7: #f5f6f8;
+  --sl-color-black: #ffffff;
 }
 
 /* code {
     color: #ed6363;
 } */
 
-.site-title, svg {
-    color: var(--sl-color-gray-1);
+.site-title,
+svg {
+  color: var(--sl-color-gray-1);
 }
 
 .sidebar-content .large {
-    font-family: 'Sora';
-    font-weight: 400;
+  font-family: "Sora";
+  font-weight: 400;
 }
 
 details > summary > .group-label > .large {
-    color: var(--sl-color-accent);
+  color: var(--sl-color-accent);
+}
+
+:is(starlight-menu-button, starlight-menu-button[aria-expanded="true"])
+  > button {
+  background-color: var(--sl-color-gray-5);
+}
+
+.social-icons > * > svg {
+	width: 1.45em;
+	height: 1.45em;
 }

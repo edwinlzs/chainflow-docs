@@ -20,9 +20,9 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ## Interfaces
 
-- [CallOpts](/api/interfaces/callopts/)
 - [CallResult](/api/interfaces/callresult/)
 - [EndpointConfig](/api/interfaces/endpointconfig/)
+- [HTTPCallOpts](/api/interfaces/httpcallopts/)
 - [HttpInputNodes](/api/interfaces/httpinputnodes/)
 - [IEndpoint](/api/interfaces/iendpoint/)
 - [INodeWithValue](/api/interfaces/inodewithvalue/)

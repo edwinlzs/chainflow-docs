@@ -3,15 +3,20 @@ title: 🌊hainflow
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Enhance your data setup and backend testing with flexible API call workflows.
+  tagline: Create composable workflows of API calls to enhance your development, backend testing and data setup tasks.
   actions:
     - text: Get Started
       link: guides/get-started/
       variant: primary
+    - text: 'GitHub'
+      icon: github
+      link: https://github.com/edwinlzs/chainflow
 ---
 
 import { CardGrid, Card } from "@astrojs/starlight/components";
 import Footer from "~/components/Footer.astro";
+import EarlyStateBanner from "~/components/EarlyStateBanner.astro";
+import Introduction from "~/components/Introduction.astro";
 
 <CardGrid stagger>
   <Card title="Empower your development" icon="rocket">
@@ -25,10 +30,15 @@ import Footer from "~/components/Footer.astro";
   </Card>
   <Card title="Simulate your frontend" icon="laptop">
     Run UI-agnostic end-to-end API tests - treat an API call workflow as if it
-    were a frontend calling your server for.
+    were a frontend calling your server.
   </Card>
 </CardGrid>
 
-{/* TODO: Graphics, Future Features */}
+<Card>
+  <img src="src/assets/chainflow.svg" />
+</Card>
 
+<br />
+<EarlyStateBanner />
+<Introduction />
 <Footer />
