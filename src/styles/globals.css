@@ -6,7 +6,8 @@ html {
 
 /* Removing default styles */
 
-a.nostyle:link, a.nostyle:visited {
+a.nostyle:link,
+a.nostyle:visited {
   text-decoration: inherit;
   color: inherit;
   background-color: inherit;
@@ -33,7 +34,43 @@ body {
   font-family: Lato, "Sora", system-ui, sans-serif;
 }
 
-.site-title, #_top {
+.site-title,
+#_top {
   font-family: "Sora", "Lato", system-ui, sans-serif;
   font-weight: 300;
+}
+
+.hero {
+  /* height: 100vh; */
+  align-items: start;
+}
+
+.site-title,
+svg {
+  color: var(--sl-color-gray-1);
+}
+
+.sidebar-content .large {
+  font-family: "Sora";
+  font-weight: 400;
+}
+
+details > summary > .group-label > .large {
+  color: var(--sl-color-accent);
+}
+
+:is(starlight-menu-button, starlight-menu-button[aria-expanded="true"])
+  > button {
+  background-color: var(--sl-color-gray-5);
+}
+
+.social-icons > * > svg {
+  width: 1.45em;
+  height: 1.45em;
+}
+
+/* Fix bug with margin top when using custom
+expressive code configuration in starlight */
+.expressive-code .ec-line {
+  margin-top: 0;
 }

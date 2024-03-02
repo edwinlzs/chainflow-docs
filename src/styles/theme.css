@@ -32,32 +32,3 @@
 /* code {
     color: #ed6363;
 } */
-
-.site-title,
-svg {
-  color: var(--sl-color-gray-1);
-}
-
-.sidebar-content .large {
-  font-family: "Sora";
-  font-weight: 400;
-}
-
-details > summary > .group-label > .large {
-  color: var(--sl-color-accent);
-}
-
-:is(starlight-menu-button, starlight-menu-button[aria-expanded="true"])
-  > button {
-  background-color: var(--sl-color-gray-5);
-}
-
-.social-icons > * > svg {
-	width: 1.45em;
-	height: 1.45em;
-}
-
-.hero {
-  /* height: 100vh; */
-  align-items: start;
-}
