@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import starlightTypeDoc, { typeDocSidebarGroup } from "starlight-typedoc";
 import chainflowFrontmatter from "./src/plugins/ChainflowFrontmatter";
-import ecConfig from "./ec.config.mjs";
+// import ecConfig from "./ec.config.mjs";
 
 export default defineConfig({
   integrations: [
