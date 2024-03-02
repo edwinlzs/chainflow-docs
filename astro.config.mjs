@@ -2,6 +2,7 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import starlightTypeDoc, { typeDocSidebarGroup } from "starlight-typedoc";
 import chainflowFrontmatter from "./src/plugins/ChainflowFrontmatter";
+import expressiveCode from "astro-expressive-code"; 
 
 export default defineConfig({
   integrations: [
@@ -11,20 +12,6 @@ export default defineConfig({
         "Lightweight and flexible API workflow library for TypeScript.",
       social: {
         github: "https://github.com/edwinlzs/chainflow",
-      },
-      expressiveCode: {
-        themes: ["dark-plus"],
-        // plugins: [pluginCollapsibleSections()],
-        styleOverrides: {
-          collapsibleSections: {
-            closedBackgroundColor: "#FFFFFF12",
-            closedTextColor: "#FFFFFF55",
-          },
-          textMarkers: {
-            markBackground: "#FFFFFF17",
-            markBorderColor: "#FFFFFF40",
-          },
-        },
       },
       sidebar: [
         {
@@ -68,5 +55,6 @@ export default defineConfig({
         }),
       ],
     }),
+    expressiveCode(),
   ],
 });
