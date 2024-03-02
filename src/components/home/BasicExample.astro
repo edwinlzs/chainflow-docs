@@ -1,0 +1,32 @@
+---
+import { Image } from "astro:assets";
+import chainflowExample from "~/assets/Chainflow.svg";
+---
+
+<div class="container">
+  <h4 class="title">Visualization of a Chainflow</h4>
+  <Image
+    src={chainflowExample}
+    alt="Basic Example of a Links"
+    class="example"
+  />
+</div>
+
+<style>
+  .title {
+    font-family: "Sora", "Lato";
+    margin-bottom: 1em;
+  }
+
+  .example {
+    min-width: 70%;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+</style>

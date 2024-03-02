@@ -56,3 +56,8 @@ details > summary > .group-label > .large {
 	width: 1.45em;
 	height: 1.45em;
 }
+
+.hero {
+  /* height: 100vh; */
+  align-items: start;
+}

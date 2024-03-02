@@ -28,12 +28,6 @@ export const getUser = origin.get('/user').query({
   age: createUser.resp.body.details.age,
 });
 
-// Role
-export const createRole = origin.post('/role').body({
-  user_id: createUser.resp.body.id,
-  type: 'role-type',
-});
-
 // Project
 export const createProject = origin.post('/project').body({
   creator_id: createUser.resp.body.id,
@@ -62,7 +56,6 @@ getSubmission.set(({ pathParams: { submissionId } }) => {
 import { chainflow } from 'chainflow';
 import {
   createProject,
-  createRole,
   createSubmission,
   createUser,
   getSubmission,
@@ -73,7 +66,6 @@ import {
 const flow = chainflow()
   .call(createUser)
   .call(getUser)
-  .call(createRole)
   .call(createProject)
   .call(createSubmission)
   .call(getSubmission);
