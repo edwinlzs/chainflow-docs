@@ -11,15 +11,12 @@ sidebar:
 
 A chainflow is where you define and run a series of endpoint calls.
 
-Create a new chainflow with the `chainflow` function. Add endpoint calls to a chainflow by passing in endpoints to the `call` method (note that this does _not_ make the actual endpoint request yet, it only adds the endpoint call to the chainflow's queue). Finally, the `run` method will *actually* execute the series of endpoint calls in the order you defined.
+Create a new chainflow with the `chainflow` function. Add endpoint calls to a chainflow by passing in endpoints to the `call` method (note that this does _not_ make the actual endpoint request yet, it only adds the endpoint call to the chainflow's queue). Finally, the `run` method will _actually_ execute the series of endpoint calls in the order you defined.
 
 ```typescript
-import { chainflow } from 'chainflow';
+import { chainflow } from "chainflow";
 
-chainflow()
-  .call(createUser)
-  .call(addRole)
-  .run();
+chainflow().call(createUser).call(addRole).run();
 ```
 
 Here, we instruct the chainflow to call `createUser` first, then call `addRole`, and run the flow once.
@@ -33,9 +30,9 @@ This is how linked values are passed from a source node to an input node.
 Outputs from an endpoint are not the only type of source node. Each chainflow can have a `seed` which is another special source node that you can link to an input node.
 
 ```typescript {5}
-import { seed } from 'chainflow';
+import { seed } from "chainflow";
 
-const addRole = origin.post('/role').body({
+const addRole = origin.post("/role").body({
   userId: createUser.resp.body.id,
   role: seed.role,
 });
@@ -50,7 +47,7 @@ chainflow()
   .call(createUser)
   .call(addRole)
   .seed({
-    role: 'admin'
+    role: "admin",
   })
   .run();
 ```
@@ -62,16 +59,53 @@ In this snippet, we call the `seed` method on a chainflow and pass in a value of
 You can directly declare input values for an endpoint on a chainflow by passing a second argument to the `call` method.
 
 ```typescript
-const createUser = origin.post('/user').body({
-  name: 'Tom',
+const createUser = origin.post("/user").body({
+  name: "Tom",
 });
 
 chainflow()
-  .call(createUser, { body: { name: 'Harry' } })
+  .call(createUser, { body: { name: "Harry" } })
   .run();
 ```
 
 Values passed this way have the highest priority and will override any defaults (in this case `Tom`) or linked values for affected input node.
+
+## Viewing Responses
+
+After running a chainflow, you can access the collected responses via the `responses` property on that chainflow.
+
+```typescript
+const flow = chainflow().call(getUser).call(addRole).run();
+
+const responses = flow.responses;
+```
+
+The responses will look something like:
+
+```typescript
+[
+  {
+    details: '[GET] /user' // identifies the endpoint called
+    val: { // the response to getUser
+      statusCode: 200, // HTTP status code
+      body: ...,
+      headers: ...,
+      ...
+    }
+  },
+  {
+    details: '[POST] /roles'
+    val: { // the response to addRole
+      statusCode: 200,
+      body: ...,
+      headers: ...,
+      ...
+    }
+  }
+]
+```
+
+Responses in the array follow the order in which the respective endpoints are called.
 
 ## Composability
 
@@ -122,21 +156,22 @@ In the snippet above, we used `extend` to add on to the chainflows we made earli
 After a run, each chainflow temporarily retains the responses accumulated from calling endpoints until its next run. Another chainflow can use the `continuesFrom` method to copy those accumulated responses into itself before making its own run.
 
 ```typescript collapse={1-9} {20}
-const login = origin.post('/user').body({
-  username: 'admin',
+const login = origin.post("/user").body({
+  username: "admin",
 });
 
-const createGroup = origin.post('/group').headers({
-  Authorization: login.resp.body.authToken,
-}).body({
-  groupName: seed.groupName,
-})
+const createGroup = origin
+  .post("/group")
+  .headers({
+    Authorization: login.resp.body.authToken,
+  })
+  .body({
+    groupName: seed.groupName,
+  });
 
 // loggedInFlow now holds a response from the login call
 // containing the user's auth token
-const loggedInFlow = chainflow()
-  .call(login)
-  .run();
+const loggedInFlow = chainflow().call(login).run();
 
 // createGroupFlow will copy the response that
 // loggedInFlow received and use the auth token in its own calls
@@ -144,7 +179,7 @@ const createGroupFlow = chainflow()
   .continuesFrom(loggedInFlow)
   .call(createGroup);
 
-const groupNames = ['RapGPT', 'Averageexpedition', 'Shaky Osmosis'];
+const groupNames = ["RapGPT", "Averageexpedition", "Shaky Osmosis"];
 for (const groupName in groupNames) {
   createGroupFlow.seed({ groupName }).run();
 }

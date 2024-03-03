@@ -35,25 +35,43 @@ as well as calls to that endpoint
 
 #### Source
 
-http/endpoint.d.ts:52
+http/endpoint.d.ts:51
 
 ## Properties
 
-### hash
+### id
 
-> **hash**: `string`
+> **id**: `string`
 
-A hash that uniquely identifies this endpoint.
+A value that uniquely identifies this endpoint.
 
 #### Implementation of
 
-[`IEndpoint.hash`](/api/interfaces/iendpoint/#hash)
+[`IEndpoint.id`](/api/interfaces/iendpoint/#id)
 
 #### Source
 
-http/endpoint.d.ts:51
+http/endpoint.d.ts:50
 
 ## Accessors
+
+### details
+
+> **`get`** **details**(): `string`
+
+#### Todo
+
+Update this when there is a better implementation of id.
+
+#### Returns
+
+`string`
+
+#### Source
+
+http/endpoint.d.ts:58
+
+***
 
 ### method
 
@@ -65,7 +83,7 @@ http/endpoint.d.ts:51
 
 #### Source
 
-http/endpoint.d.ts:57
+http/endpoint.d.ts:56
 
 ***
 
@@ -79,7 +97,7 @@ http/endpoint.d.ts:57
 
 #### Source
 
-http/endpoint.d.ts:62
+http/endpoint.d.ts:63
 
 ## Methods
 
@@ -99,7 +117,7 @@ Sets headers provided by the originServer object.
 
 #### Source
 
-http/endpoint.d.ts:70
+http/endpoint.d.ts:71
 
 ***
 
@@ -119,7 +137,7 @@ Sets the request body.
 
 #### Source
 
-http/endpoint.d.ts:61
+http/endpoint.d.ts:62
 
 ***
 
@@ -145,7 +163,7 @@ Calls this endpoint with responses provided from earlier requests in the chain.
 
 #### Source
 
-http/endpoint.d.ts:74
+http/endpoint.d.ts:75
 
 ***
 
@@ -165,7 +183,7 @@ Configures this endpoint.
 
 #### Source
 
-http/endpoint.d.ts:59
+http/endpoint.d.ts:60
 
 ***
 
@@ -185,7 +203,7 @@ Sets custom headers for requests.
 
 #### Source
 
-http/endpoint.d.ts:66
+http/endpoint.d.ts:67
 
 ***
 
@@ -205,7 +223,7 @@ Sets the path params (if they exist in the URL).
 
 #### Source
 
-http/endpoint.d.ts:68
+http/endpoint.d.ts:69
 
 ***
 
@@ -225,7 +243,7 @@ Sets the request query parameters.
 
 #### Source
 
-http/endpoint.d.ts:64
+http/endpoint.d.ts:65
 
 ***
 
@@ -245,7 +263,7 @@ Passes the request input nodes of this endpoint to a callback.
 
 #### Source
 
-http/endpoint.d.ts:76
+http/endpoint.d.ts:77
 
 ***
 
@@ -265,7 +283,7 @@ Declare values to store from responses to this endpoint.
 
 #### Source
 
-http/endpoint.d.ts:72
+http/endpoint.d.ts:73
 
 ***
 

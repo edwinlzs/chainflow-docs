@@ -2,17 +2,19 @@
 editUrl: false
 next: false
 prev: false
-title: "store"
+title: "enableLogs"
 layout: "/src/layouts/DocsLayout.astro"
 ---
 
-> **`const`** **store**: `SourceNode`
+> **enableLogs**(): `void`
 
-Special object that acts as a central "gateway" between input and source values.
+## Returns
+
+`void`
 
 ## Source
 
-core/chainflow.d.ts:23
+http/logger.d.ts:4
 
 ***
 

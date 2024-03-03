@@ -16,6 +16,18 @@ layout: "/src/layouts/DocsLayout.astro"
 
 [`Chainflow`](/api/classes/chainflow/)
 
+## Properties
+
+### responses
+
+> **responses**: `Responses`
+
+Stores accumulated responses.
+
+#### Source
+
+core/chainflow.d.ts:27
+
 ## Methods
 
 ### call()
@@ -40,7 +52,7 @@ Adds an endpoint call to the callchain.
 
 #### Source
 
-core/chainflow.d.ts:23
+core/chainflow.d.ts:33
 
 ***
 
@@ -57,7 +69,7 @@ Creates a clone of this chainflow's callqueue and initial sources
 
 #### Source
 
-core/chainflow.d.ts:28
+core/chainflow.d.ts:38
 
 ***
 
@@ -78,7 +90,7 @@ sources values of another chainflow.
 
 #### Source
 
-core/chainflow.d.ts:33
+core/chainflow.d.ts:43
 
 ***
 
@@ -98,7 +110,7 @@ Extends this chainflow's callqueue with that of another flow.
 
 #### Source
 
-core/chainflow.d.ts:30
+core/chainflow.d.ts:40
 
 ***
 
@@ -111,24 +123,6 @@ Resets the chainflow's state by clearing its accumulated sources.
 #### Returns
 
 `void`
-
-#### Source
-
-core/chainflow.d.ts:25
-
-***
-
-### responses()
-
-> **responses**(): `void`
-
-#### Returns
-
-`void`
-
-#### Todo
-
-Returns the accumulated responses of this chainflow.
 
 #### Source
 
@@ -148,7 +142,7 @@ Run the set up chain
 
 #### Source
 
-core/chainflow.d.ts:19
+core/chainflow.d.ts:29
 
 ***
 
@@ -168,7 +162,7 @@ Adds a seed to this chainflow.
 
 #### Source
 
-core/chainflow.d.ts:21
+core/chainflow.d.ts:31
 
 ***
 

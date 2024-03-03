@@ -30,17 +30,31 @@ Defines an endpoint that a chainflow can call upon.
 
 #### Source
 
-core/chainflow.d.ts:10
+core/chainflow.d.ts:13
 
 ***
 
-### hash
+### details
 
-> **hash**: `string`
+> **details**: `string`
+
+A string with info describing the endpoint.
 
 #### Source
 
-core/chainflow.d.ts:9
+core/chainflow.d.ts:12
+
+***
+
+### id
+
+> **id**: `string`
+
+A value that uniquely identifies this endpoint.
+
+#### Source
+
+core/chainflow.d.ts:10
 
 ***
 

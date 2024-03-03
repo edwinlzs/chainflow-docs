@@ -10,7 +10,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ## Index signature
 
- \[`hash`: `string`\]: `SourceValue`[]
+ \[`id`: `string`\]: `SourceValue`[]
 
 ## Source
 

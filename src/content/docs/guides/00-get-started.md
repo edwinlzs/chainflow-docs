@@ -53,3 +53,13 @@ const getUsersWithRole = origin.get("/user").query({
 // define flow
 chainflow().call(createUser).call(addRole).call(getUsersWithRole).run();
 ```
+
+## Logging
+
+Chainflow currently has very basic logging of the requests/responses being made. You can enable it by setting `ENABLE_CHAINFLOW_LOGS=true` in your `.env` file, or by running this function:
+
+```typescript
+import { enableLogs } from 'chainflow';
+
+enableLogs();
+```
