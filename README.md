@@ -27,4 +27,5 @@ Checklist
   - [x] respValidator
   - [x] respParser
 - [x] store
-- [ ] logging
+- [x] logging
+- [x] responses
