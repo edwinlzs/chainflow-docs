@@ -5,7 +5,7 @@ import chainflowExampleCode from "~/components/home/basicExample.d.ts?raw";
 ---
 
 <CardGrid>
-  <Code code={chainflowExampleCode} lang="ts" class="code" />
+  <Code code={chainflowExampleCode} lang="ts" class="homepage-snippet" />
   <Card title="Let your data flow">
     <span class="description"
       >APIs typically provide data that are useful to other APIs. Use Chainflow
@@ -35,14 +35,13 @@ import chainflowExampleCode from "~/components/home/basicExample.d.ts?raw";
     justify-content: center;
   }
 
-  .code {
-    max-height: 22em;
-    overflow-y: scroll;
+  .homepage-snippet {
+    overflow-x: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
 
-  .code::-webkit-scrollbar {
+  .homepage-snippet::-webkit-scrollbar {
     display: none;
   }
 </style>

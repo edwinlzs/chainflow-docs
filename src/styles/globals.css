@@ -74,3 +74,11 @@ expressive code configuration in starlight */
 .expressive-code .ec-line {
   margin-top: 0;
 }
+
+/* Fix sizing of code snippets on homepage */
+.homepage-snippet > .frame > pre {
+  max-height: 22em;
+}
+:is(.homepage-snippet > * > pre)::-webkit-scrollbar-corner {
+  background: none;
+}
