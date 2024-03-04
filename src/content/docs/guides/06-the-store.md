@@ -4,7 +4,7 @@ description: Using the chainflow store to centralize links.
 layout: "/src/layouts/DocsLayout.astro"
 slug: "guides/the-store"
 sidebar:
-  order: 5
+  order: 6
 ---
 
 ## Many-to-Many links

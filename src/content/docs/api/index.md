@@ -43,6 +43,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 - [chainflow](/api/functions/chainflow/)
 - [config](/api/functions/config/)
+- [defaultHeaders](/api/functions/defaultheaders/)
 - [enableLogs](/api/functions/enablelogs/)
 - [gen](/api/functions/gen/)
 - [link](/api/functions/link/)

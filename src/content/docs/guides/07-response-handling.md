@@ -4,7 +4,7 @@ description: How to configure handling of responses to endpoint calls.
 layout: "/src/layouts/DocsLayout.astro"
 slug: "guides/response-handling"
 sidebar:
-  order: 6
+  order: 7
 ---
 
 ## `config` on Endpoints
@@ -13,7 +13,9 @@ Each endpoint has a `config` _method_ that allows you to specify several options
 
 ### Parsing the response body
 
-By default, Chainflow parses the response body as a JSON object. The library uses [undici](https://github.com/nodejs/undici) as its underlying HTTP client, hence if you need to parse the response in another format you may specify any of 4 formats undici has implemented via the `RESP_PARSER` enum and its variants: `ARRAY_BUFFER`, `BLOB`, `JSON` or `TEXT`.
+By default, Chainflow parses the response body as a JSON object unless the status code is `204` or the `content-type` header does not contain `application/json` (to avoid errors when parsing an empty body), upon which they will instead parse it as text.
+
+The library uses [undici](https://github.com/nodejs/undici) as its underlying HTTP client, hence you can manually specify the parser as any of 4 formats undici has implemented via the `RESP_PARSER` enum and its variants: `ARRAY_BUFFER`, `BLOB`, `JSON` or `TEXT`.
 
 ```typescript {3-4}
 import { RESP_PARSER } from "chainflow";
