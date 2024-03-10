@@ -11,7 +11,7 @@ as well as calls to that endpoint
 
 ## Implements
 
-- [`IEndpoint`](/api/interfaces/iendpoint/)\<[`HTTPCallOpts`](/api/interfaces/httpcallopts/)\>
+- [`IEndpoint`](/api/interfaces/iendpoint/)\<[`HTTPCallOpts`](/api/interfaces/httpcallopts/), `IHttpReq`, `ParsedHttpResp`\>
 
 ## Constructors
 
@@ -23,11 +23,9 @@ as well as calls to that endpoint
 
 • **\_\_namedParameters**: `Object`
 
-• **\_\_namedParameters\.addr**: `string`
+• **\_\_namedParameters\.method**: `SUPPORTED_METHOD`
 
-• **\_\_namedParameters\.method**: `string`
-
-• **\_\_namedParameters\.path**: `string`
+• **\_\_namedParameters\.url**: `string`
 
 #### Returns
 
@@ -35,7 +33,7 @@ as well as calls to that endpoint
 
 #### Source
 
-http/endpoint.d.ts:51
+http/endpoint.d.ts:43
 
 ## Properties
 
@@ -43,7 +41,7 @@ http/endpoint.d.ts:51
 
 > **id**: `string`
 
-A value that uniquely identifies this endpoint.
+Uniquely identifies this endpoint.
 
 #### Implementation of
 
@@ -51,7 +49,27 @@ A value that uniquely identifies this endpoint.
 
 #### Source
 
-http/endpoint.d.ts:50
+http/endpoint.d.ts:40
+
+***
+
+### method
+
+> **method**: `SUPPORTED_METHOD`
+
+#### Source
+
+http/endpoint.d.ts:42
+
+***
+
+### url
+
+> **url**: `string`
+
+#### Source
+
+http/endpoint.d.ts:41
 
 ## Accessors
 
@@ -69,21 +87,7 @@ Update this when there is a better implementation of id.
 
 #### Source
 
-http/endpoint.d.ts:58
-
-***
-
-### method
-
-> **`get`** **method**(): `SUPPORTED_METHOD`
-
-#### Returns
-
-`SUPPORTED_METHOD`
-
-#### Source
-
-http/endpoint.d.ts:56
+http/endpoint.d.ts:48
 
 ***
 
@@ -97,7 +101,7 @@ http/endpoint.d.ts:56
 
 #### Source
 
-http/endpoint.d.ts:63
+http/endpoint.d.ts:53
 
 ## Methods
 
@@ -117,7 +121,7 @@ Sets headers provided by the originServer object.
 
 #### Source
 
-http/endpoint.d.ts:71
+http/endpoint.d.ts:61
 
 ***
 
@@ -137,13 +141,13 @@ Sets the request body.
 
 #### Source
 
-http/endpoint.d.ts:62
+http/endpoint.d.ts:52
 
 ***
 
 ### call()
 
-> **call**(`responses`, `opts`?): `Promise`\<[`CallResult`](/api/interfaces/callresult/)\>
+> **call**(`responses`, `opts`?): `Promise`\<[`CallResult`](/api/interfaces/callresult/)\<`IHttpReq`, `ParsedHttpResp`\>\>
 
 Calls this endpoint with responses provided from earlier requests in the chain.
 
@@ -155,7 +159,7 @@ Calls this endpoint with responses provided from earlier requests in the chain.
 
 #### Returns
 
-`Promise`\<[`CallResult`](/api/interfaces/callresult/)\>
+`Promise`\<[`CallResult`](/api/interfaces/callresult/)\<`IHttpReq`, `ParsedHttpResp`\>\>
 
 #### Implementation of
 
@@ -163,7 +167,7 @@ Calls this endpoint with responses provided from earlier requests in the chain.
 
 #### Source
 
-http/endpoint.d.ts:75
+http/endpoint.d.ts:65
 
 ***
 
@@ -183,7 +187,7 @@ Configures this endpoint.
 
 #### Source
 
-http/endpoint.d.ts:60
+http/endpoint.d.ts:50
 
 ***
 
@@ -203,7 +207,7 @@ Sets custom headers for requests.
 
 #### Source
 
-http/endpoint.d.ts:67
+http/endpoint.d.ts:57
 
 ***
 
@@ -223,7 +227,7 @@ Sets the path params (if they exist in the URL).
 
 #### Source
 
-http/endpoint.d.ts:69
+http/endpoint.d.ts:59
 
 ***
 
@@ -243,7 +247,7 @@ Sets the request query parameters.
 
 #### Source
 
-http/endpoint.d.ts:65
+http/endpoint.d.ts:55
 
 ***
 
@@ -263,7 +267,7 @@ Passes the request input nodes of this endpoint to a callback.
 
 #### Source
 
-http/endpoint.d.ts:77
+http/endpoint.d.ts:67
 
 ***
 
@@ -283,7 +287,7 @@ Declare values to store from responses to this endpoint.
 
 #### Source
 
-http/endpoint.d.ts:73
+http/endpoint.d.ts:63
 
 ***
 

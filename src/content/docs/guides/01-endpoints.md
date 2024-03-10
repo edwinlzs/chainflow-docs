@@ -9,21 +9,21 @@ sidebar:
 
 ## Origin Server
 
-Start off by defining an `OriginServer` instance you will be sending requests to by passing it a string with the server's host and port.
+Start off by defining an `Origin` instance that represents a server you will be sending requests to by passing it the host and port (protocol is optional, defaults to `http`).
 
 ```typescript
-import { originServer } from "./chainflow";
+import { origin } from "./chainflow";
 
-const origin = originServer("127.0.0.1:5000");
+const backend = origin("127.0.0.1:5000");
 ```
 
 ## Defining an Endpoint
 
-Create `Endpoint` instances from the origin server instance by calling the respective HTTP method verb on it and passing a path string.
+Create `Endpoint` instances from the `Origin` instance by calling the respective HTTP method verb on it and passing a path string.
 
 ```typescript
-const createUser = origin.post("/user");
-const getProfile = origin.get("/user/profile");
+const createUser = backend.post("/user");
+const getProfile = backend.get("/user/profile");
 ```
 
 You can configure HTTP request parameters on endpoint instances by defining their HTTP headers, body, query and path parameters.
@@ -62,7 +62,7 @@ This will cause the endpoint to be called with the URL `.../user/profile?age=42`
 You can only define path parameters at the creation of the endpoint, using curly braces `{}` to denote the parameter and its key, like below.
 
 ```typescript
-const getProfile = origin.get("/user/{userId}");
+const getProfile = backend.get("/user/{userId}");
 ```
 
 The snippet above defines the `getProfile` endpoint with one path parameter which has the key `userId`.
@@ -70,7 +70,7 @@ The snippet above defines the `getProfile` endpoint with one path parameter whic
 You can still assign values to the path params by calling the `pathParams` method:
 
 ```typescript
-const getProfile = origin.get("/user/{userId}").pathParams({
+const getProfile = backend.get("/user/{userId}").pathParams({
   userId: "user123",
 });
 ```
@@ -80,7 +80,7 @@ Note that unlike the `headers`, `body` and `query` methods, the `pathParams` met
 All of these methods are chainable as per the Builder pattern, e.g.:
 
 ```typescript
-const createUser = origin
+const createUser = backend
   .post("/user")
   .headers({
     token: "some-value",

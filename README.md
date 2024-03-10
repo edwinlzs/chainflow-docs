@@ -1,14 +1,15 @@
 Work in Progress - Documentation for the [Chainflow](https://github.com/edwinlzs/chainflow) library
 
 Checklist
-- [x] originServer
+- [x] origin
+- [ ] origin (no base url)
 - [x] endpoint
 - [x] chainflow
 - [x] body
 - [x] path params
 - [x] query
 - [x] headers (endpoint)
-- [x] headers (originServer)
+- [x] headers (origin)
 - [x] default values
 - [x] required
 - [x] gen
@@ -28,4 +29,4 @@ Checklist
   - [x] respParser
 - [x] store
 - [x] logging
-- [x] responses
+- [x] events

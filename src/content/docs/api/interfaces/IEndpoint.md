@@ -10,27 +10,31 @@ Defines an endpoint that a chainflow can call upon.
 
 ## Type parameters
 
-• **T**
+• **CallOpts**
+
+• **Req**
+
+• **Resp**
 
 ## Properties
 
 ### call
 
-> **call**: (`sources`, `opts`?) => `Promise`\<[`CallResult`](/api/interfaces/callresult/)\>
+> **call**: (`sources`, `opts`?) => `Promise`\<[`CallResult`](/api/interfaces/callresult/)\<`Req`, `Resp`\>\>
 
 #### Parameters
 
 • **sources**: [`SourceValues`](/api/type-aliases/sourcevalues/)
 
-• **opts?**: `T`
+• **opts?**: `CallOpts`
 
 #### Returns
 
-`Promise`\<[`CallResult`](/api/interfaces/callresult/)\>
+`Promise`\<[`CallResult`](/api/interfaces/callresult/)\<`Req`, `Resp`\>\>
 
 #### Source
 
-core/chainflow.d.ts:13
+core/chainflow.d.ts:14
 
 ***
 
@@ -38,11 +42,11 @@ core/chainflow.d.ts:13
 
 > **details**: `string`
 
-A string with info describing the endpoint.
+Describes the endpoint.
 
 #### Source
 
-core/chainflow.d.ts:12
+core/chainflow.d.ts:13
 
 ***
 
@@ -50,11 +54,11 @@ core/chainflow.d.ts:12
 
 > **id**: `string`
 
-A value that uniquely identifies this endpoint.
+Uniquely identifies this endpoint.
 
 #### Source
 
-core/chainflow.d.ts:10
+core/chainflow.d.ts:11
 
 ***
 

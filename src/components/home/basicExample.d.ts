@@ -1,19 +1,19 @@
-import { chainflow, link, originServer } from 'chainflow';
+import { chainflow, link, origin } from 'chainflow';
 
-const origin = originServer("127.0.0.1:5000");
+const backend = origin("127.0.0.1:5000");
 
-const createUser = origin.post("/user").body({
+const createUser = backend.post("/user").body({
   name: "Tom",
 });
 
-const createGroup = origin.post("/group").body({
+const createGroup = backend.post("/group").body({
   creatorId: createUser.resp.body.id,
   groupName: "Code Monkeys",
 });
 
-const getRandomFact = origin.get("/fact");
+const getRandomFact = backend.get("/fact");
 
-const sendMessage = origin.post("/message").body({
+const sendMessage = backend.post("/message").body({
   sender: createUser.resp.body.id,
   groupId: createGroup.resp.body.id,
   message: link(

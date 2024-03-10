@@ -18,7 +18,7 @@ It is useful when you have a endpoint with an input node that can take values fr
 Call the `store` _method_ on an endpoint to define how to store a source node from a response.
 
 ```typescript {6} {9}
-const createUser = origin
+const createUser = backend
   .post("/user")
   .body({
     name: "Tom",
@@ -39,7 +39,7 @@ Next, import the special `store` _source node object_ from chainflow and link it
 ```typescript {5}
 import { store } from "chainflow";
 
-const addRole = origin.post("/role").body({
+const addRole = backend.post("/role").body({
   // `userId` will take the value of `newUserId` from the store, if available
   userId: store.newUserId,
   role: "Engineer",

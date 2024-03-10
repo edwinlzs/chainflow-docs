@@ -29,24 +29,24 @@ npm install --save-dev chainflow
 
 ## Basic Example
 
-Below, we create endpoints for an origin server, define the input nodes on their request body/query parameters, and finally run a flow calling those endpoints.
+Below, we create endpoints from our backend origin, define the input nodes on their request body/query parameters, and finally run a flow calling those endpoints.
 
 ```typescript
-import { originServer, chainflow } from "./chainflow";
+import { origin, chainflow } from "./chainflow";
 
-const origin = originServer("127.0.0.1:5000");
+const backend = origin("127.0.0.1:5000");
 
 // define endpoints
-const createUser = origin.post("/user").body({
+const createUser = backend.post("/user").body({
   name: "Tom",
 });
 
-const addRole = origin.post("/role").body({
+const addRole = backend.post("/role").body({
   userId: createUser.body.resp.id,
   role: "Engineer",
 });
 
-const getUsersWithRole = origin.get("/user").query({
+const getUsersWithRole = backend.get("/user").query({
   role: "Engineer",
 });
 
@@ -56,7 +56,7 @@ chainflow().call(createUser).call(addRole).call(getUsersWithRole).run();
 
 ## Logging
 
-Chainflow currently has very basic logging of the requests/responses being made. You can enable it by setting `ENABLE_CHAINFLOW_LOGS=true` in your `.env` file, or by running this function:
+Enable logging of the requests/responses being made by setting `ENABLE_CHAINFLOW_LOGS=true` in your `.env` file, or by running this function:
 
 ```typescript
 import { enableLogs } from 'chainflow';

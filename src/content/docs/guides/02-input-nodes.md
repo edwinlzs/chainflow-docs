@@ -14,7 +14,7 @@ sidebar:
 In the previous chapter, we defined the following endpoint:
 
 ```typescript "token" "name" "details" "age"
-const createUser = origin
+const createUser = backend
   .post("/user")
   .headers({
     token: "some-value",
@@ -71,7 +71,7 @@ A required input node must take a value from elsewhere. There are two possible w
 Links are what give chainflows high dynamism by allowing outputs from one endpoint to flow to the inputs of another. Below is the simplest way of creating a link: 
 
 ```typescript {2}
-const addRole = origin.post('/role').body({
+const addRole = backend.post('/role').body({
 	userId: createUser.resp.body.id,
   role: 'engineer',
 });
@@ -106,7 +106,7 @@ The below snippet shows another way of defining links:
 ```typescript {8-9}
 import { link } from 'chainflow';
 
-const addRole = origin.post('/role').body({
+const addRole = backend.post('/role').body({
 	userId: 'dummy-id',
   role: 'engineer',
 });

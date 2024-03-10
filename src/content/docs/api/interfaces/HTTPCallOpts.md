@@ -16,7 +16,7 @@ Options for configuring an endpoint call.
 
 #### Source
 
-http/endpoint.d.ts:42
+http/endpoint.d.ts:32
 
 ***
 
@@ -26,7 +26,7 @@ http/endpoint.d.ts:42
 
 #### Source
 
-http/endpoint.d.ts:39
+http/endpoint.d.ts:29
 
 ***
 
@@ -36,7 +36,7 @@ http/endpoint.d.ts:39
 
 #### Source
 
-http/endpoint.d.ts:41
+http/endpoint.d.ts:31
 
 ***
 
@@ -46,7 +46,7 @@ http/endpoint.d.ts:41
 
 #### Source
 
-http/endpoint.d.ts:40
+http/endpoint.d.ts:30
 
 ***
 

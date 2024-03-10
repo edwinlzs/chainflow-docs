@@ -18,33 +18,37 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ## Properties
 
-### responses
+### events
 
-> **responses**: `Responses`
+> **events**: `CallEvent`[]
 
-Stores accumulated responses.
+Stores accumulated endpoint call events.
 
 #### Source
 
-core/chainflow.d.ts:27
+core/chainflow.d.ts:28
 
 ## Methods
 
 ### call()
 
-> **call**\<`T`\>(`endpoint`, `opts`?): `this`
+> **call**\<`CallOpts`, `Req`, `Resp`\>(`endpoint`, `opts`?): `this`
 
 Adds an endpoint call to the callchain.
 
 #### Type parameters
 
-• **T**
+• **CallOpts**
+
+• **Req**
+
+• **Resp**
 
 #### Parameters
 
-• **endpoint**: [`IEndpoint`](/api/interfaces/iendpoint/)\<`T`\>
+• **endpoint**: [`IEndpoint`](/api/interfaces/iendpoint/)\<`CallOpts`, `Req`, `Resp`\>
 
-• **opts?**: `T`
+• **opts?**: `CallOpts`
 
 #### Returns
 
@@ -52,7 +56,7 @@ Adds an endpoint call to the callchain.
 
 #### Source
 
-core/chainflow.d.ts:33
+core/chainflow.d.ts:34
 
 ***
 
@@ -69,7 +73,7 @@ Creates a clone of this chainflow's callqueue and initial sources
 
 #### Source
 
-core/chainflow.d.ts:38
+core/chainflow.d.ts:39
 
 ***
 
@@ -90,7 +94,7 @@ sources values of another chainflow.
 
 #### Source
 
-core/chainflow.d.ts:43
+core/chainflow.d.ts:44
 
 ***
 
@@ -110,7 +114,7 @@ Extends this chainflow's callqueue with that of another flow.
 
 #### Source
 
-core/chainflow.d.ts:40
+core/chainflow.d.ts:41
 
 ***
 
@@ -126,7 +130,7 @@ Resets the chainflow's state by clearing its accumulated sources.
 
 #### Source
 
-core/chainflow.d.ts:35
+core/chainflow.d.ts:36
 
 ***
 
@@ -142,7 +146,7 @@ Run the set up chain
 
 #### Source
 
-core/chainflow.d.ts:29
+core/chainflow.d.ts:30
 
 ***
 
@@ -162,7 +166,7 @@ Adds a seed to this chainflow.
 
 #### Source
 
-core/chainflow.d.ts:31
+core/chainflow.d.ts:32
 
 ***
 

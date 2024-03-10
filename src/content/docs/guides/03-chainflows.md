@@ -32,7 +32,7 @@ Outputs from an endpoint are not the only type of source node. Each chainflow ca
 ```typescript {5}
 import { seed } from "chainflow";
 
-const addRole = origin.post("/role").body({
+const addRole = backend.post("/role").body({
   userId: createUser.resp.body.id,
   role: seed.role,
 });
@@ -59,7 +59,7 @@ In this snippet, we call the `seed` method on a chainflow and pass in a value of
 You can directly declare input values for an endpoint on a chainflow by passing a second argument to the `call` method.
 
 ```typescript
-const createUser = origin.post("/user").body({
+const createUser = backend.post("/user").body({
   name: "Tom",
 });
 
@@ -72,12 +72,12 @@ Values passed this way have the highest priority and will override any defaults 
 
 ## Viewing Responses
 
-After running a chainflow, you can access the collected responses via the `responses` property on that chainflow.
+After running a chainflow, you can retrieve the request and response data from endpoint calls executed during that run via the `event` property on that chainflow.
 
 ```typescript
-const flow = chainflow().call(getUser).call(addRole).run();
+const flow = chainflow().run(createUser).run(getRoles);
 
-const responses = flow.responses;
+const events = flow.events;
 ```
 
 The responses will look something like:
@@ -85,22 +85,25 @@ The responses will look something like:
 ```typescript
 [
   {
-    details: '[GET] /user' // identifies the endpoint called
-    val: { // the response to getUser
-      statusCode: 200, // HTTP status code
+    details: '[POST] /user', // identifies the endpoint called
+    req: { // the request
+      method: 'POST',
+      url: ...,
+      body: ...,
+      headers: ...,
+      respParser: ..., // the format used to parse the response body
+    },
+    resp: { // the response
+      statusCode: 200,
       body: ...,
       headers: ...,
       ...
     }
   },
   {
-    details: '[POST] /roles'
-    val: { // the response to addRole
-      statusCode: 200,
-      body: ...,
-      headers: ...,
-      ...
-    }
+    details: '[GET] /roles',
+    req: ...,
+    resp: ...
   }
 ]
 ```
@@ -156,11 +159,11 @@ In the snippet above, we used `extend` to add on to the chainflows we made earli
 After a run, each chainflow temporarily retains the responses accumulated from calling endpoints until its next run. Another chainflow can use the `continuesFrom` method to copy those accumulated responses into itself before making its own run.
 
 ```typescript collapse={1-9} {20}
-const login = origin.post("/user").body({
+const login = backend.post("/user").body({
   username: "admin",
 });
 
-const createGroup = origin
+const createGroup = backend
   .post("/group")
   .headers({
     Authorization: login.resp.body.authToken,

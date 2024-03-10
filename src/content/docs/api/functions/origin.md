@@ -2,27 +2,26 @@
 editUrl: false
 next: false
 prev: false
-title: "defaultHeaders"
+title: "origin"
 layout: "/src/layouts/DocsLayout.astro"
 ---
 
-> **defaultHeaders**(`headers`?, `replace`?): `void`
+> **origin**(`origin`?): [`Origin`](/api/type-aliases/origin/)
 
-A utility to modify the default headers sent in every endpoint call.
+Convenience function for creating an endpoint builder
+with supported HTTP methods defined on it.
 
 ## Parameters
 
-• **headers?**: `Record`\<`string`, `string`\>
-
-• **replace?**: `boolean`
+• **origin?**: `string`
 
 ## Returns
 
-`void`
+[`Origin`](/api/type-aliases/origin/)
 
 ## Source
 
-http/utils/client.d.ts:12
+http/origin.d.ts:5
 
 ***
 

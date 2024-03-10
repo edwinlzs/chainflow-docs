@@ -2,11 +2,11 @@
 editUrl: false
 next: false
 prev: false
-title: "OriginServer"
+title: "Origin"
 layout: "/src/layouts/DocsLayout.astro"
 ---
 
-> **OriginServer**: `OriginBase` & `Object`
+> **Origin**: `OriginBase` & `Object`
 
 ## Type declaration
 
@@ -36,7 +36,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ## Source
 
-http/originServer.d.ts:7
+http/origin.d.ts:8
 
 ***
 

@@ -31,7 +31,7 @@ sendMessage.set(({ body: { msg } }) => {
 Alternatively, the `link` function has an overload allowing you to use it directly at the point of creation with a callback of an input node like below:
 
 ```typescript {3}
-const sendMessage = origin.post('/message').body({
+const sendMessage = backend.post('/message').body({
   // link(SourceNode, callback)
   msg: link(createUser.resp.body.name, createGreeting),
 });
@@ -48,7 +48,7 @@ Should an input node need to take values from multiple sources at the same time,
 const mergeValues = ([name, favAnimal]: [string, string]) =>
   `${name} likes ${favAnimal}.`;
 
-const createMessage = origin.post('message').body({
+const createMessage = backend.post('message').body({
   // linkMerge(Array<SourceNode>, callback)
   msg: linkMerge(
     [getUser.resp.body.name, getFavAnimal.resp.body.favAnimal],
@@ -76,7 +76,7 @@ const mergeValues = ({
 }) => `${userName} likes ${favAnimal}.`;
 
 
-const createMessage = origin.post('message').body({
+const createMessage = backend.post('message').body({
   // linkMerge(Record<string, SourceNode>, callback)
   msg: linkMerge(
     {

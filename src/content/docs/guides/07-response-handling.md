@@ -20,7 +20,7 @@ The library uses [undici](https://github.com/nodejs/undici) as its underlying HT
 ```typescript {3-4}
 import { RESP_PARSER } from "chainflow";
 
-const getUser = origin.get("/user").config({
+const getUser = backend.get("/user").config({
   respParser: RESP_PARSER.TEXT,
 });
 ```
@@ -32,7 +32,7 @@ If you're using JavaScript, you can use the strings `'arrayBuffer'`, `'blob'`, `
 By default, Chainflow rejects a response and throws an error if the response has HTTP status code 400 and above. If you'd like to change when the error is thrown and/or provide custom validations of the response payload, you can do so by passing a custom callback to the `respValidator` key using the endpoint's `config` method.
 
 ```typescript
-const getUser = origin.get("/user").config({
+const getUser = backend.get("/user").config({
   respValidator: (resp) => {
     if (resp.statusCode !== 201)
       return { valid: false, msg: "Failed to retrieve users." };
@@ -59,11 +59,11 @@ By default, a source node's value is considered unavailable if it is `undefined`
 ```typescript {1} {12} {15}
 import { config } from 'chainflow';
 
-const getUser = origin.get("/user").query({
+const getUser = backend.get("/user").query({
   name: "Tom",
 });
 
-const addRole = origin.post("/role").body({
+const addRole = backend.post("/role").body({
   userId: "some-default-id",
   role: "ENGINEER",
 });

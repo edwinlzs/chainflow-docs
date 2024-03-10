@@ -9,7 +9,6 @@ layout: "/src/layouts/DocsLayout.astro"
 ## Enumerations
 
 - [NODE\_VALUE](/api/enumerations/node_value/)
-- [RESP\_PARSER](/api/enumerations/resp_parser/)
 
 ## Classes
 
@@ -31,7 +30,7 @@ layout: "/src/layouts/DocsLayout.astro"
 
 ## Type Aliases
 
-- [OriginServer](/api/type-aliases/originserver/)
+- [Origin](/api/type-aliases/origin/)
 - [SourceValues](/api/type-aliases/sourcevalues/)
 
 ## Variables
@@ -48,7 +47,7 @@ layout: "/src/layouts/DocsLayout.astro"
 - [gen](/api/functions/gen/)
 - [link](/api/functions/link/)
 - [linkMerge](/api/functions/linkmerge/)
-- [originServer](/api/functions/originserver/)
+- [origin](/api/functions/origin/)
 - [required](/api/functions/required/)
 
 ***

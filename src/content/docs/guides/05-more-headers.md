@@ -9,26 +9,26 @@ sidebar:
 
 ## Shared headers
 
-Sometimes, you may want to share some common headers across multiple endpoints (e.g. for data such as login tokens). An easy way to do this is with the `headers` method on an `OriginServer` itself (instead of on an endpoint which is covered earlier). This will make every endpoint created thereafter from that origin server bear those common headers.
+Sometimes, you may want to share some common headers across multiple endpoints (e.g. for data such as login tokens). An easy way to do this is with the `headers` method on an `Origin` itself (instead of on an endpoint which is covered earlier). This will make every endpoint created thereafter from that origin server bear those common headers.
 
 ```typescript {7-9}
-const origin = originServer("127.0.0.1:5000");
+const backend = origin("127.0.0.1:5000");
 
-const login = origin.post("/login").body({
+const login = backend.post("/login").body({
   name: "admin",
 });
 
-origin.headers({
+backend.headers({
   Authorization: login.resp.body.token,
 });
 
-const createGroup = loggedInOrigin.post("/group");
-const sendMessage = loggedInOrigin.post("/message");
+const createGroup = backend.post("/group");
+const sendMessage = backend.post("/message");
 
 chainflow().call(login).call(createGroup).call(sendMessage);
 ```
 
-In this snippet, we initially create a `login` endpoint from `origin`. After doing so, we define a set of headers on `origin` that takes a value from `login.resp.body.token`, then proceed to define the `createGroup` and `sendMessage` endpoints. These two endpoints will _both_ have the `Authorization` header that takes the token from the response to `login`.
+In this snippet, we initially create a `login` endpoint from our `backend` origin. After doing so, we define a set of headers on `backend` that takes a value from `login.resp.body.token`, then proceed to define the `createGroup` and `sendMessage` endpoints. These two endpoints will _both_ have the `Authorization` header that takes the token from the response to `login`.
 
 You can still define other headers on each individual endpoint - the shared headers and those headers defined on the endpoint will be deep merged together (with endpoint-defined headers overriding shared headers if there are conflicts).
 

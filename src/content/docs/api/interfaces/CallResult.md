@@ -6,15 +6,31 @@ title: "CallResult"
 layout: "/src/layouts/DocsLayout.astro"
 ---
 
+## Type parameters
+
+• **Req**
+
+• **Resp**
+
 ## Properties
 
-### resp
+### req
 
-> **resp**: `any`
+> **req**: `Req`
 
 #### Source
 
 core/chainflow.d.ts:4
+
+***
+
+### resp
+
+> **resp**: `Resp`
+
+#### Source
+
+core/chainflow.d.ts:5
 
 ***
 
@@ -24,7 +40,7 @@ core/chainflow.d.ts:4
 
 #### Source
 
-core/chainflow.d.ts:5
+core/chainflow.d.ts:6
 
 ***
 

@@ -26,7 +26,7 @@ http/endpoint.d.ts:21
 
 #### Parameters
 
-• **resp**: `ParsedResponse`
+• **resp**: `ParsedHttpResp`
 
 #### Returns
 

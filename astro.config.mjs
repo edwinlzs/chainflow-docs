@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import starlightTypeDoc, { typeDocSidebarGroup } from "starlight-typedoc";
 import chainflowFrontmatter from "./src/plugins/ChainflowFrontmatter";
-import expressiveCode from "astro-expressive-code"; 
+import expressiveCode from "astro-expressive-code";
 
 export default defineConfig({
   integrations: [
@@ -21,6 +21,11 @@ export default defineConfig({
         {
           label: "GUIDES",
           autogenerate: { directory: "guides" },
+        },
+        {
+          label: "BLOG",
+          collapsed: true,
+          autogenerate: { directory: "blog" },
         },
         typeDocSidebarGroup,
       ],
